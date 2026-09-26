@@ -1,0 +1,1877 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <title>Cadastro Reserva | Emprego Todo Dia Iguatu</title>
+
+    <meta name="description"
+        content="Cadastre seu currículo no Cadastro Reserva do Emprego Todo Dia Iguatu para futuras oportunidades de emprego.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#0066cc">
+
+    <link rel="canonical"
+        href="https://empregotododiaiguatu.com.br/cadastro-reserva.html">
+
+    <style>
+
+        /* =========================================================
+           RESET
+           ========================================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0066cc, #00a8a8);
+            min-height: 100vh;
+            padding: 20px 12px 40px;
+            color: #222;
+        }
+
+        /* =========================================================
+           MENU
+           ========================================================= */
+
+        .menu-site {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .menu-site a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: #fff;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+            transition: .2s ease;
+        }
+
+        .menu-site a:hover {
+            background: #0066cc;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .menu-site a.ativo {
+            background: #0066cc;
+            color: #fff;
+        }
+
+        /* =========================================================
+           CONTAINER
+           ========================================================= */
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .caixa {
+            background: #fff;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .20);
+        }
+
+        /* =========================================================
+           CABEÇALHO
+           ========================================================= */
+
+        .cabecalho-cadastro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .icone-topo {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            background: linear-gradient(135deg, #0066cc, #00a8a8);
+            box-shadow: 0 8px 20px rgba(0, 102, 204, .25);
+        }
+
+        .cabecalho-cadastro h1 {
+            color: #0066cc;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .cabecalho-cadastro p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .cabecalho-cadastro strong {
+            color: #0066cc;
+        }
+
+        .linha-decorativa {
+            width: 100px;
+            height: 4px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #0066cc, #00a8a8);
+            margin: 20px auto 30px;
+        }
+
+        /* =========================================================
+           INFORMAÇÕES DO CADASTRO RESERVA
+           ========================================================= */
+
+        .informacoes-cadastro {
+            margin: 0 0 30px;
+            padding: 22px;
+            border: 1px solid #d9e3ee;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #f7fbff, #eef8f8);
+        }
+
+        .informacoes-cadastro h2 {
+            color: #0066cc;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .informacoes-cadastro p {
+            color: #4d4d4d;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .informacoes-cadastro ul {
+            margin: 10px 0 15px 22px;
+            color: #4d4d4d;
+        }
+
+        .informacoes-cadastro li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .informacoes-cadastro .aviso {
+            margin-top: 16px;
+            padding: 15px;
+            border-left: 4px solid #0066cc;
+            border-radius: 8px;
+            background: #fff;
+            color: #444;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .links-informacoes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .links-informacoes a {
+            display: inline-block;
+            padding: 9px 12px;
+            border-radius: 8px;
+            background: #fff;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            border: 1px solid #cdddea;
+        }
+
+        .links-informacoes a:hover {
+            background: #0066cc;
+            color: #fff;
+        }
+
+        /* =========================================================
+           MENSAGENS
+           ========================================================= */
+
+        .mensagem {
+            display: none;
+            padding: 14px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .mensagem-erro {
+            background: #ffe5e5;
+            border: 1px solid #ff5c5c;
+            color: #a90000;
+        }
+
+        .mensagem-sucesso {
+            background: #e8f8ee;
+            border: 1px solid #4db879;
+            color: #176b38;
+        }
+
+        /* =========================================================
+           CAMPOS
+           ========================================================= */
+
+        .campo {
+            margin-bottom: 22px;
+        }
+
+        .campo label.titulo {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .obrigatorio {
+            color: #d00000;
+        }
+
+        .campo input,
+        .campo textarea {
+            width: 100%;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+            background: #fff;
+            padding: 13px 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            outline: none;
+            transition: .2s;
+        }
+
+        .campo input {
+            height: 48px;
+        }
+
+        .campo textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .campo input:focus,
+        .campo textarea:focus {
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, .10);
+        }
+
+        /* =========================================================
+           TELEFONE
+           ========================================================= */
+
+        .info-telefone {
+            margin-top: 7px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* =========================================================
+           CURRÍCULO
+           ========================================================= */
+
+        .area-curriculo {
+            border: 2px dashed #0066cc;
+            border-radius: 14px;
+            padding: 25px 18px;
+            text-align: center;
+            background: #f7fbff;
+        }
+
+        .area-curriculo p {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .input-arquivo {
+            display: none;
+        }
+
+        .botao-arquivo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background: #0066cc;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .botao-arquivo:hover {
+            background: #0052a3;
+            transform: translateY(-1px);
+        }
+
+        .info-arquivo {
+            margin-top: 14px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .arquivo-selecionado {
+            display: none;
+            margin-top: 14px;
+            padding: 11px;
+            border-radius: 8px;
+            background: #e8f8ee;
+            color: #176b38;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .erro-arquivo {
+            display: none;
+            margin-top: 12px;
+            padding: 11px;
+            border-radius: 8px;
+            background: #ffe5e5;
+            color: #a90000;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* =========================================================
+           CONSENTIMENTO
+           ========================================================= */
+
+        .consentimento {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 15px;
+            margin: 25px 0;
+            background: #f5f7fa;
+            border: 1px solid #e1e5ea;
+            border-radius: 10px;
+        }
+
+        .consentimento input {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            cursor: pointer;
+        }
+
+        .consentimento label {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.6;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           BOTÃO ENVIAR
+           ========================================================= */
+
+        .botao-enviar {
+            width: 100%;
+            min-height: 54px;
+            border: 0;
+            border-radius: 11px;
+            background: linear-gradient(135deg, #0066cc, #00a8a8);
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .botao-enviar:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 102, 204, .25);
+        }
+
+        .botao-enviar:disabled {
+            opacity: .7;
+            cursor: not-allowed;
+        }
+
+        .carregando {
+            display: none;
+            margin-top: 12px;
+            text-align: center;
+            color: #0066cc;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .rodape {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* =========================================================
+           TELA DE SUCESSO
+           ========================================================= */
+
+        #sucesso {
+            display: none;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .icone-sucesso {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #e8f8ee;
+            color: #16833e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        #sucesso h2 {
+            color: #16833e;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        #sucesso p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .botao-novo {
+            margin-top: 25px;
+            padding: 13px 22px;
+            border: 0;
+            border-radius: 10px;
+            background: #0066cc;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           RESPONSIVO
+           ========================================================= */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 12px 8px 30px;
+            }
+
+            .menu-site {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .menu-site a {
+                width: 100%;
+                padding: 10px 6px;
+                font-size: 12px;
+            }
+
+            .caixa {
+                padding: 25px 17px;
+                border-radius: 14px;
+            }
+
+            .cabecalho-cadastro h1 {
+                font-size: 27px;
+            }
+
+            .cabecalho-cadastro p {
+                font-size: 15px;
+            }
+
+            .informacoes-cadastro {
+                padding: 18px 15px;
+            }
+
+            .informacoes-cadastro h2 {
+                font-size: 20px;
+            }
+
+            .informacoes-cadastro p,
+            .informacoes-cadastro li {
+                font-size: 14px;
+            }
+
+            .links-informacoes {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .links-informacoes a {
+                text-align: center;
+            }
+
+            .botao-arquivo {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .menu-site {
+                grid-template-columns: 1fr;
+            }
+
+            .caixa {
+                padding: 20px 14px;
+            }
+
+            .cabecalho-cadastro h1 {
+                font-size: 24px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         MENU DO SITE
+         ========================================================= -->
+
+    <nav class="menu-site" aria-label="Menu principal">
+
+        <a href="https://empregotododiaiguatu.com.br/">
+            🏠 INÍCIO
+        </a>
+
+        <!-- VAGAS ABRE A PAGINA PRINCIPAL DE VAGAS -->
+        <a href="/vagas.html">
+            💼 VAGAS
+        </a>
+
+        <a href="https://empregotododiaiguatu.com.br/cadastro-reserva.html"
+           class="ativo"
+           aria-current="page">
+            📄 CADASTRO RESERVA
+        </a>
+
+        <a href="https://empregotododiaiguatu.com.br/curriculo-simples.html">
+            📝 FAÇA SEU CURRÍCULO
+        </a>
+
+        <a href="https://empregotododiaiguatu.com.br/politica-de-privacidade.html">
+            🔒 PRIVACIDADE
+        </a>
+
+    </nav>
+
+
+    <!-- =========================================================
+         CONTAINER
+         ========================================================= -->
+
+    <div class="container">
+
+        <div class="caixa">
+
+            <!-- =====================================================
+                 FORMULÁRIO
+                 ===================================================== -->
+
+            <div id="formularioArea">
+
+                <div class="cabecalho-cadastro">
+
+                    <div class="icone-topo">
+                        📄
+                    </div>
+
+                    <h1>
+                        Cadastro Reserva
+                    </h1>
+
+                    <p>
+                        Cadastre seu currículo no
+                        <strong>Emprego Todo Dia Iguatu</strong>
+                        para futuras oportunidades.
+                        <br>
+                        <strong>🔎 CURRÍCULO EM ANÁLISE</strong>
+                    </p>
+
+                    <div class="linha-decorativa"></div>
+
+                </div>
+
+
+                <!-- =====================================================
+                     INFORMAÇÕES ÚTEIS SOBRE O CADASTRO RESERVA
+                     ===================================================== -->
+
+                <section class="informacoes-cadastro"
+                         aria-labelledby="tituloInformacoesCadastro">
+
+                    <h2 id="tituloInformacoesCadastro">
+                        📌 Como funciona o Cadastro Reserva
+                    </h2>
+
+                    <p>
+                        O Cadastro Reserva permite que você deixe seus dados
+                        profissionais e seu currículo registrados para futuras
+                        oportunidades divulgadas pelo
+                        <strong>Emprego Todo Dia Iguatu</strong>.
+                    </p>
+
+                    <p>
+                        Antes de enviar, confira se seus dados estão corretos
+                        e utilize um currículo atualizado. Essas informações
+                        ajudam a identificar seu perfil profissional quando
+                        surgirem oportunidades compatíveis com o cargo de
+                        interesse informado no cadastro.
+                    </p>
+
+                    <p>
+                        O Cadastro Reserva é diferente de uma candidatura
+                        garantida a uma vaga específica. O cadastro representa
+                        o interesse do candidato em futuras oportunidades e
+                        <strong>não garante entrevista, contato, contratação
+                        ou prazo para retorno</strong>.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Informe seu nome, e-mail e telefone corretamente.
+                        </li>
+                        <li>
+                            Escolha um cargo de interesse compatível com seu
+                            perfil profissional.
+                        </li>
+                        <li>
+                            Mantenha seu currículo atualizado e legível.
+                        </li>
+                        <li>
+                            Revise as informações antes de clicar em
+                            “ENVIAR CURRÍCULO”.
+                        </li>
+                        <li>
+                            Para uma vaga anunciada, confira sempre os
+                            requisitos e as informações fornecidas na página
+                            da oportunidade.
+                        </li>
+                    </ul>
+
+                    <div class="aviso">
+                        <strong>🔐 Segurança e privacidade:</strong><br>
+                        Envie somente informações necessárias para sua
+                        finalidade profissional. Não informe senhas, códigos
+                        de acesso, dados bancários ou outras informações
+                        sensíveis que não sejam necessárias para o cadastro.
+                        Consulte também nossa Política de Privacidade para
+                        entender como as informações podem ser tratadas.
+                    </div>
+
+                    <div class="links-informacoes">
+                        <a href="/vagas.html">
+                            💼 CONSULTAR VAGAS
+                        </a>
+
+                        <a href="/politica-de-privacidade.html">
+                            🔒 POLÍTICA DE PRIVACIDADE
+                        </a>
+
+                        <a href="/contato-email.html">
+                            📧 CONTATO
+                        </a>
+                    </div>
+
+                </section>
+
+
+                <div id="mensagemErro"
+                     class="mensagem mensagem-erro"
+                     role="alert">
+                </div>
+
+
+                <div id="mensagemSucesso"
+                     class="mensagem mensagem-sucesso"
+                     role="status">
+                </div>
+
+
+                <form id="formulario" novalidate>
+
+                    <!-- NOME -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="nome">
+                            Nome completo
+                            <span class="obrigatorio">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            autocomplete="name"
+                            maxlength="120"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="email">
+                            E-mail
+                            <span class="obrigatorio">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            autocomplete="email"
+                            maxlength="150"
+                            required>
+
+                    </div>
+
+
+                    <!-- TELEFONE -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="telefone">
+                            Telefone / WhatsApp
+                            <span class="obrigatorio">*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(88) 9 9348-5054"
+                            maxlength="16"
+                            inputmode="numeric"
+                            autocomplete="tel"
+                            required>
+
+                        <div class="info-telefone">
+                            📱 Digite seu telefone com DDD.
+                            <br>
+                            Exemplo:
+                            <strong>(88) 9 9348-5054</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARGO -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="cargo">
+                            Cargo de interesse
+                            <span class="obrigatorio">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cargo"
+                            name="cargo"
+                            placeholder="Ex.: Auxiliar Administrativo"
+                            maxlength="120"
+                            required>
+
+                    </div>
+
+
+                    <!-- CIDADE -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="cidade">
+                            Cidade
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            name="cidade"
+                            placeholder="Digite sua cidade"
+                            maxlength="100"
+                            autocomplete="address-level2">
+
+                    </div>
+
+
+                    <!-- EXPERIÊNCIA -->
+
+                    <div class="campo">
+
+                        <label class="titulo" for="experiencia">
+                            Fale um pouco sobre você
+                        </label>
+
+                        <textarea
+                            id="experiencia"
+                            name="experiencia"
+                            placeholder="Conte um pouco sobre sua experiência profissional, habilidades e objetivos."
+                            maxlength="3000"></textarea>
+
+                    </div>
+
+
+                    <!-- CURRÍCULO -->
+
+                    <div class="campo">
+
+                        <label class="titulo">
+                            Currículo
+                            <span class="obrigatorio">*</span>
+                        </label>
+
+                        <div class="area-curriculo">
+
+                            <p>
+                                📎 Selecione seu currículo para enviar.
+                            </p>
+
+                            <label
+                                for="curriculo"
+                                class="botao-arquivo">
+
+                                📎 SELECIONAR CURRÍCULO
+
+                            </label>
+
+                            <input
+                                type="file"
+                                id="curriculo"
+                                name="curriculo"
+                                class="input-arquivo"
+                                accept=".pdf,.doc,.docx,.xls,.xlsx"
+                                required>
+
+                            <div class="info-arquivo">
+
+                                Formatos aceitos:
+                                PDF, DOC, DOCX, XLS e XLSX.
+
+                                <br>
+
+                                Tamanho máximo:
+                                <strong>10 MB</strong>.
+
+                            </div>
+
+                            <div
+                                id="arquivoSelecionado"
+                                class="arquivo-selecionado">
+                            </div>
+
+                            <div
+                                id="erroArquivo"
+                                class="erro-arquivo">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONSENTIMENTO -->
+
+                    <div class="consentimento">
+
+                        <input
+                            type="checkbox"
+                            id="consentimento"
+                            name="consentimento"
+                            required>
+
+                        <label for="consentimento">
+
+                            Autorizo o Emprego Todo Dia Iguatu a manter meu
+                            currículo no Cadastro Reserva para futuras
+                            oportunidades de emprego.
+
+                            Estou ciente de que o cadastro não garante
+                            contratação e que empresas poderão entrar em
+                            contato comigo por telefone, WhatsApp ou e-mail.
+
+                            <br><br>
+
+                            Consulte a
+                            <a
+                                href="/politica-de-privacidade.html"
+                                target="_self"
+                                style="color:#0066cc;font-weight:bold;"
+                            >
+                                Política de Privacidade
+                            </a>
+                            antes de concluir o cadastro.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        id="botaoEnviar"
+                        class="botao-enviar">
+
+                        📤 ENVIAR CURRÍCULO
+
+                    </button>
+
+
+                    <div
+                        id="carregando"
+                        class="carregando">
+
+                        ⏳ Enviando seu currículo...
+                        <br>
+                        Aguarde.
+
+                    </div>
+
+
+                    <div class="rodape">
+
+                        🔒 Seus dados serão utilizados para o Cadastro Reserva
+                        e futuras oportunidades.
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- =========================================================
+                 SUCESSO
+                 ========================================================= -->
+
+            <div id="sucesso">
+
+                <div class="icone-sucesso">
+                    ✓
+                </div>
+
+                <h2>
+                    Currículo enviado com sucesso!
+                </h2>
+
+                <p>
+
+                    Seu currículo foi recebido e armazenado
+                    no Cadastro Reserva do
+                    <strong>Emprego Todo Dia Iguatu</strong>.
+
+                    <br><br>
+
+                    Agradecemos pelo seu cadastro!
+
+                </p>
+
+                <button
+                    type="button"
+                    class="botao-novo"
+                    onclick="location.reload()">
+
+                    Cadastrar outro currículo
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         IFRAME INVISÍVEL
+         ========================================================= -->
+
+    <!-- ENVIO OCULTO: o candidato permanece no seu site -->
+    <iframe
+        name="iframeEnvio"
+        id="iframeEnvio"
+        title="Processamento do envio"
+        aria-hidden="true"
+        tabindex="-1"
+        style="position:absolute;width:1px;height:1px;border:0;opacity:0;pointer-events:none;left:-9999px;top:-9999px;">
+    </iframe>
+
+
+    <script>
+
+        /* =========================================================
+           URL DO GOOGLE APPS SCRIPT
+           ========================================================= */
+
+        const URL_APPS_SCRIPT =
+            "https://script.google.com/macros/s/AKfycbzkUPHnUEAEaHNU5XwbWTI3t0Bmqy41aVwAed_J7YI4niTEn1azNf6BurnT2Z8wwMSt8g/exec";
+
+
+        /* =========================================================
+           CONFIGURAÇÕES
+           ========================================================= */
+
+        const TAMANHO_MAXIMO =
+            10 * 1024 * 1024;
+
+        const EXTENSOES_PERMITIDAS = [
+            ".pdf",
+            ".doc",
+            ".docx",
+            ".xls",
+            ".xlsx"
+        ];
+
+
+        /* =========================================================
+           ELEMENTOS
+           ========================================================= */
+
+        const formulario =
+            document.getElementById("formulario");
+
+        const nome =
+            document.getElementById("nome");
+
+        const email =
+            document.getElementById("email");
+
+        const telefone =
+            document.getElementById("telefone");
+
+        const cargo =
+            document.getElementById("cargo");
+
+        const cidade =
+            document.getElementById("cidade");
+
+        const experiencia =
+            document.getElementById("experiencia");
+
+        const curriculo =
+            document.getElementById("curriculo");
+
+        const consentimento =
+            document.getElementById("consentimento");
+
+        const botaoEnviar =
+            document.getElementById("botaoEnviar");
+
+        const mensagemErro =
+            document.getElementById("mensagemErro");
+
+        const mensagemSucesso =
+            document.getElementById("mensagemSucesso");
+
+        const arquivoSelecionado =
+            document.getElementById("arquivoSelecionado");
+
+        const erroArquivo =
+            document.getElementById("erroArquivo");
+
+        const formularioArea =
+            document.getElementById("formularioArea");
+
+        const sucesso =
+            document.getElementById("sucesso");
+
+        const carregando =
+            document.getElementById("carregando");
+
+        /* =========================================================
+           VAGA SELECIONADA NO CATÁLOGO
+           Preenche automaticamente o campo Cargo/Vaga.
+           ========================================================= */
+        (function preencherVagaSelecionada() {
+            const params = new URLSearchParams(window.location.search);
+            const vagaCargo = params.get("vagaCargo");
+            if (vagaCargo && cargo) {
+                cargo.value = vagaCargo;
+                cargo.dispatchEvent(new Event("input", { bubbles: true }));
+                cargo.dispatchEvent(new Event("change", { bubbles: true }));
+            }
+        })();
+
+
+        /* =========================================================
+           FORMATAR TELEFONE
+           ========================================================= */
+
+        function formatarTelefone(valor) {
+
+            let numeros =
+                valor.replace(/\D/g, "").substring(0, 11);
+
+            if (!numeros) {
+                return "";
+            }
+
+            if (numeros.length <= 2) {
+                return "(" + numeros;
+            }
+
+            const ddd =
+                numeros.substring(0, 2);
+
+            const restante =
+                numeros.substring(2);
+
+
+            if (restante.startsWith("9")) {
+
+                if (restante.length <= 1) {
+
+                    return "(" +
+                        ddd +
+                        ") " +
+                        restante;
+
+                }
+
+                if (restante.length <= 5) {
+
+                    return "(" +
+                        ddd +
+                        ") " +
+                        restante.substring(0, 1) +
+                        " " +
+                        restante.substring(1);
+
+                }
+
+                return "(" +
+                    ddd +
+                    ") " +
+                    restante.substring(0, 1) +
+                    " " +
+                    restante.substring(1, 5) +
+                    "-" +
+                    restante.substring(5, 9);
+            }
+
+
+            if (restante.length <= 4) {
+
+                return "(" +
+                    ddd +
+                    ") " +
+                    restante;
+
+            }
+
+
+            return "(" +
+                ddd +
+                ") " +
+                restante.substring(0, 4) +
+                "-" +
+                restante.substring(4, 8);
+        }
+
+
+        telefone.addEventListener(
+            "input",
+            function () {
+
+                this.value =
+                    formatarTelefone(this.value);
+
+            }
+        );
+
+
+        /* =========================================================
+           MOSTRAR ERRO
+           ========================================================= */
+
+        function mostrarErro(mensagem) {
+
+            mensagemSucesso.style.display =
+                "none";
+
+            mensagemErro.textContent =
+                "❌ " + mensagem;
+
+            mensagemErro.style.display =
+                "block";
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+
+        /* =========================================================
+           SELEÇÃO DO CURRÍCULO
+           ========================================================= */
+
+        curriculo.addEventListener(
+            "change",
+            function () {
+
+                arquivoSelecionado.style.display =
+                    "none";
+
+                erroArquivo.style.display =
+                    "none";
+
+                arquivoSelecionado.textContent =
+                    "";
+
+                erroArquivo.textContent =
+                    "";
+
+
+                const arquivo =
+                    this.files[0];
+
+
+                if (!arquivo) {
+                    return;
+                }
+
+
+                const nomeArquivo =
+                    arquivo.name.toLowerCase();
+
+
+                const extensao =
+                    nomeArquivo.includes(".")
+                        ? nomeArquivo.substring(
+                            nomeArquivo.lastIndexOf(".")
+                        )
+                        : "";
+
+
+                if (
+                    !EXTENSOES_PERMITIDAS.includes(
+                        extensao
+                    )
+                ) {
+
+                    this.value = "";
+
+                    erroArquivo.textContent =
+                        "❌ Formato não permitido. Envie PDF, DOC, DOCX, XLS ou XLSX.";
+
+                    erroArquivo.style.display =
+                        "block";
+
+                    return;
+                }
+
+
+                if (
+                    arquivo.size >
+                    TAMANHO_MAXIMO
+                ) {
+
+                    this.value = "";
+
+                    erroArquivo.textContent =
+                        "❌ O currículo ultrapassa o limite de 10 MB.";
+
+                    erroArquivo.style.display =
+                        "block";
+
+                    return;
+                }
+
+
+                const tamanhoMB =
+                    (
+                        arquivo.size /
+                        (1024 * 1024)
+                    ).toFixed(2);
+
+
+                arquivoSelecionado.textContent =
+                    "✅ Arquivo selecionado: " +
+                    arquivo.name +
+                    " (" +
+                    tamanhoMB +
+                    " MB)";
+
+
+                arquivoSelecionado.style.display =
+                    "block";
+
+            }
+        );
+
+
+        /* =========================================================
+           CONVERTER ARQUIVO PARA BASE64
+           ========================================================= */
+
+        function arquivoParaBase64(arquivo) {
+
+            return new Promise(
+                function (resolve, reject) {
+
+                    const reader =
+                        new FileReader();
+
+
+                    reader.onload =
+                        function () {
+
+                            try {
+
+                                const resultado =
+                                    reader.result;
+
+                                const partes =
+                                    resultado.split(",");
+
+
+                                if (partes.length < 2) {
+
+                                    reject(
+                                        new Error(
+                                            "Não foi possível preparar o arquivo."
+                                        )
+                                    );
+
+                                    return;
+                                }
+
+
+                                resolve(
+                                    partes[1]
+                                );
+
+                            } catch (erro) {
+
+                                reject(erro);
+                            }
+                        };
+
+
+                    reader.onerror =
+                        function () {
+
+                            reject(
+                                new Error(
+                                    "Não foi possível ler o currículo."
+                                )
+                            );
+                        };
+
+
+                    reader.readAsDataURL(
+                        arquivo
+                    );
+
+                }
+            );
+        }
+
+
+        /* =========================================================
+           ENVIO DO FORMULÁRIO
+           ========================================================= */
+
+        formulario.addEventListener(
+            "submit",
+            async function (event) {
+
+                event.preventDefault();
+
+
+                mensagemErro.style.display =
+                    "none";
+
+                mensagemSucesso.style.display =
+                    "none";
+
+
+                /* =================================================
+                   PEGAR VALORES
+                   ================================================= */
+
+                const nomeValor =
+                    nome.value.trim();
+
+                const emailValor =
+                    email.value.trim();
+
+                const telefoneValor =
+                    telefone.value.trim();
+
+                const telefoneNumeros =
+                    telefoneValor.replace(/\D/g, "");
+
+                const cargoValor =
+                    cargo.value.trim();
+
+                const cidadeValor =
+                    cidade.value.trim();
+
+                const experienciaValor =
+                    experiencia.value.trim();
+
+
+                /* =================================================
+                   VALIDAR NOME
+                   ================================================= */
+
+                if (
+                    nomeValor.length < 3
+                ) {
+
+                    mostrarErro(
+                        "Digite seu nome completo."
+                    );
+
+                    nome.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR EMAIL
+                   ================================================= */
+
+                const regexEmail =
+                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+                if (
+                    !regexEmail.test(
+                        emailValor
+                    )
+                ) {
+
+                    mostrarErro(
+                        "Digite um e-mail válido."
+                    );
+
+                    email.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR TELEFONE
+                   ================================================= */
+
+                if (
+                    telefoneNumeros.length !== 10 &&
+                    telefoneNumeros.length !== 11
+                ) {
+
+                    mostrarErro(
+                        "Digite um telefone válido com DDD."
+                    );
+
+                    telefone.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR CARGO
+                   ================================================= */
+
+                if (
+                    cargoValor.length < 2
+                ) {
+
+                    mostrarErro(
+                        "Informe o cargo de interesse."
+                    );
+
+                    cargo.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR CURRÍCULO
+                   ================================================= */
+
+                const arquivo =
+                    curriculo.files[0];
+
+
+                if (!arquivo) {
+
+                    mostrarErro(
+                        "Selecione seu currículo."
+                    );
+
+                    curriculo.focus();
+
+                    return;
+                }
+
+
+                if (
+                    arquivo.size >
+                    TAMANHO_MAXIMO
+                ) {
+
+                    mostrarErro(
+                        "O currículo ultrapassa o limite de 10 MB."
+                    );
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR EXTENSÃO
+                   ================================================= */
+
+                const nomeArquivo =
+                    arquivo.name.toLowerCase();
+
+
+                const extensao =
+                    nomeArquivo.includes(".")
+                        ? nomeArquivo.substring(
+                            nomeArquivo.lastIndexOf(".")
+                        )
+                        : "";
+
+
+                if (
+                    !EXTENSOES_PERMITIDAS.includes(
+                        extensao
+                    )
+                ) {
+
+                    mostrarErro(
+                        "O formato do currículo não é permitido."
+                    );
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR CONSENTIMENTO
+                   ================================================= */
+
+                if (
+                    !consentimento.checked
+                ) {
+
+                    mostrarErro(
+                        "Marque a autorização para continuar."
+                    );
+
+                    consentimento.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   BLOQUEAR BOTÃO
+                   ================================================= */
+
+                botaoEnviar.disabled =
+                    true;
+
+                botaoEnviar.textContent =
+                    "⏳ ENVIANDO...";
+
+                carregando.style.display =
+                    "block";
+
+
+                try {
+
+                    /* =============================================
+                       BASE64
+                       ============================================= */
+
+                    const arquivoBase64 =
+                        await arquivoParaBase64(
+                            arquivo
+                        );
+
+
+                    if (!arquivoBase64) {
+
+                        throw new Error(
+                            "Arquivo vazio."
+                        );
+                    }
+
+
+                    /* =============================================
+                       DADOS
+                       ============================================= */
+
+                    const dados = {
+
+                        nome:
+                            nomeValor,
+
+                        email:
+                            emailValor,
+
+                        telefone:
+                            telefoneValor,
+
+                        cargo:
+                            cargoValor,
+
+                        cidade:
+                            cidadeValor,
+
+                        experiencia:
+                            experienciaValor,
+
+                        consentimento:
+                            "SIM",
+
+                        arquivoNome:
+                            arquivo.name,
+
+                        arquivoTamanho:
+                            arquivo.size,
+
+                        arquivoTipo:
+                            arquivo.type ||
+                            "application/octet-stream",
+
+                        arquivoBase64:
+                            arquivoBase64
+                    };
+
+
+                    /* =============================================
+                       ENVIO REAL PARA GOOGLE APPS SCRIPT
+                       Google Drive + Google Planilhas
+                       ============================================= */
+
+                    const iframeEnvio =
+                        document.getElementById("iframeEnvio");
+
+                    if (!iframeEnvio) {
+                        throw new Error("Canal de envio não encontrado.");
+                    }
+
+                    const formularioOculto =
+                        document.createElement("form");
+
+                    formularioOculto.method = "POST";
+                    formularioOculto.action = URL_APPS_SCRIPT;
+                    formularioOculto.target = "iframeEnvio";
+                    formularioOculto.enctype = "application/x-www-form-urlencoded";
+                    formularioOculto.acceptCharset = "UTF-8";
+                    formularioOculto.style.display = "none";
+
+                    const campoDados =
+                        document.createElement("input");
+
+                    campoDados.type = "hidden";
+                    campoDados.name = "dados";
+                    campoDados.value = JSON.stringify(dados);
+
+                    formularioOculto.appendChild(campoDados);
+                    document.body.appendChild(formularioOculto);
+
+                    let respostaRecebida = false;
+                    let iframeListenerAtivo = true;
+
+                    const finalizarEnvio = function () {
+
+                        if (respostaRecebida) return;
+
+                        respostaRecebida = true;
+                        iframeListenerAtivo = false;
+
+                        iframeEnvio.removeEventListener(
+                            "load",
+                            detectarResposta
+                        );
+
+                        if (formularioOculto.parentNode) {
+                            formularioOculto.remove();
+                        }
+
+                        formularioArea.style.display = "none";
+                        sucesso.style.display = "block";
+                        carregando.style.display = "none";
+
+                        /* =====================================================
+                           AVISA A PÁGINA DE VAGAS QUE UM CURRÍCULO FOI ENVIADO
+                           para a vaga selecionada. A página de vagas fará nova
+                           consulta ao Apps Script até enxergar o novo total.
+                           ===================================================== */
+                        (function avisarAtualizacaoDaVaga(){
+                            try {
+                                const params = new URLSearchParams(window.location.search);
+                                const vagaId = params.get("vagaId") || "";
+                                const vagaCargo = (params.get("vagaCargo") || (cargo && cargo.value) || "").trim();
+                                const evento = {
+                                    tipo: "CURRICULO_ENVIADO",
+                                    vagaId: String(vagaId),
+                                    vagaCargo: vagaCargo,
+                                    timestamp: Date.now()
+                                };
+
+                                /* Se estiver embutido em VAGAS, a própria página recebe o evento. */
+                                window.postMessage(evento, window.location.origin);
+
+                                /* Se for uma página separada, o retorno à página de vagas dispara atualização. */
+                                localStorage.setItem("empregoTodoDiaUltimoCurriculo", JSON.stringify(evento));
+                                localStorage.setItem("empregoTodoDiaUltimoCurriculo_ts", String(evento.timestamp));
+                            } catch (e) {
+                                console.warn("Não foi possível sinalizar atualização da vaga:", e);
+                            }
+                        })();
+
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+                    };
+
+                    const detectarResposta = function () {
+
+                        if (!iframeListenerAtivo) return;
+
+                        /* O primeiro load pode ocorrer antes do POST.
+                           Ignoramos cargas anteriores ao envio. */
+                        if (!formularioOculto.dataset.enviado) return;
+
+                        /* O Apps Script respondeu ao POST. */
+                        finalizarEnvio();
+                    };
+
+                    iframeEnvio.addEventListener(
+                        "load",
+                        detectarResposta
+                    );
+
+                    /* Marca o formulário antes de enviar. */
+                    formularioOculto.dataset.enviado = "1";
+
+                    /* =============================================
+                       ENVIAR PARA O /exec
+                       ============================================= */
+                    formularioOculto.submit();
+
+                    /* Segurança: não fica preso indefinidamente. */
+                    setTimeout(function () {
+
+                        if (!respostaRecebida) {
+
+                            if (formularioOculto.parentNode) {
+                                formularioOculto.remove();
+                            }
+
+                            botaoEnviar.disabled = false;
+                            botaoEnviar.textContent =
+                                "📤 ENVIAR CURRÍCULO";
+                            carregando.style.display = "none";
+
+                            mostrarErro(
+                                "O Google não confirmou o recebimento. " +
+                                "Verifique sua conexão e tente novamente."
+                            );
+                        }
+
+                    }, 30000);
+
+                } catch (erro) {
+
+                    console.error(
+                        "Erro no envio:",
+                        erro
+                    );
+
+
+                    botaoEnviar.disabled =
+                        false;
+
+
+                    botaoEnviar.textContent =
+                        "📤 ENVIAR CURRÍCULO";
+
+
+                    carregando.style.display =
+                        "none";
+
+
+                    mostrarErro(
+                        "Não foi possível enviar o currículo. Tente novamente."
+                    );
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

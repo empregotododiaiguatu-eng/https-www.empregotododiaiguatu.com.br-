@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Anuncie sua vaga de emprego no Emprego Todo Dia Iguatu. Confira como funciona a divulgação, canais disponíveis, condições do serviço e orientações para enviar sua oportunidade."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="Emprego Todo Dia Iguatu"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111111"
+    >
+
+    <link
+        rel="canonical"
+        href="https://empregotododiaiguatu.com.br/Vagas-de-Empregos-anuncie.html"
+    >
+
+    <title>
+        Anuncie sua Vaga de Emprego em Iguatu | Emprego Todo Dia Iguatu
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f1f1;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* LINK VOLTAR */
+
+        .voltar-topo {
+            display: inline-block;
+            margin: 10px 0 18px;
+            color: #e88a00;
+            text-decoration: none;
+            font-weight: 700;
+            transition:
+                background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+        }
+
+        .voltar-topo:hover {
+            color: #c66f00;
+            text-decoration: underline;
+        }
+
+        .voltar-topo:focus-visible {
+            outline: 3px solid rgba(232, 138, 0, 0.35);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* CONTAINER */
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* DESTAQUE */
+
+        .promocao {
+            background:
+                linear-gradient(
+                    135deg,
+                    #111111,
+                    #333333
+                );
+            color: #ffffff;
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        .promocao .emoji {
+            font-size: 45px;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        .promocao h1 {
+            margin: 0;
+            font-size: 30px;
+            line-height: 1.3;
+            font-weight: 900;
+        }
+
+        .promocao p {
+            margin: 14px 0 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* PREÇO */
+
+        .preco {
+            background: #ffd700;
+            color: #111111;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .preco small {
+            display: block;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .preco strong {
+            display: block;
+            margin-top: 5px;
+            font-size: 42px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        /* CONTEÚDO */
+
+        .conteudo {
+            padding: 30px;
+        }
+
+        .conteudo h2 {
+            margin: 0 0 20px;
+            color: #222222;
+            text-align: center;
+            font-size: 25px;
+            line-height: 1.4;
+        }
+
+        .descricao {
+            color: #555555;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* PLATAFORMAS */
+
+        .plataformas {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .plataforma {
+            padding: 15px;
+            background: #f7f7f7;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 700;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .plataforma:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        /* VALIDADE */
+
+        .validade {
+            margin-top: 25px;
+            padding: 18px;
+            background: #fff4d6;
+            border-left: 5px solid #f0b400;
+            border-radius: 6px;
+            color: #444444;
+            line-height: 1.6;
+        }
+
+        .validade strong {
+            color: #222222;
+        }
+
+        /* PIX */
+
+        .pix {
+            margin-top: 30px;
+            padding: 25px;
+            background: #e9fff1;
+            border: 2px solid #25d366;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .pix h2 {
+            margin: 0 0 10px;
+            color: #168a43;
+            font-size: 23px;
+        }
+
+        .pix-valor {
+            margin: 15px 0;
+            color: #111111;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .pix p {
+            margin-bottom: 15px;
+            color: #444444;
+            line-height: 1.6;
+        }
+
+        .pix-chave {
+            margin-bottom: 18px;
+            padding: 14px;
+            background: #ffffff;
+            border: 1px dashed #25d366;
+            border-radius: 6px;
+            color: #555555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* WHATSAPP */
+
+        .botao-whatsapp {
+            display: block;
+            width: 100%;
+            padding: 16px 20px;
+            background: #25d366;
+            color: #ffffff;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.4;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .botao-whatsapp:hover {
+            background: #1ebe5d;
+            transform: translateY(-2px);
+            box-shadow:
+                0 5px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .botao-whatsapp:active {
+            transform: translateY(1px);
+        }
+
+        .botao-whatsapp:focus-visible {
+            outline: 3px solid rgba(37, 211, 102, 0.40);
+            outline-offset: 3px;
+        }
+
+        /* AVISO */
+
+        .aviso {
+            margin-top: 20px;
+            color: #666666;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* BOTÃO INÍCIO */
+
+        .botoes-final {
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        .botao-inicio {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+            padding: 16px 20px;
+            background: #000000;
+            color: #ffffff;
+            border: 2px solid #222222;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.4;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+            box-shadow:
+                0 4px 0 #222222;
+        }
+
+        .botao-inicio:hover {
+            background: #222222;
+            transform: translateY(-2px);
+            box-shadow:
+                0 6px 0 #111111,
+                0 10px 18px rgba(0, 0, 0, 0.20);
+        }
+
+        .botao-inicio:active {
+            transform: translateY(2px);
+            box-shadow:
+                0 2px 0 #111111;
+        }
+
+        .botao-inicio:focus-visible {
+            outline: 3px solid rgba(51, 51, 51, 0.35);
+            outline-offset: 3px;
+        }
+
+        /* RODAPÉ */
+
+        .rodape {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+            color: #777777;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .rodape strong {
+            color: #555555;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                border-radius: 10px;
+            }
+
+            .promocao {
+                padding: 25px 15px;
+            }
+
+            .promocao .emoji {
+                font-size: 38px;
+            }
+
+            .promocao h1 {
+                font-size: 24px;
+            }
+
+            .promocao p {
+                font-size: 15px;
+            }
+
+            .preco {
+                padding: 18px 15px;
+            }
+
+            .preco strong {
+                font-size: 35px;
+            }
+
+            .conteudo {
+                padding: 20px;
+            }
+
+            .conteudo h2 {
+                font-size: 21px;
+            }
+
+            .descricao {
+                font-size: 15px;
+            }
+
+            .plataformas {
+                grid-template-columns: 1fr;
+            }
+
+            .pix {
+                padding: 20px 15px;
+            }
+
+            .pix h2 {
+                font-size: 20px;
+            }
+
+            .pix-valor {
+                font-size: 28px;
+            }
+
+            .botao-whatsapp {
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+
+            .botao-inicio {
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+
+            .voltar-topo {
+                margin: 8px 5px 15px;
+                font-size: 14px;
+            }
+        }
+
+        /* CELULARES PEQUENOS */
+
+        @media (max-width: 380px) {
+
+            .promocao h1 {
+                font-size: 21px;
+            }
+
+            .preco strong {
+                font-size: 32px;
+            }
+
+            .conteudo {
+                padding: 17px;
+            }
+
+            .pix {
+                padding: 18px 12px;
+            }
+        }
+
+
+        .informacoes-adicionais {
+            margin-top: 28px;
+            padding: 22px;
+            background: #fafafa;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+        }
+
+        .informacoes-adicionais h2 {
+            margin: 0 0 12px;
+            color: #222;
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .informacoes-adicionais p {
+            margin: 0 0 14px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .informacoes-adicionais p:last-child {
+            margin-bottom: 0;
+        }
+
+    </style>
+
+
+    <!-- Google AdSense
+         Antes de publicar anúncios, substitua CA-PUB-SEU-ID pelo seu ID real
+         fornecido pelo Google AdSense. -->
+    <!--
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-SEU-ID"
+        crossorigin="anonymous"></script>
+    -->
+
+</head>
+
+<body>
+
+    <!-- LINK SUPERIOR -->
+
+    <a
+        href="https://empregotododiaiguatu.com.br/#inicio"
+        class="voltar-topo"
+        aria-label="Voltar para o início do site"
+    >
+        &larr; Voltar para o início
+    </a>
+
+
+    <main class="container">
+
+        <!-- DESTAQUE -->
+
+        <header class="promocao">
+
+            <div
+                class="emoji"
+                aria-hidden="true"
+            >
+                🚨📢💼
+            </div>
+
+            <h1>
+                DIVULGUE SUA VAGA DE EMPREGO
+            </h1>
+
+            <p>
+                Divulgue sua oportunidade em nossos canais e
+                plataformas digitais disponíveis.
+            </p>
+
+        </header>
+
+
+        <!-- PREÇO -->
+
+        <section
+            class="preco"
+            aria-label="Valor da divulgação"
+        >
+
+            <small>
+                VALOR DA DIVULGAÇÃO
+            </small>
+
+            <strong>
+                R$ 50,00
+            </strong>
+
+        </section>
+
+
+        <!-- CONTEÚDO -->
+
+        <section class="conteudo">
+
+            <h2>
+                📣 Sua vaga em vários canais
+            </h2>
+
+            <p class="descricao">
+                Divulgue sua oportunidade de emprego através
+                dos nossos canais e plataformas digitais,
+                aumentando as possibilidades de sua vaga
+                chegar a candidatos interessados.
+            </p>
+
+
+            <!-- PLATAFORMAS -->
+
+            <div
+                class="plataformas"
+                aria-label="Canais disponíveis para divulgação"
+            >
+
+                <div class="plataforma">
+                    📘 Facebook
+                </div>
+
+                <div class="plataforma">
+                    📸 Instagram
+                </div>
+
+                <div class="plataforma">
+                    📱 Canal do WhatsApp
+                </div>
+
+                <div class="plataforma">
+                    👥 Grupo do WhatsApp
+                </div>
+
+                <div class="plataforma">
+                    📲 Stories
+                </div>
+
+                <div class="plataforma">
+                    📰 Feed
+                </div>
+
+                <div class="plataforma">
+                    💬 Status do WhatsApp
+                </div>
+
+                <div class="plataforma">
+                    🌐 Nosso Site
+                </div>
+
+            </div>
+
+
+            <!-- VALIDADE -->
+
+            <div class="validade">
+
+                <strong>
+                    ⏰ Validade da divulgação
+                </strong>
+
+                <br><br>
+
+                A contratação dá direito a
+                <strong>1 divulgação da vaga</strong>
+                nas plataformas disponíveis.
+
+                <br><br>
+
+                Após a publicação, a divulgação será
+                considerada utilizada.
+
+            </div>
+
+
+            <!-- PAGAMENTO -->
+
+            <section
+                class="pix"
+                aria-labelledby="titulo-pagamento"
+            >
+
+                <h2 id="titulo-pagamento">
+                    💚 PAGAMENTO VIA PIX
+                </h2>
+
+                <div class="pix-valor">
+                    R$ 50,00
+                </div>
+
+                <p>
+                    Para receber as informações de pagamento
+                    e confirmar a divulgação, entre em contato
+                    conosco pelo WhatsApp.
+                </p>
+
+                <div class="pix-chave">
+                    🔐 A chave Pix será informada durante
+                    o atendimento pelo WhatsApp.
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/558893485054?text=Ol%C3%A1%21%20Fiquei%20interessado%28a%29%20em%20divulgar%20uma%20vaga%20de%20emprego.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20divulga%C3%A7%C3%A3o"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="botao-whatsapp"
+                    aria-label="Entrar em contato pelo WhatsApp para divulgar uma vaga"
+                >
+                    📱 FIQUEI INTERESSADO — ENTRAR EM CONTATO PELO WHATSAPP
+                </a>
+
+            </section>
+
+
+            <!-- AVISO -->
+
+            <div class="aviso">
+
+                ⚠️ Após realizar o pagamento,
+                envie o comprovante e as informações
+                completas da vaga para que a divulgação
+                possa ser preparada e publicada.
+
+                <br><br>
+
+                📢
+
+                <strong>
+                    O pagamento corresponde a uma única divulgação.
+                </strong>
+
+            </div>
+
+
+            <!-- INFORMAÇÕES ADICIONAIS -->
+            <section class="informacoes-adicionais" aria-labelledby="informacoes-titulo">
+                <h2 id="informacoes-titulo">Como funciona a divulgação de uma vaga?</h2>
+
+                <p>
+                    O serviço é destinado a empresas, profissionais e responsáveis
+                    por processos seletivos que desejam apresentar uma oportunidade
+                    de trabalho ao público interessado em Iguatu e região.
+                </p>
+
+                <p>
+                    Para solicitar a divulgação, entre em contato pelo WhatsApp,
+                    informe os dados completos da oportunidade e siga as orientações
+                    recebidas durante o atendimento. A publicação será preparada
+                    com base nas informações fornecidas pelo anunciante.
+                </p>
+
+                <p>
+                    É importante enviar informações corretas e atualizadas, incluindo
+                    cargo, requisitos, localização, forma de candidatura e demais
+                    condições da oportunidade. Alterações relevantes devem ser
+                    comunicadas para que o conteúdo possa ser atualizado quando
+                    possível.
+                </p>
+
+                <p>
+                    A divulgação tem finalidade informativa e não representa
+                    garantia de contratação, número de candidatos ou resultado
+                    específico no processo seletivo. A empresa anunciante permanece
+                    responsável pelas informações fornecidas e pela seleção dos
+                    candidatos.
+                </p>
+
+                <p>
+                    <strong>Segurança:</strong> o anunciante deve utilizar canais
+                    oficiais para o recebimento de currículos e orientar os
+                    candidatos sobre qualquer procedimento necessário. O Emprego
+                    Todo Dia Iguatu não deve ser apresentado como responsável pela
+                    contratação ou pela decisão final da empresa.
+                </p>
+
+                <p>
+                    <strong>Transparência sobre o serviço:</strong> o valor informado
+                    nesta página corresponde a uma única divulgação, conforme as
+                    condições apresentadas. Antes do pagamento, confirme os detalhes
+                    do serviço diretamente pelo canal de atendimento.
+                </p>
+            </section>
+
+
+            <!-- BOTÃO FINAL -->
+
+            <div class="botoes-final">
+
+                <a
+                    href="https://empregotododiaiguatu.com.br/#inicio"
+                    class="botao-inicio"
+                    aria-label="Voltar ao início do site Emprego Todo Dia Iguatu"
+                >
+                    🏠 VOLTAR AO INÍCIO
+                </a>
+
+            </div>
+
+
+            <!-- RODAPÉ -->
+
+            <footer class="rodape">
+
+                <strong>
+                    Emprego Todo Dia Iguatu
+                </strong>
+
+                <br>
+
+                📍 Iguatu - Ceará
+
+                <br>
+
+                🌐 empregotododiaiguatu.com.br
+
+                <br>
+
+                © 2026 Emprego Todo Dia Iguatu
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

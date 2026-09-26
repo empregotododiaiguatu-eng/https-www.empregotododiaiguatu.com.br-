@@ -1,0 +1,4495 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<!-- Arquivo preparado para Vercel: index.html | V3 - revisão de estrutura e conteúdo -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="Empregotododiaiguatu - Portal de empregos e oportunidades em Iguatu – CE e região. Consulte vagas, cadastre seu currículo, participe do Cadastro Reserva e encontre orientações para candidatos e empresas.">
+<meta name="theme-color" content="#e88a00">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Empregotododiaiguatu">
+<title>Empregotododiaiguatu - Empregos e Oportunidades em Iguatu – CE</title>
+<link rel="canonical" href="https://empregotododiaiguatu.com.br/">
+<!-- =========================================================
+     GOOGLE ADSENSE
+========================================================= -->
+<meta name="google-adsense-account" content="ca-pub-7768202536618144">
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7768202536618144">
+</script>
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<!-- =========================================================
+     VERCEL ANALYTICS
+========================================================= -->
+<script>
+window.va = window.va || function () {
+    (window.vaq = window.vaq || []).push(arguments);
+};
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+    width: 100%;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,145,0,.96),
+            rgba(255,178,55,.96),
+            rgba(230,125,0,.96)
+        ),
+        url("./imagens/empregotododiaiguatu.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #222;
+
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+header {
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 40px 20px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d96b00 0%,
+            #e88a00 20%,
+            #f6a623 45%,
+            #ffb84d 65%,
+            #e88a00 100%
+        );
+
+    border-bottom: 5px solid #b85f00;
+
+    box-shadow:
+        0 8px 0 #a95700,
+        0 12px 25px rgba(0,0,0,.35);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+header::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    left: -20%;
+
+    width: 140%;
+    height: 160px;
+
+    background:
+        rgba(255,255,255,.12);
+
+    transform: rotate(-5deg);
+
+    pointer-events: none;
+}
+
+header h1 {
+
+    position: relative;
+
+    font-size: 48px;
+
+    color: #fff;
+
+    margin-bottom: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        1px 1px 0 #d87900,
+        2px 2px 0 #c66c00,
+        3px 3px 0 #ad5e00,
+        4px 4px 0 #934f00,
+        5px 5px 8px rgba(0,0,0,.40);
+
+    transition: .3s;
+}
+
+header h1:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+header h2 {
+
+    position: relative;
+
+    display: inline-block;
+
+    font-size: 22px;
+
+    color: #fff;
+
+    font-weight: 800;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffcc70,
+            #e99516
+        );
+
+    border:
+        2px solid rgba(255,255,255,.45);
+
+    box-shadow:
+        0 4px 0 #b96a00,
+        0 7px 15px rgba(0,0,0,.30);
+
+    text-shadow:
+        2px 2px 3px rgba(0,0,0,.35);
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.menu {
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #333,
+            #111
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 6px 12px rgba(0,0,0,.35);
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    padding: 20px 25px;
+
+    text-shadow:
+        1px 2px 2px #000;
+
+    transition: .3s;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.menu-item > a:hover {
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffc766,
+            #ed980f
+        );
+
+    color: #111;
+}
+
+
+/* =========================================================
+   SUBMENU
+========================================================= */
+
+.submenu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    min-width: 300px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff7e8,
+            #ffe8c2
+        );
+
+    border-radius:
+        0 0 12px 12px;
+
+    border:
+        1px solid #e5b76d;
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.35);
+
+    overflow: hidden;
+}
+
+.menu-item.aberto > .submenu {
+    display: block;
+}
+
+.submenu a {
+
+    display: block;
+
+    padding: 16px 18px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    border-bottom:
+        1px solid #efd4a6;
+
+    transition: .3s;
+}
+
+.submenu a strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.submenu a small {
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+.submenu a:hover {
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffb84d,
+            #ffd27f
+        );
+
+    padding-left: 25px;
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+main {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 55px auto;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,247,232,.98),
+            rgba(255,226,184,.96)
+        );
+
+    border-radius: 25px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    border:
+        2px solid rgba(230,138,0,.55);
+
+    box-shadow:
+        0 8px 0 rgba(180,95,0,.45),
+        0 15px 35px rgba(0,0,0,.30);
+}
+
+main h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #4a2500;
+}
+
+main p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #4a321d;
+}
+
+
+/* =========================================================
+   DESTAQUE VIP
+========================================================= */
+
+.destaque {
+
+    background:
+        linear-gradient(
+            135deg,
+            #063b1c,
+            #0b7a35,
+            #063b1c
+        );
+
+    border:
+        4px solid #ffd700;
+
+    border-radius: 18px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    color: #fff;
+
+    box-shadow:
+        0 0 25px rgba(255,215,0,.7);
+
+    animation:
+        destaquePulse 2.5s infinite;
+
+    margin: 20px auto;
+
+    max-width: 700px;
+}
+
+.destaque h3 {
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    margin: 0 0 15px;
+
+    color: #fff;
+
+    text-shadow:
+        2px 2px 4px #000;
+}
+
+.destaque p {
+
+    background:
+        #fff4df;
+
+    color: #111;
+
+    border-radius: 12px;
+
+    padding: 18px 12px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+}
+
+.destaque p strong {
+
+    display: block;
+
+    color: #e60000;
+
+    font-size: 26px;
+
+    margin-top: 8px;
+
+    font-weight: 900;
+}
+
+.urgencia {
+
+    display: inline-block;
+
+    background: #ffcc00;
+
+    color: #111;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.botao-whatsapp {
+
+    display: block;
+
+    background:
+        linear-gradient(
+            180deg,
+            #25d366,
+            #128c45
+        );
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    padding: 18px 15px;
+
+    border-radius: 12px;
+
+    margin-top: 18px;
+
+    box-shadow:
+        0 6px 0 #075e2d,
+        0 10px 25px rgba(0,0,0,.4);
+
+    animation:
+        botaoPulse 1.5s infinite;
+}
+
+
+/* =========================================================
+   ANIMAÇÕES
+========================================================= */
+
+@keyframes destaquePulse {
+
+    0%,100% {
+        box-shadow:
+            0 0 20px rgba(255,215,0,.5);
+    }
+
+    50% {
+        box-shadow:
+            0 0 35px rgba(255,215,0,.9);
+    }
+}
+
+@keyframes botaoPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.slider-area {
+
+    width: 100%;
+
+    margin: 50px auto 20px;
+
+    padding: 25px 15px 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff1d6,
+            #ffdca8,
+            #ffe9c8
+        );
+
+    border-radius: 25px;
+
+    border:
+        2px solid rgba(226,126,0,.70);
+
+    overflow: hidden;
+}
+
+.slider-titulo {
+
+    text-align: center;
+
+    font-weight: bold;
+
+    font-size: 24px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #333,
+            #111
+        );
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.empresa-destaque {
+
+    color: #ffe600;
+
+    font-size: 32px;
+
+    font-weight: 900;
+}
+
+.preco-antigo {
+
+    color: #ffe600;
+
+    text-decoration: line-through;
+
+    font-size: 26px;
+
+    font-weight: 900;
+
+    margin-right: 8px;
+}
+
+.preco-novo {
+
+    color: #ff0000;
+
+    font-size: 42px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   ÁREA DOS SLIDES
+========================================================= */
+
+.slider {
+
+    position: relative;
+
+    width: 100%;
+
+    height: clamp(
+        220px,
+        38vw,
+        480px
+    );
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #222;
+
+    touch-action: pan-y;
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: scale(1.12);
+
+    transition:
+        opacity .8s ease,
+        transform 1.2s ease,
+        visibility .8s ease;
+}
+
+.slide.ativo {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: scale(1);
+
+    z-index: 2;
+}
+
+.slide img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   LEGENDA
+========================================================= */
+
+.legenda-slider {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding:
+        55px 25px 35px;
+
+    color: #fff;
+
+    text-align: left;
+
+    z-index: 7;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.80)
+        );
+}
+
+.legenda-slider strong {
+
+    font-size:
+        clamp(
+            18px,
+            3vw,
+            28px
+        );
+
+    text-shadow:
+        2px 2px 4px #000;
+}
+
+
+/* =========================================================
+   BOTÕES DO SLIDER
+========================================================= */
+
+.slider-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffcc70,
+            #e88a00
+        );
+
+    color: #fff;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.35);
+}
+
+.slider-btn:hover {
+
+    transform:
+        translateY(-50%) scale(1.08);
+}
+
+.prev {
+    left: 18px;
+}
+
+.next {
+    right: 18px;
+}
+
+
+/* =========================================================
+   INDICADORES
+========================================================= */
+
+.indicadores {
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    gap: 9px;
+
+    z-index: 20;
+}
+
+.indicador {
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    border:
+        2px solid #fff;
+
+    background:
+        rgba(255,255,255,.45);
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.indicador:hover {
+
+    transform: scale(1.15);
+}
+
+.indicador.ativo {
+
+    width: 30px;
+
+    border-radius: 20px;
+
+    background:
+        #ffb84d;
+}
+
+
+/* =========================================================
+   BOTÕES SOCIAIS
+========================================================= */
+
+.botoes {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.botao {
+
+    display: inline-block;
+
+    padding: 15px 26px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: .25s;
+}
+
+.botao:hover {
+
+    transform:
+        translateY(-5px);
+}
+
+.instagram {
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #e1306c,
+            #fd1d1d,
+            #fcb045
+        );
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.grupo-whatsapp {
+    background: #32d96b;
+}
+
+
+/* =========================================================
+   SEGURANÇA
+========================================================= */
+
+.seguranca-site {
+
+    width: 100%;
+
+    padding: 30px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111,
+            #242424,
+            #111
+        );
+
+    border-top:
+        4px solid #e99516;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.seguranca-conteudo {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.seguranca-icone {
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e99516;
+
+    font-size: 32px;
+}
+
+.seguranca-texto {
+    text-align: left;
+}
+
+.seguranca-texto h3 {
+
+    margin-bottom: 7px;
+
+    color: #ffb84d;
+
+    font-size: 22px;
+}
+
+.seguranca-texto p {
+
+    margin: 4px 0;
+
+    color: #fff;
+
+    font-size: 15px;
+}
+
+.selos-seguranca {
+
+    max-width: 900px;
+
+    margin: 25px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.selos-seguranca span {
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,184,77,.45);
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   AVISO DE SEGURANÇA
+========================================================= */
+
+.aviso-seguranca {
+
+    position: fixed;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 99999;
+
+    max-width: 360px;
+
+    background: #111;
+
+    color: #fff;
+
+    border-left:
+        5px solid #e99516;
+
+    border-radius: 14px;
+
+    padding: 14px 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(20px);
+
+    transition: .4s;
+}
+
+.aviso-seguranca.mostrar {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+}
+
+.aviso-seguranca.oculto {
+
+    opacity: 0;
+
+    visibility: hidden;
+}
+
+.aviso-seguranca-conteudo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.aviso-icone {
+    font-size: 25px;
+}
+
+.aviso-seguranca strong {
+    color: #ffb84d;
+}
+
+.aviso-seguranca p {
+
+    margin-top: 3px;
+
+    color: #ddd;
+
+    font-size: 12px;
+}
+
+.aviso-seguranca button {
+
+    margin-left: auto;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #333;
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #292929,
+            #111
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    border-top:
+        5px solid #e99516;
+}
+
+footer strong {
+
+    font-size: 22px;
+
+    color: #ffb84d;
+}
+
+
+/* =========================================================
+   ABA DE VISITAS
+========================================================= */
+
+.aba-visitas {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 46%;
+
+    z-index: 99999;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 96px;
+
+    padding:
+        10px 14px 10px 9px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff,
+            #fff8ed
+        );
+
+    border:
+        2px solid #f0a12a;
+
+    border-left: 0;
+
+    border-radius:
+        0 22px 22px 0;
+
+    box-shadow:
+        4px 7px 22px rgba(0,0,0,.23),
+        0 0 12px rgba(232,138,0,.22);
+
+    transform:
+        translateY(-50%);
+
+    animation:
+        abaEntrada .7s ease-out,
+        abaSaida .55s ease-in 5s forwards;
+}
+
+.aba-icone {
+
+    width: 37px;
+    height: 37px;
+
+    flex: 0 0 37px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff0d5,
+            #ffe0ae
+        );
+
+    border-radius: 50%;
+
+    font-size: 19px;
+}
+
+.aba-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+.aba-titulo {
+
+    font:
+        900 8px Arial,sans-serif;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+.aba-info strong {
+
+    margin-top: 4px;
+
+    font:
+        900 20px Arial,sans-serif;
+
+    color: #d96b00;
+}
+
+@keyframes abaEntrada {
+
+    from {
+        transform:
+            translate(-120%,-50%);
+
+        opacity: 0;
+    }
+
+    to {
+        transform:
+            translate(0,-50%);
+
+        opacity: 1;
+    }
+}
+
+@keyframes abaSaida {
+
+    from {
+        transform:
+            translate(0,-50%);
+
+        opacity: 1;
+    }
+
+    to {
+        transform:
+            translate(-120%,-50%);
+
+        opacity: 0;
+
+        visibility: hidden;
+    }
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedback-flutuante {
+
+    position: fixed;
+
+    right: 0;
+
+    top: 52%;
+
+    transform:
+        translateY(-50%);
+
+    z-index: 9998;
+
+    width: 62px;
+
+    min-height: 190px;
+
+    border: 0;
+
+    border-radius:
+        22px 0 0 22px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffcf33,
+            #ff9800 48%,
+            #e85d04
+        );
+
+    color: #fff;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.55);
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    animation:
+        feedbackPulse 2.2s infinite;
+}
+
+.feedback-flutuante::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -70%;
+    left: -40%;
+
+    width: 70%;
+    height: 240%;
+
+    background:
+        rgba(255,255,255,.28);
+
+    transform:
+        rotate(25deg);
+
+    animation:
+        feedbackBrilho 3.5s infinite;
+}
+
+.feedback-flutuante > span {
+
+    position: relative;
+
+    writing-mode:
+        vertical-rl;
+
+    transform:
+        rotate(180deg);
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    letter-spacing: .8px;
+
+    text-shadow:
+        1px 2px 3px rgba(0,0,0,.35);
+}
+
+.feedback-flutuante .presente {
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+@keyframes feedbackPulse {
+
+    0%,100% {
+
+        box-shadow:
+            0 8px 28px rgba(0,0,0,.35),
+            0 0 0 0 rgba(255,193,7,.45);
+    }
+
+    50% {
+
+        box-shadow:
+            0 8px 28px rgba(0,0,0,.35),
+            0 0 0 9px rgba(255,193,7,0);
+    }
+}
+
+@keyframes feedbackBrilho {
+
+    0% {
+        left: -70%;
+    }
+
+    55%,100% {
+        left: 160%;
+    }
+}
+
+
+/* =========================================================
+   FEEDBACK MODAL
+========================================================= */
+
+.feedback-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background:
+        rgba(0,0,0,.72);
+
+    backdrop-filter:
+        blur(5px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 18px;
+}
+
+.feedback-overlay.aberto {
+    display: flex;
+}
+
+.feedback-modal {
+
+    width:
+        min(94vw,500px);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    position: relative;
+
+    border-radius: 26px;
+
+    padding:
+        28px 22px 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf7,
+            #fff0d2
+        );
+
+    border:
+        3px solid #f4a300;
+
+    box-shadow:
+        0 22px 60px rgba(0,0,0,.45);
+
+    animation:
+        feedbackEntrada .35s ease-out;
+}
+
+@keyframes feedbackEntrada {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(.96);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.feedback-fechar {
+
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    color: #fff;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.feedback-topo {
+
+    text-align: center;
+
+    padding:
+        5px 30px 18px;
+}
+
+.feedback-icone {
+
+    font-size: 48px;
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    animation:
+        presentePula 1.8s infinite;
+}
+
+@keyframes presentePula {
+
+    0%,100% {
+        transform:
+            translateY(0)
+            rotate(0);
+    }
+
+    50% {
+        transform:
+            translateY(-7px)
+            rotate(-4deg);
+    }
+}
+
+.feedback-topo h2 {
+
+    color: #6b3500;
+
+    font-size: 26px;
+
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+}
+
+.feedback-topo p {
+
+    color: #5a4229;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+.feedback-beneficio {
+
+    margin:
+        8px 0 18px;
+
+    padding:
+        15px 12px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f9d58,
+            #18c76e
+        );
+
+    color: #fff;
+
+    box-shadow:
+        0 6px 18px rgba(15,157,88,.3);
+}
+
+.feedback-beneficio strong {
+
+    display: block;
+
+    font-size: 20px;
+}
+
+.feedback-beneficio small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    opacity: .95;
+}
+
+.feedback-estrelas {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin:
+        8px 0 4px;
+}
+
+.feedback-estrela {
+
+    border: 0;
+
+    background: transparent;
+
+    color: #c9c9c9;
+
+    font-size: 39px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    padding: 2px;
+
+    transition:
+        transform .18s,
+        color .18s;
+}
+
+.feedback-estrela:hover,
+.feedback-estrela.selecionada {
+
+    color: #ffc107;
+
+    transform:
+        scale(1.12);
+}
+
+.feedback-avaliacao {
+
+    text-align: center;
+
+    min-height: 24px;
+
+    color: #7b4200;
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.feedback-modal textarea {
+
+    width: 100%;
+
+    min-height: 125px;
+
+    resize: vertical;
+
+    border:
+        2px solid #e5b45c;
+
+    border-radius: 14px;
+
+    padding: 13px;
+
+    background: #fff;
+
+    color: #222;
+
+    font: inherit;
+
+    outline: none;
+}
+
+.feedback-modal textarea:focus {
+
+    border-color: #f08a00;
+
+    box-shadow:
+        0 0 0 3px rgba(240,138,0,.13);
+}
+
+.feedback-contador {
+
+    text-align: right;
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin:
+        5px 2px 12px;
+}
+
+.feedback-enviar {
+
+    width: 100%;
+
+    border: 0;
+
+    border-radius: 14px;
+
+    padding:
+        15px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff9800,
+            #e85d04
+        );
+
+    color: #fff;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #a84200;
+
+    transition: .2s;
+}
+
+.feedback-enviar:hover {
+
+    transform:
+        translateY(-2px);
+}
+
+.feedback-enviar:active {
+
+    transform:
+        translateY(2px);
+
+    box-shadow:
+        0 2px 0 #a84200;
+}
+
+.feedback-enviar:disabled {
+
+    opacity: .6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+.feedback-sucesso {
+
+    display: none;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background: #e8fff1;
+
+    border:
+        1px solid #52bd7a;
+
+    color: #145c32;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.feedback-whatsapp {
+
+    display: none;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    border-radius: 13px;
+
+    padding: 13px;
+
+    background: #25d366;
+
+    color: #fff;
+
+    font-weight: 900;
+}
+
+.feedback-area {
+
+    max-width: 760px;
+
+    margin: 35px auto;
+
+    padding: 25px 20px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.97),
+            rgba(255,239,205,.97)
+        );
+
+    border:
+        2px solid rgba(230,138,0,.5);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18);
+
+    text-align: center;
+}
+
+.feedback-area h3 {
+
+    color: #6b3500;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.feedback-area p {
+
+    color: #573b21;
+
+    line-height: 1.5;
+}
+
+.feedback-abrir-area {
+    cursor: pointer;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding:
+        13px 22px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffb300,
+            #e85d04
+        );
+
+    color: #fff;
+
+    font-weight: 900;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 4px 0 #a84200;
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width:700px) {
+
+    header {
+        padding:
+            30px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 31px;
+    }
+
+    header h2 {
+
+        font-size: 16px;
+
+        padding:
+            10px 14px;
+    }
+
+    .menu {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .menu-item {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .menu-item > a {
+
+        width: 100%;
+
+        font-size: 17px;
+
+        padding:
+            16px 10px;
+
+        white-space: normal;
+
+        border-bottom:
+            1px solid #444;
+    }
+
+    .submenu {
+
+        position: static;
+
+        width: 100%;
+
+        min-width: 100%;
+
+        border-radius: 0;
+    }
+
+    main {
+
+        width: 94%;
+
+        padding:
+            30px 20px;
+
+        margin:
+            35px auto;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .destaque h3 {
+        font-size: 23px;
+    }
+
+    .slider {
+
+        height:
+            clamp(
+                210px,
+                58vw,
+                350px
+            );
+    }
+
+    .slider-btn {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 21px;
+    }
+
+    .prev {
+        left: 8px;
+    }
+
+    .next {
+        right: 8px;
+    }
+
+    .empresa-destaque {
+        font-size: 24px;
+    }
+
+    .preco-antigo {
+        font-size: 20px;
+    }
+
+    .preco-novo {
+        font-size: 32px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .seguranca-conteudo {
+        flex-direction: column;
+    }
+
+    .seguranca-texto {
+        text-align: center;
+    }
+
+    .aviso-seguranca {
+
+        left: 8px;
+        right: 8px;
+
+        bottom: 8px;
+
+        max-width: none;
+    }
+
+    .aba-visitas {
+
+        top: 43%;
+
+        min-width: 82px;
+
+        padding:
+            8px 11px 8px 7px;
+
+        gap: 7px;
+    }
+
+    .aba-icone {
+
+        width: 31px;
+        height: 31px;
+
+        flex-basis: 31px;
+
+        font-size: 16px;
+    }
+
+    .aba-titulo {
+        font-size: 7px;
+    }
+
+    .aba-info strong {
+        font-size: 17px;
+    }
+
+    .feedback-flutuante {
+
+        width: 54px;
+
+        min-height: 165px;
+
+        border-radius:
+            18px 0 0 18px;
+    }
+
+    .feedback-flutuante > span {
+        font-size: 12px;
+    }
+
+    .feedback-flutuante .presente {
+        font-size: 21px;
+    }
+
+    .feedback-modal {
+
+        padding:
+            25px 16px 20px;
+    }
+
+    .feedback-topo h2 {
+        font-size: 22px;
+    }
+
+    .feedback-estrela {
+        font-size: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+    }
+}
+
+
+/* =========================================================
+   AJUSTE DE MENU PARA INTERNET / RESPONSIVO
+========================================================= */
+.menu {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-item > a {
+    padding: 15px 18px;
+    font-size: clamp(13px, 1.25vw, 16px);
+}
+
+@media (max-width: 900px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .menu-item > a {
+        padding: 13px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .menu-item > a {
+        text-align: center;
+        padding: 12px 7px;
+        font-size: 12px;
+        white-space: normal;
+        line-height: 1.2;
+    }
+}
+
+
+
+/* =========================================================
+   CONTEÚDO INFORMATIVO — ESTRUTURA DO PORTAL
+========================================================= */
+.conteudo-editorial {
+    margin: 28px auto;
+    max-width: 1000px;
+}
+.bloco-informativo {
+    background: rgba(255,255,255,.97);
+    border-radius: 18px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 7px 22px rgba(0,0,0,.16);
+    border-left: 5px solid #e88a00;
+}
+.bloco-informativo h2 {
+    color: #d96b00;
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+.bloco-informativo h3 {
+    color: #d96b00;
+    font-size: 19px;
+    margin: 18px 0 7px;
+}
+.bloco-informativo p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 11px;
+}
+.bloco-informativo ul {
+    padding-left: 24px;
+    line-height: 1.8;
+}
+.bloco-informativo li {
+    margin-bottom: 5px;
+}
+.grid-informativo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 18px;
+}
+.card-informativo {
+    background: #fff8ed;
+    border: 1px solid #f0c078;
+    border-radius: 14px;
+    padding: 20px;
+}
+.card-informativo h3 {
+    margin-top: 0;
+}
+.botao-conteudo {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #e88a00;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 3px 0 #b85f00;
+}
+.botao-conteudo:hover {
+    transform: translateY(-2px);
+}
+@media (max-width: 700px) {
+    .conteudo-editorial { margin: 20px 12px; }
+    .bloco-informativo { padding: 22px 18px; }
+    .bloco-informativo h2 { font-size: 23px; }
+    .grid-informativo { grid-template-columns: 1fr; }
+}
+</style>
+<style>
+/* Conteúdo informativo original — complemento ao conteúdo existente */
+.bloco-conteudo-original{
+  max-width:1050px;
+  margin:18px auto 22px;
+  padding:20px;
+  background:rgba(255,255,255,.97);
+  border-radius:14px;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  border-top:4px solid #e88a00;
+}
+.bloco-conteudo-original h2{
+  margin:0 0 8px;
+  color:#4a2500;
+  font-size:22px;
+}
+.bloco-conteudo-original>p{
+  margin:0 0 14px;
+  color:#3d2a18;
+  font-size:14px;
+  line-height:1.55;
+}
+.guia-emprego-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.guia-emprego-grid article{
+  background:#fff8ec;
+  border:1px solid #e6cda8;
+  border-radius:11px;
+  padding:13px;
+}
+.guia-emprego-grid h3{
+  margin:0 0 6px;
+  color:#6b3500;
+  font-size:15px;
+}
+.guia-emprego-grid p{
+  margin:0;
+  color:#4b3a28;
+  font-size:12px;
+  line-height:1.5;
+}
+.bloco-conteudo-original .nota-conteudo{
+  margin:14px 0 0;
+  padding-top:12px;
+  border-top:1px solid #ead8bd;
+  font-size:12px;
+}
+@media(max-width:700px){
+  .guia-emprego-grid{grid-template-columns:1fr}
+  .bloco-conteudo-original{margin:12px 10px 18px;padding:15px}
+}
+</style>
+<style>
+/* =========================================================
+   ORGANIZAÇÃO DOS CONTEÚDOS — DUAS COLUNAS
+   Mantém o conteúdo original e reduz a altura da página.
+========================================================= */
+#informacoes-portal.conteudo-editorial{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+    align-items:start;
+    max-width:1000px;
+    margin:28px auto;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo{
+    margin:0;
+    height:100%;
+    padding:20px 22px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo p{
+    font-size:15px;
+    line-height:1.55;
+    margin-bottom:9px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo h3{
+    font-size:17px;
+    margin:12px 0 5px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo ul{
+    line-height:1.55;
+    margin-bottom:8px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo li{
+    margin-bottom:3px;
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(7){
+    grid-column:1 / -1;
+}
+
+#informacoes-portal.conteudo-editorial .grid-informativo{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+}
+
+#informacoes-portal.conteudo-editorial .card-informativo{
+    padding:14px;
+}
+
+#informacoes-portal.conteudo-editorial .card-informativo h3{
+    font-size:15px;
+}
+
+#informacoes-portal.conteudo-editorial .card-informativo p{
+    font-size:13px;
+    line-height:1.45;
+}
+
+#informacoes-portal.conteudo-editorial .botao-conteudo{
+    margin-top:6px;
+    padding:10px 15px;
+    font-size:14px;
+}
+
+/* Cores discretas por assunto, mantendo a identidade laranja */
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(1){
+    border-left-color:#e88a00;
+    background:linear-gradient(145deg,#fffdf8,#fff4df);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(2){
+    border-left-color:#1877f2;
+    background:linear-gradient(145deg,#f8fbff,#edf5ff);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(3){
+    border-left-color:#25a55b;
+    background:linear-gradient(145deg,#f8fff9,#edfff3);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(4){
+    border-left-color:#e88a00;
+    background:linear-gradient(145deg,#fffdf8,#fff7e9);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(5){
+    border-left-color:#8e44ad;
+    background:linear-gradient(145deg,#fdfaff,#f7effb);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(6){
+    border-left-color:#126b3f;
+    background:linear-gradient(145deg,#f8fffb,#eefaf3);
+}
+
+#informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(7){
+    border-left-color:#444;
+    background:linear-gradient(145deg,#ffffff,#f6f6f6);
+}
+
+@media (max-width:700px){
+    #informacoes-portal.conteudo-editorial{
+        grid-template-columns:1fr;
+        gap:14px;
+        margin:20px 10px;
+    }
+
+    #informacoes-portal.conteudo-editorial > .bloco-informativo{
+        padding:17px 16px;
+    }
+
+    #informacoes-portal.conteudo-editorial > .bloco-informativo:nth-child(7){
+        grid-column:auto;
+    }
+
+    #informacoes-portal.conteudo-editorial .grid-informativo{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Empregotododiaiguatu - Empregos e Oportunidades em Iguatu – CE">
+<meta property="og:description" content="Consulte vagas de emprego, prepare seu currículo, faça o Cadastro Reserva e encontre informações para candidatos e empresas em Iguatu – CE e região.">
+<meta property="og:url" content="https://empregotododiaiguatu.com.br/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Empregotododiaiguatu",
+  "url":"https://empregotododiaiguatu.com.br/",
+  "description":"Portal de empregos e oportunidades em Iguatu – CE e região.",
+  "inLanguage":"pt-BR"
+}
+</script>
+</head>
+<body>
+<!-- AMP Auto Ads — somente funcional em uma página AMP válida -->
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7768202536618144">
+</amp-auto-ads>
+<!-- =========================================================
+     BOTÃO RÁPIDO DE FEEDBACK
+========================================================= -->
+<div aria-label="Abrir formulário de feedback" id="abrirFeedbackRapido" role="button" style="
+        position:fixed;
+        top:12px;
+        right:12px;
+        z-index:9999;
+        padding:9px 13px;
+        border-radius:22px;
+        background:linear-gradient(135deg,#333,#111);
+        color:#fff;
+        font-size:12px;
+        font-weight:800;
+        box-shadow:0 4px 12px rgba(0,0,0,.30);
+        cursor:pointer;
+        opacity:.94;
+    " tabindex="0">
+    ⭐ DEIXE SEU FEEDBACK
+</div>
+<!-- =========================================================
+     ABA DE VISITAS
+========================================================= -->
+<div aria-label="Visitas" class="aba-visitas" id="abaVisitas">
+<div class="aba-icone">
+        👁️
+    </div>
+<div class="aba-info">
+<span class="aba-titulo">
+            VISITAS
+        </span>
+<strong id="contadorVisitas">
+            0
+        </strong>
+</div>
+</div>
+<script>
+
+/* =========================================================
+   CONTADOR DE VISITAS LOCAL
+========================================================= */
+
+(function () {
+
+    const chave =
+        "empregotododiaiguatu_total_visitas";
+
+    let visitas = 0;
+
+    try {
+
+        visitas =
+            Number(
+                localStorage.getItem(chave) || 0
+            ) + 1;
+
+        localStorage.setItem(
+            chave,
+            visitas
+        );
+
+    } catch (erro) {
+
+        visitas = 1;
+
+        console.warn(
+            "LocalStorage indisponível.",
+            erro
+        );
+
+    }
+
+    const contador =
+        document.getElementById(
+            "contadorVisitas"
+        );
+
+    if (contador) {
+
+        contador.textContent =
+            visitas.toLocaleString("pt-BR");
+
+    }
+
+})();
+
+</script>
+<!-- =========================================================
+     CABEÇALHO
+========================================================= -->
+<header id="inicio">
+<h1>
+        Empregotododiaiguatu
+    </h1>
+<h2>
+        📢 PÁGINA OFICIAL DE EMPREGOS DE IGUATU – CE.
+    </h2>
+</header>
+<!-- =========================================================
+     MENU
+========================================================= -->
+<nav aria-label="Menu principal" class="menu">
+<div class="menu-item">
+<a href="/#inicio">
+
+            🏠 INÍCIO
+
+        </a>
+</div>
+<!-- =========================================================
+         CADASTRO RESERVA
+    ========================================================== -->
+<div class="menu-item">
+<a href="./cadastro-reserva.html" rel="noopener noreferrer" target="_blank">
+
+            📋 CADASTRO RESERVA
+
+        </a>
+</div>
+<div class="menu-item">
+<a href="servicos-online.html">
+
+            🌐 SERVIÇOS ONLINE
+
+        </a>
+</div>
+<div class="menu-item">
+<a href="./vagas.html">
+
+            💼 VAGAS
+
+        </a>
+</div>
+<div class="menu-item">
+<a aria-expanded="false" aria-haspopup="true" class="menu-toggle" href="#">
+
+            📢 ANUNCIE AQUI ▼
+
+        </a>
+<div class="submenu">
+<a href="./divulgue-sua-empresa.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    🚀📢 Divulgue sua empresa e aumente sua visibilidade!
+                </strong>
+<small>
+                    Instagram • Facebook • Threads • WhatsApp • Canal de empregos • +17 grupos
+                </small>
+</a>
+<a href="./publicidade%20nos%20whatsapp.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    📢 Publicidade nos Grupos WhatsApp
+                </strong>
+<small>
+                    Alcance milhares de pessoas e saiba como funciona.
+                </small>
+</a>
+<a href="Vagas emprego anuncie.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    💼 Vagas de Empregos
+                </strong>
+<small>
+                    Anuncie sua oportunidade de trabalho.
+                </small>
+</a>
+</div>
+</div>
+<div class="menu-item">
+<a aria-expanded="false" aria-haspopup="true" class="menu-toggle" href="#">
+
+            📄 FAÇA SEU CURRÍCULO ▼
+
+        </a>
+<div class="submenu">
+<a href="curriculo-simples.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    📄 Currículo Simples
+                </strong>
+<small>
+                    Modelo rápido e fácil.
+                </small>
+</a>
+<a href="curriculo-basico.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    📝 Currículo Básico
+                </strong>
+<small>
+                    Modelo completo.
+                </small>
+</a>
+<a href="curriculo-intermediario.html" rel="noopener noreferrer" target="_blank">
+<strong>
+                    💼 Currículo Intermediário
+                </strong>
+<small>
+                    Modelo profissional.
+                </small>
+</a>
+</div>
+</div>
+<div class="menu-item">
+<a aria-expanded="false" aria-haspopup="true" class="menu-toggle" href="#">
+
+            📞 CONTATO ▼
+
+        </a>
+<div class="submenu">
+<a href="ligue-agora.html" rel="noopener noreferrer" target="_blank">
+
+                📱 WhatsApp ☎️ Ligue agora
+
+            </a>
+<a href="contato-email.html" rel="noopener noreferrer" target="_blank">
+
+                📧 E-mail
+
+            </a>
+<a href="informacoes-duvidas.html" rel="noopener noreferrer" target="_blank">
+
+                ℹ️ Informações e dúvidas
+
+            </a>
+</div>
+</div>
+</nav>
+<!-- =========================================================
+     CONTEÚDO
+========================================================= -->
+<main><section class="bloco-conteudo-original" id="conteudo-original-adsense"><h2>💼 Como usar o Emprego Todo Dia Iguatu</h2><p>O Emprego Todo Dia Iguatu reúne oportunidades de trabalho e recursos para quem procura emprego em Iguatu e região. Aqui você pode consultar vagas, preparar seu currículo, participar do Cadastro Reserva e encontrar informações para organizar sua candidatura.</p><div class="guia-emprego-grid"><article><h2>🔎 Encontre uma vaga</h2><p>Confira a função, requisitos, local e a forma de candidatura informada em cada oportunidade.</p></article><article><h2>📄 Prepare seu currículo</h2><p>Mantenha seus dados profissionais atualizados e escolha um modelo adequado para sua candidatura.</p></article><article><h2>📋 Cadastro Reserva</h2><p>Envie seu currículo quando quiser ficar disponível para futuras oportunidades divulgadas pelo site.</p></article></div><p class="nota-conteudo"><h3>Antes de enviar seus dados, confira as informações da vaga e leia a Política de Privacidade. O site não garante contratação: a seleção e o retorno dependem de cada empresa ou anunciante.</h3></p></section>
+<h2>
+        💼 Encontre sua próxima oportunidade!
+    </h2>
+<p>
+
+        Bem-vindo ao
+
+        <strong>
+            Empregotododiaiguatu
+        </strong>
+
+        sua página de divulgação de vagas de emprego
+        em Iguatu – CE e região.
+
+    </p>
+
+<!-- =====================================================
+         SLIDER 9 SLIDES
+    ====================================================== -->
+<div class="conteudo-editorial" id="informacoes-portal">
+<section class="bloco-informativo">
+<h2>💼 Sobre o Empregotododiaiguatu</h2>
+<p>O Empregotododiaiguatu reúne informações sobre oportunidades de trabalho em Iguatu – CE e região. A página foi organizada para facilitar a consulta de vagas e o acesso a recursos úteis para quem está procurando emprego.</p>
+<p>Além da consulta de oportunidades, o portal oferece caminhos para cadastro de currículo, Cadastro Reserva, criação de currículo e informações para empresas interessadas em divulgar oportunidades.</p>
+<p>Para aproveitar melhor o site, consulte a descrição de cada oportunidade, confira os requisitos informados e utilize o canal de contato indicado na própria vaga.</p>
+</section>
+<section class="bloco-informativo">
+<h2>🔎 Como procurar uma vaga</h2>
+<div class="grid-informativo">
+<div class="card-informativo"><h2>1. Consulte as oportunidades</h2><p>Acesse a página de vagas e leia as informações disponíveis antes de iniciar uma candidatura.</p></div>
+<div class="card-informativo"><h2>2. Confira os requisitos</h2><p>Observe experiência, escolaridade, local de trabalho, horário e outras exigências descritas pela oportunidade.</p></div>
+<div class="card-informativo"><h2>3. Prepare seus dados</h2><p>Mantenha telefone, e-mail, experiência profissional e demais informações do currículo atualizados.</p></div>
+<div class="card-informativo"><h2>4. Entre em contato</h2><p>Siga o canal informado na vaga para enviar currículo ou esclarecer dúvidas sobre o processo seletivo.</p></div>
+</div>
+<a class="botao-conteudo" href="./vagas.html">💼 VER VAGAS</a>
+</section>
+<section class="bloco-informativo">
+<h2>📋 Cadastro Reserva</h2>
+<p>O Cadastro Reserva é uma forma de registrar informações profissionais e disponibilizar um currículo para futuras oportunidades. O candidato deve preencher os dados com atenção e manter as informações atualizadas.</p>
+<p>O cadastro não representa garantia de contratação. Eventuais contatos dependerão das oportunidades e das informações fornecidas pelo candidato.</p>
+<a class="botao-conteudo" href="./cadastro-reserva.html">📋 FAZER CADASTRO</a>
+</section>
+<section class="bloco-informativo">
+<h2>📄 Currículo: o que vale a pena informar</h2>
+<p>Um bom currículo deve apresentar as informações profissionais de maneira clara e objetiva. Dê preferência a dados verdadeiros, organizados e relacionados à experiência e formação do candidato.</p>
+<ul>
+<li>Nome e formas de contato atualizadas.</li>
+<li>Experiências profissionais e principais atividades realizadas.</li>
+<li>Formação escolar, cursos e qualificações relevantes.</li>
+<li>Informações adicionais que possam ajudar na avaliação profissional.</li>
+</ul>
+<a class="botao-conteudo" href="./curriculo-basico.html">📄 FAZER MEU CURRÍCULO</a>
+</section>
+<section class="bloco-informativo">
+<h2>⭐ Dicas para a busca de emprego</h2>
+<h3>Atualize seu currículo</h3>
+<p>Revise telefone, e-mail, experiências e cursos sempre que houver alguma mudança.</p>
+<h3>Leia a vaga antes de se candidatar</h3>
+<p>Confira os requisitos e as informações da oportunidade para evitar candidaturas incompatíveis.</p>
+<h3>Tenha cuidado com informações pessoais</h3>
+<p>Compartilhe seus dados somente pelos canais relacionados à oportunidade e evite fornecer informações desnecessárias.</p>
+<h3>Prepare-se para a entrevista</h3>
+<p>Conheça suas próprias experiências profissionais e esteja preparado para explicar suas atividades, habilidades e disponibilidade.</p>
+</section>
+<section class="bloco-informativo">
+<h2>📝 Como funciona a candidatura</h2>
+<p>Depois de encontrar uma oportunidade, leia todas as informações publicadas e confirme se seu perfil atende aos requisitos. Em seguida, use somente o canal de candidatura informado na própria vaga.</p>
+<p>Quando solicitado, envie um currículo atualizado e acompanhe o contato da empresa ou anunciante. O portal apenas divulga as informações disponíveis e não participa da decisão de contratação.</p>
+</section>
+<section class="bloco-informativo">
+<h2>🛡️ Segurança na busca por emprego</h2>
+<p>Desconfie de pedidos de pagamento para participar de processos seletivos, promessas de contratação garantida ou solicitações de dados desnecessários.</p>
+<p>Antes de enviar informações pessoais, confirme a origem da oportunidade e utilize os canais apresentados na publicação. Em caso de dúvida, consulte a área de contato do portal.</p>
+</section>
+<section class="bloco-informativo">
+<h2>🏢 Para empresas</h2>
+<p>Empresas que desejam divulgar oportunidades podem utilizar os canais de divulgação disponíveis no portal. Uma vaga bem apresentada ajuda o candidato a entender melhor a oportunidade e os requisitos necessários.</p>
+<p>Ao divulgar uma oportunidade, informe de maneira clara o cargo, principais atividades, requisitos, localização, horário quando aplicável e o canal correto para recebimento dos currículos.</p>
+<a class="botao-conteudo" href="./divulgue-sua-empresa.html">📢 DIVULGAR OPORTUNIDADE</a>
+</section>
+<section class="bloco-informativo">
+<h2>❓ Perguntas frequentes</h2>
+<h3>O Cadastro Reserva garante emprego?</h3>
+<p>Não. O cadastro serve para registrar informações profissionais para futuras oportunidades e não garante contratação.</p>
+<h3>Onde encontro as vagas?</h3>
+<p>As oportunidades disponíveis podem ser consultadas na página <a href="./vagas.html"><strong>Vagas</strong></a>.</p>
+<h3>Como uma empresa pode divulgar uma oportunidade?</h3>
+<p>As empresas podem acessar a área <a href="./divulgue-sua-empresa.html"><strong>Anuncie Aqui</strong></a> para consultar as opções de divulgação disponíveis.</p>
+<h3>Preciso manter meus dados atualizados?</h3>
+<p>Sim. Informações atualizadas facilitam a utilização do portal e o contato quando houver uma oportunidade compatível.</p>
+</section>
+</div><!-- =====================================================
+         DESTAQUE VIP
+    ====================================================== -->
+<div class="destaque">
+<div class="urgencia">
+
+            🔥 CONDIÇÃO ESPECIAL PARA OS 10 PRIMEIROS USUÁRIOS!
+
+        </div>
+<h3>
+
+            🚨 GRUPO VIP DE EMPREGOS<br/>
+            IGUATU
+
+        </h3>
+<p>
+
+            🎁 ENTRE AGORA E APROVEITE!
+
+            <strong>
+                ACESSO GRATUITO POR 1 MÊS!
+            </strong>
+</p>
+<a class="botao-whatsapp" href="termos-responsabilidade-grupo-vip.html" rel="noopener noreferrer" target="_blank">
+
+            💬 ENTRE NO GRUPO VIP E ACOMPANHE AS NOVAS VAGAS!
+
+        </a>
+</div>
+<p>
+
+        🔎 Veja as vagas e oportunidades atualizadas diariamente!
+        Encontre a oportunidade ideal para você.
+
+    </p>
+<section aria-label="Publicidade e empresas em destaque" class="slider-area">
+<div class="slider-titulo">
+<span class="empresa-destaque">
+
+                🚨 SUA EMPRESA AQUI 🚨
+
+            </span>
+<br/>
+<span class="preco-antigo">
+                R$ 99,99
+            </span>
+<span class="preco-novo">
+                POR R$ 49,99
+            </span>
+</div>
+<div class="slider" id="slider">
+<!-- SLIDE 1 -->
+<div class="slide ativo">
+<img alt="Super promoção inauguração" draggable="false" loading="eager" src="./imagens/promo.png">
+<div class="legenda-slider">
+<strong>
+                        🎉 SUPER PROMOÇÃO INAUGURAÇÃO
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 2 -->
+<div class="slide">
+<img alt="Empréstimos diários e mensal" draggable="false" loading="lazy" src="./imagens/investimentos.jpeg">
+<div class="legenda-slider">
+<strong>
+                        📢 EMPRESTIMO NA HORA (88)99298-9027
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 3 -->
+<div class="slide">
+<img alt="Lava a jato Deus é Fiel" draggable="false" loading="lazy" src="./imagens/gas.jpeg">
+<div class="legenda-slider">
+<strong>
+                        📢 REI GAS PROMOÇÃO (88)99610-4444
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 4 -->
+<div class="slide">
+<img alt="Angélica Souza Consultora Financeira" draggable="false" loading="lazy" src="./imagens/fretes.jpeg">
+<div class="legenda-slider">
+<strong>
+                    📢 WR FRETES E MUDANÇAS (88)92153-3249
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 5 -->
+<div class="slide">
+<img alt="Internet Wi-Fi fibra e instalação grátis" draggable="false" loading="lazy" src="./imagens/nio.png">
+<div class="legenda-slider">
+<strong>
+                        📢 INTERNET WI-FI FIBRA (88)98164-7922
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 6 -->
+<div class="slide">
+<img alt="WR Fretes e Mudanças" draggable="false" loading="lazy" src="./imagens/credito.jpeg">
+<div class="legenda-slider">
+<strong>
+                        💰 CRÉDITO FGTS CLT (88)99886-7773
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 7 -->
+<div class="slide">
+<img alt="Publicidade em destaque 7" draggable="false" loading="lazy" src="./imagens/brisanet.png">
+<div class="legenda-slider">
+<strong>
+                        📢 BIRSANET INTERNET (88)92190-7180
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 8 -->
+<div class="slide">
+<img alt="Publicidade em destaque 8" draggable="false" loading="lazy" src="./imagens/lavajato.png">
+<div class="legenda-slider">
+<strong>
+                        🧽 LAVA A JATO DEUS É FIEL (88)99446-8291
+                    </strong>
+</div>
+</div>
+<!-- SLIDE 9 -->
+<div class="slide">
+<img alt="Publicidade em destaque 9" draggable="false" loading="lazy" src="./imagens/deposito.png">
+<div class="legenda-slider">
+<strong>
+                        📢 DEPÓSITO FERREIRA IGUATU (88)92190-7180
+                    </strong>
+</div>
+</div>
+<!-- BOTÃO ANTERIOR -->
+<button aria-label="Imagem anterior" class="slider-btn prev" id="sliderPrev" type="button">
+
+                ❮
+
+            </button>
+<!-- BOTÃO PRÓXIMO -->
+<button aria-label="Próxima imagem" class="slider-btn next" id="sliderNext" type="button">
+
+                ❯
+
+            </button>
+<!-- INDICADORES -->
+<div aria-label="Selecionar slide" class="indicadores">
+<button aria-label="Ir para slide 1" class="indicador ativo" data-slide="0" type="button">
+</button>
+<button aria-label="Ir para slide 2" class="indicador" data-slide="1" type="button">
+</button>
+<button aria-label="Ir para slide 3" class="indicador" data-slide="2" type="button">
+</button>
+<button aria-label="Ir para slide 4" class="indicador" data-slide="3" type="button">
+</button>
+<button aria-label="Ir para slide 5" class="indicador" data-slide="4" type="button">
+</button>
+<button aria-label="Ir para slide 6" class="indicador" data-slide="5" type="button">
+</button>
+<button aria-label="Ir para slide 7" class="indicador" data-slide="6" type="button">
+</button>
+<button aria-label="Ir para slide 8" class="indicador" data-slide="7" type="button">
+</button>
+<button aria-label="Ir para slide 9" class="indicador" data-slide="8" type="button">
+</button>
+</div>
+</div>
+</section>
+<!-- =====================================================
+         FEEDBACK
+    ====================================================== -->
+<section class="feedback-area" id="feedback">
+<h3>
+            💬 Sua opinião ajuda o Empregotododiaiguatu!
+        </h3>
+<p>
+            ⭐ Avalie nosso site e deixe seu comentário. Como agradecimento pela participação, você receberá 2 meses de acesso gratuito ao Grupo VIP de Empregos. 🎁
+        </p>
+
+<a class="feedback-abrir-area" href="#" id="abrirFeedbackArea">
+
+            ⭐ DEIXAR MEU FEEDBACK
+
+        </a>
+</section>
+<!-- =====================================================
+         ABA FLUTUANTE FEEDBACK
+    ====================================================== -->
+<!-- =====================================================
+         MODAL FEEDBACK
+    ====================================================== -->
+<div aria-labelledby="feedbackTitulo" aria-modal="true" class="feedback-overlay" id="feedbackOverlay" role="dialog">
+<div class="feedback-modal">
+<button aria-label="Fechar" class="feedback-fechar" id="fecharFeedback" type="button">
+
+                ×
+
+            </button>
+<div class="feedback-topo">
+<span class="feedback-icone">
+                    🎁
+                </span>
+<h2 id="feedbackTitulo">
+                    Deixe seu feedback
+                </h2>
+<p>
+                    Conte para nós o que você achou do Empregotododiaiguatu!
+                    Sua opinião ajuda a melhorar o site para todos.
+                </p>
+</div>
+<div class="feedback-beneficio">
+<strong>
+                    Obrigado por ajudar a melhorar o portal.
+                </strong>
+<small>
+                    Seu comentário é registrado neste dispositivo e pode ajudar a identificar melhorias.
+                </small>
+</div>
+<div aria-label="Avaliação de 1 a 5 estrelas" class="feedback-estrelas">
+<button aria-label="1 estrela" class="feedback-estrela" data-nota="1" type="button">
+                    ★
+                </button>
+<button aria-label="2 estrelas" class="feedback-estrela" data-nota="2" type="button">
+                    ★
+                </button>
+<button aria-label="3 estrelas" class="feedback-estrela" data-nota="3" type="button">
+                    ★
+                </button>
+<button aria-label="4 estrelas" class="feedback-estrela" data-nota="4" type="button">
+                    ★
+                </button>
+<button aria-label="5 estrelas" class="feedback-estrela" data-nota="5" type="button">
+                    ★
+                </button>
+</div>
+<div aria-live="polite" class="feedback-avaliacao" id="feedbackAvaliacao">
+
+                Escolha sua avaliação
+
+            </div>
+<textarea aria-label="Seu comentário" id="feedbackComentario" maxlength="500" placeholder="Escreva aqui seu comentário, sugestão ou experiência..."></textarea>
+<div class="feedback-contador">
+<span id="feedbackContador">
+                    0
+                </span>/500
+
+            </div>
+<button class="feedback-enviar" id="feedbackEnviar" type="button">
+
+                🚀 ENVIAR FEEDBACK
+
+            </button>
+<div aria-live="polite" class="feedback-sucesso" id="feedbackSucesso">
+<strong>
+                    ✅ Feedback registrado neste dispositivo!
+                </strong>
+<br/>
+
+                Obrigado por ajudar a melhorar o Empregotododiaiguatu.
+
+                <br/>
+                Se quiser entrar em contato, utilize os canais oficiais disponíveis no site.
+            </div>
+<a class="feedback-whatsapp" href="#" id="feedbackWhatsapp" rel="noopener noreferrer" target="_blank">
+
+                💚 ENVIAR CONFIRMAÇÃO PELO WHATSAPP
+
+            </a>
+</div>
+</div>
+<!-- =====================================================
+         REDES SOCIAIS
+    ====================================================== -->
+<div class="botoes">
+<a class="botao instagram" href="https://www.instagram.com/empregostododiaiguatu/" rel="noopener noreferrer" target="_blank">
+
+            📸 Instagram
+
+        </a>
+<a class="botao facebook" href="https://facebook.com/profile.php?id=61558530166182&amp;locale=pt_BR" rel="noopener noreferrer" target="_blank">
+
+            🔵 Facebook
+
+        </a>
+<a class="botao whatsapp" href="https://www.whatsapp.com/channel/0029VbCq22gEFeXrVuI4vG0q" rel="noopener noreferrer" target="_blank">
+
+            📢 Canal WhatsApp
+
+        </a>
+<a class="botao grupo-whatsapp" href="https://chat.whatsapp.com/KknHTt54v4FIalx2O2Evs2" rel="noopener noreferrer" target="_blank">
+
+            📢 Grupo do WhatsApp Empregos
+
+        </a>
+</div>
+</main>
+<!-- =========================================================
+     SEGURANÇA
+========================================================= -->
+<section aria-label="Segurança do site" class="seguranca-site">
+<div class="seguranca-conteudo">
+<div class="seguranca-icone">
+            🔒
+        </div>
+<div class="seguranca-texto">
+<h3>
+                SITE PROTEGIDO E SEGURO
+            </h3>
+<p>
+                🔐 Navegação segura • 🔒 Proteção de dados • 🛡️
+                Segurança para nossos visitantes
+            </p>
+<p>
+                O Empregotododiaiguatu trabalha para oferecer
+                uma experiência segura e confiável aos visitantes.
+            </p>
+</div>
+</div>
+<div class="selos-seguranca">
+<span>
+            🔒 CONEXÃO HTTPS
+        </span>
+<span>
+            🛡️ PRIVACIDADE
+        </span>
+<span>
+            🔐 CUIDADO COM SEUS DADOS
+        </span>
+<span>
+            ✅ SITE OFICIAL
+        </span>
+</div>
+</section>
+<!-- =========================================================
+     AVISO DE SEGURANÇA
+========================================================= -->
+<div class="aviso-seguranca" id="avisoSeguranca" role="status">
+<div class="aviso-seguranca-conteudo">
+<span class="aviso-icone">
+            🔒
+        </span>
+<div>
+<strong>
+                Navegação segura
+            </strong>
+<p>
+                Você está acessando o site
+                <strong>Empregotododiaiguatu.com.br</strong>
+</p>
+</div>
+<button aria-label="Fechar aviso" id="fecharAviso" type="button">
+
+            ✕
+
+        </button>
+</div>
+</div>
+<!-- =========================================================
+     RODAPÉ
+========================================================= -->
+<footer>
+<strong>
+        Empregotododiaiguatu
+    </strong>
+<br/>
+
+    📢 Página Oficial de Empregos de Iguatu – CE.
+
+    <br/><br/>
+
+<div style="margin: 4px 0 10px;">
+<a aria-label="Política de Privacidade" href="politica-de-privacidade.html" rel="noopener noreferrer" style="
+                color: inherit;
+                text-decoration: none;
+                font-weight: 700;
+                display: inline-block;
+                padding: 4px 10px;
+                border-radius: 6px;
+            " target="_blank">🔒 Política de Privacidade</a>
+
+<a aria-label="Informações e dúvidas" href="informacoes-duvidas.html" rel="noopener noreferrer" style="
+                color: inherit;
+                text-decoration: none;
+                font-weight: 700;
+                display: inline-block;
+                padding: 4px 10px;
+                border-radius: 6px;
+            " target="_blank">ℹ️ Informações e dúvidas</a>
+</div>
+
+    © 2026 - Todos os direitos reservados.
+
+</footer>
+<!-- =========================================================
+     JAVASCRIPT PRINCIPAL
+========================================================= -->
+<script>
+
+"use strict";
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+const menuItens =
+    document.querySelectorAll(".menu-item");
+
+
+menuItens.forEach(function(menuItem) {
+
+    const link =
+        menuItem.querySelector(
+            ":scope > .menu-toggle"
+        );
+
+    if (!link) {
+        return;
+    }
+
+
+    link.addEventListener(
+        "click",
+        function(event) {
+
+            event.preventDefault();
+
+            const estavaAberto =
+                menuItem.classList.contains(
+                    "aberto"
+                );
+
+
+            menuItens.forEach(
+                function(outroItem) {
+
+                    outroItem.classList.remove(
+                        "aberto"
+                    );
+
+                    const outroLink =
+                        outroItem.querySelector(
+                            ":scope > .menu-toggle"
+                        );
+
+                    if (outroLink) {
+
+                        outroLink.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+
+                }
+            );
+
+
+            if (!estavaAberto) {
+
+                menuItem.classList.add(
+                    "aberto"
+                );
+
+                link.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =========================================================
+   FECHAR MENU FORA
+========================================================= */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest(".menu")
+        ) {
+
+            menuItens.forEach(
+                function(menuItem) {
+
+                    menuItem.classList.remove(
+                        "aberto"
+                    );
+
+                    const link =
+                        menuItem.querySelector(
+                            ":scope > .menu-toggle"
+                        );
+
+                    if (link) {
+
+                        link.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   SLIDER - 9 SLIDES
+   AUTOMÁTICO A CADA 3 SEGUNDOS
+========================================================= */
+
+const slider =
+    document.getElementById("slider");
+
+const slides =
+    slider
+        ? slider.querySelectorAll(".slide")
+        : [];
+
+const indicadores =
+    slider
+        ? slider.querySelectorAll(".indicador")
+        : [];
+
+const botaoAnterior =
+    document.getElementById("sliderPrev");
+
+const botaoProximo =
+    document.getElementById("sliderNext");
+
+
+let slideAtual = 0;
+
+let intervaloSlider = null;
+
+let toqueInicial = 0;
+
+
+/* =========================================================
+   TEMPO DO SLIDER
+
+   3000 = 3 segundos
+
+   SEQUÊNCIA:
+
+   1 → 2
+   2 → 3
+   3 → 4
+   4 → 5
+   5 → 6
+   6 → 7
+   7 → 8
+   8 → 9
+   9 → 1
+========================================================= */
+
+const tempoSlide = 3000;
+
+
+/* =========================================================
+   MOSTRAR SLIDE
+========================================================= */
+
+function mostrarSlide(numero) {
+
+    if (!slides.length) {
+        return;
+    }
+
+
+    if (numero >= slides.length) {
+
+        slideAtual = 0;
+
+    }
+
+    else if (numero < 0) {
+
+        slideAtual =
+            slides.length - 1;
+
+    }
+
+    else {
+
+        slideAtual = numero;
+
+    }
+
+
+    slides.forEach(
+        function(slide) {
+
+            slide.classList.remove(
+                "ativo"
+            );
+
+        }
+    );
+
+
+    indicadores.forEach(
+        function(indicador) {
+
+            indicador.classList.remove(
+                "ativo"
+            );
+
+        }
+    );
+
+
+    if (slides[slideAtual]) {
+
+        slides[slideAtual].classList.add(
+            "ativo"
+        );
+
+    }
+
+
+    if (indicadores[slideAtual]) {
+
+        indicadores[slideAtual].classList.add(
+            "ativo"
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   PRÓXIMO SLIDE
+========================================================= */
+
+function proximoSlide() {
+
+    if (!slides.length) {
+        return;
+    }
+
+    slideAtual++;
+
+    if (slideAtual >= slides.length) {
+
+        slideAtual = 0;
+
+    }
+
+    mostrarSlide(slideAtual);
+
+}
+
+
+/* =========================================================
+   SLIDE ANTERIOR
+========================================================= */
+
+function slideAnterior() {
+
+    if (!slides.length) {
+        return;
+    }
+
+    slideAtual--;
+
+    if (slideAtual < 0) {
+
+        slideAtual =
+            slides.length - 1;
+
+    }
+
+    mostrarSlide(slideAtual);
+
+}
+
+
+/* =========================================================
+   PARAR AUTOMÁTICO
+========================================================= */
+
+function pararSlider() {
+
+    if (intervaloSlider !== null) {
+
+        clearInterval(
+            intervaloSlider
+        );
+
+        intervaloSlider = null;
+
+    }
+
+}
+
+
+/* =========================================================
+   INICIAR AUTOMÁTICO
+
+   O SLIDER PASSA A CADA 3 SEGUNDOS
+========================================================= */
+
+function iniciarSlider() {
+
+    pararSlider();
+
+
+    if (slides.length <= 1) {
+        return;
+    }
+
+
+    intervaloSlider =
+        setInterval(
+            function() {
+
+                proximoSlide();
+
+            },
+            tempoSlide
+        );
+
+}
+
+
+/* =========================================================
+   REINICIAR AUTOMÁTICO
+========================================================= */
+
+function reiniciarSlider() {
+
+    iniciarSlider();
+
+}
+
+
+/* =========================================================
+   BOTÃO ANTERIOR
+========================================================= */
+
+if (botaoAnterior) {
+
+    botaoAnterior.addEventListener(
+        "click",
+        function() {
+
+            slideAnterior();
+
+            reiniciarSlider();
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   BOTÃO PRÓXIMO
+========================================================= */
+
+if (botaoProximo) {
+
+    botaoProximo.addEventListener(
+        "click",
+        function() {
+
+            proximoSlide();
+
+            reiniciarSlider();
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   INDICADORES
+========================================================= */
+
+indicadores.forEach(
+    function(indicador) {
+
+        indicador.addEventListener(
+            "click",
+            function() {
+
+                const numero =
+                    Number(
+                        indicador.dataset.slide
+                    );
+
+
+                if (
+                    Number.isInteger(numero)
+                ) {
+
+                    mostrarSlide(numero);
+
+                    reiniciarSlider();
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   PAUSAR COM MOUSE
+========================================================= */
+
+if (slider) {
+
+    slider.addEventListener(
+        "mouseenter",
+        function() {
+
+            pararSlider();
+
+        }
+    );
+
+
+    slider.addEventListener(
+        "mouseleave",
+        function() {
+
+            iniciarSlider();
+
+        }
+    );
+
+
+    /* =====================================================
+       TOUCH START
+    ===================================================== */
+
+    slider.addEventListener(
+        "touchstart",
+        function(event) {
+
+            if (
+                event.touches.length > 0
+            ) {
+
+                toqueInicial =
+                    event.touches[0].clientX;
+
+            }
+
+            pararSlider();
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    /* =====================================================
+       TOUCH END
+    ===================================================== */
+
+    slider.addEventListener(
+        "touchend",
+        function(event) {
+
+            if (
+                !event.changedTouches.length
+            ) {
+
+                iniciarSlider();
+
+                return;
+
+            }
+
+
+            const toqueFinal =
+                event.changedTouches[0].clientX;
+
+
+            const distancia =
+                toqueFinal - toqueInicial;
+
+
+            if (
+                distancia < -50
+            ) {
+
+                proximoSlide();
+
+            }
+
+            else if (
+                distancia > 50
+            ) {
+
+                slideAnterior();
+
+            }
+
+
+            iniciarSlider();
+
+        },
+        {
+            passive: true
+        }
+    );
+
+}
+
+
+/* =========================================================
+   INICIAR SLIDER
+
+   COMEÇA NO SLIDE 1
+
+   DEPOIS DE 3 SEGUNDOS:
+   1 → 2
+
+   DEPOIS DE MAIS 3:
+   2 → 3
+
+   ...
+
+   9 → 1
+========================================================= */
+
+mostrarSlide(0);
+
+iniciarSlider();
+
+
+/* =========================================================
+   PROTEÇÃO DAS IMAGENS
+========================================================= */
+
+document
+    .querySelectorAll("img")
+    .forEach(
+        function(imagem) {
+
+            imagem.setAttribute(
+                "draggable",
+                "false"
+            );
+
+
+            imagem.addEventListener(
+                "dragstart",
+                function(event) {
+
+                    event.preventDefault();
+
+                }
+            );
+
+        }
+    );
+
+
+/* =========================================================
+   AVISO DE SEGURANÇA
+========================================================= */
+
+const CHAVE_AVISO =
+    "empregotododiaiguatu_aviso_seguranca_exibido";
+
+
+const aviso =
+    document.getElementById(
+        "avisoSeguranca"
+    );
+
+
+const fecharAviso =
+    document.getElementById(
+        "fecharAviso"
+    );
+
+
+function fecharAvisoSeguranca() {
+
+    if (!aviso) {
+        return;
+    }
+
+
+    aviso.classList.remove(
+        "mostrar"
+    );
+
+    aviso.classList.add(
+        "oculto"
+    );
+
+
+    try {
+
+        sessionStorage.setItem(
+            CHAVE_AVISO,
+            "1"
+        );
+
+    }
+
+    catch (erro) {
+
+        console.warn(
+            "Não foi possível salvar o aviso.",
+            erro
+        );
+
+    }
+
+}
+
+
+if (fecharAviso) {
+
+    fecharAviso.addEventListener(
+        "click",
+        fecharAvisoSeguranca
+    );
+
+}
+
+
+function mostrarAvisoSegurancaUmaVez() {
+
+    if (!aviso) {
+        return;
+    }
+
+
+    let jaExibido = false;
+
+
+    try {
+
+        jaExibido =
+            sessionStorage.getItem(
+                CHAVE_AVISO
+            ) === "1";
+
+    }
+
+    catch (erro) {
+
+        jaExibido = false;
+
+    }
+
+
+    if (jaExibido) {
+        return;
+    }
+
+
+    setTimeout(
+        function() {
+
+            aviso.classList.add(
+                "mostrar"
+            );
+
+
+            setTimeout(
+                function() {
+
+                    fecharAvisoSeguranca();
+
+                },
+                5000
+            );
+
+        },
+        1200
+    );
+
+}
+
+
+mostrarAvisoSegurancaUmaVez();
+
+
+/* =========================================================
+   VOLTAR AO INÍCIO
+========================================================= */
+
+function voltarAoInicio() {
+
+    const inicio =
+        document.getElementById(
+            "inicio"
+        );
+
+
+    if (inicio) {
+
+        inicio.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+}
+
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        const link =
+            event.target.closest(
+                'a[href="#inicio"], a[href="/#inicio"], a[href="/#inicio"]'
+            );
+
+
+        if (!link) {
+            return;
+        }
+
+
+        event.preventDefault();
+
+        voltarAoInicio();
+
+    }
+);
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+let notaFeedback = 0;
+
+
+const estrelasFeedback =
+    document.querySelectorAll(
+        ".feedback-estrela"
+    );
+
+
+const campoFeedback =
+    document.getElementById(
+        "feedbackComentario"
+    );
+
+
+const contadorFeedback =
+    document.getElementById(
+        "feedbackContador"
+    );
+
+
+const avaliacaoFeedback =
+    document.getElementById(
+        "feedbackAvaliacao"
+    );
+
+
+const overlayFeedback =
+    document.getElementById(
+        "feedbackOverlay"
+    );
+
+
+const abrirFeedbackArea =
+    document.getElementById(
+        "abrirFeedbackArea"
+    );
+
+
+const abrirFeedbackFlutuante =
+    document.getElementById(
+        "abrirFeedbackFlutuante"
+    );
+
+
+const fecharFeedbackBotao =
+    document.getElementById(
+        "fecharFeedback"
+    );
+
+
+const textosAvaliacao = {
+
+    1:
+        "😞 1 estrela — precisamos melhorar muito.",
+
+    2:
+        "😕 2 estrelas — sua opinião é importante.",
+
+    3:
+        "🙂 3 estrelas — obrigado pela avaliação!",
+
+    4:
+        "😊 4 estrelas — ficamos felizes!",
+
+    5:
+        "🤩 5 estrelas — muito obrigado pelo apoio!"
+
+};
+
+
+/* =========================================================
+   ESTRELAS
+========================================================= */
+
+function atualizarEstrelas() {
+
+    estrelasFeedback.forEach(
+        function(estrela) {
+
+            const nota =
+                Number(
+                    estrela.dataset.nota
+                );
+
+
+            estrela.classList.toggle(
+                "selecionada",
+                nota <= notaFeedback
+            );
+
+        }
+    );
+
+}
+
+
+estrelasFeedback.forEach(
+    function(estrela) {
+
+        estrela.addEventListener(
+            "click",
+            function() {
+
+                notaFeedback =
+                    Number(
+                        this.dataset.nota
+                    );
+
+
+                atualizarEstrelas();
+
+
+                if (avaliacaoFeedback) {
+
+                    avaliacaoFeedback.textContent =
+                        textosAvaliacao[
+                            notaFeedback
+                        ];
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   CONTADOR DO TEXTO
+========================================================= */
+
+if (campoFeedback) {
+
+    campoFeedback.addEventListener(
+        "input",
+        function() {
+
+            if (contadorFeedback) {
+
+                contadorFeedback.textContent =
+                    this.value.length;
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   ABRIR FEEDBACK
+========================================================= */
+
+function abrirFeedback(event) {
+
+    if (event) {
+        event.preventDefault();
+    }
+
+
+    if (!overlayFeedback) {
+        return;
+    }
+
+
+    overlayFeedback.classList.add(
+        "aberto"
+    );
+
+
+    document.body.style.overflow =
+        "hidden";
+
+
+    setTimeout(
+        function() {
+
+            if (campoFeedback) {
+
+                campoFeedback.focus();
+
+            }
+
+        },
+        150
+    );
+
+}
+
+
+if (abrirFeedbackArea) {
+
+    abrirFeedbackArea.addEventListener(
+        "click",
+        abrirFeedback
+    );
+
+}
+
+
+if (abrirFeedbackFlutuante) {
+
+    abrirFeedbackFlutuante.addEventListener(
+        "click",
+        abrirFeedback
+    );
+
+}
+
+
+/* =========================================================
+   FECHAR FEEDBACK
+========================================================= */
+
+function fecharFeedback() {
+
+    if (!overlayFeedback) {
+        return;
+    }
+
+
+    overlayFeedback.classList.remove(
+        "aberto"
+    );
+
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+if (fecharFeedbackBotao) {
+
+    fecharFeedbackBotao.addEventListener(
+        "click",
+        fecharFeedback
+    );
+
+}
+
+
+if (overlayFeedback) {
+
+    overlayFeedback.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target ===
+                overlayFeedback
+            ) {
+
+                fecharFeedback();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   ESC FECHA FEEDBACK
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape" &&
+            overlayFeedback &&
+            overlayFeedback.classList.contains(
+                "aberto"
+            )
+        ) {
+
+            fecharFeedback();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   ENVIAR FEEDBACK
+========================================================= */
+
+const botaoFeedback =
+    document.getElementById(
+        "feedbackEnviar"
+    );
+
+
+if (botaoFeedback) {
+
+    botaoFeedback.addEventListener(
+        "click",
+        enviarFeedbackSite
+    );
+
+}
+
+
+function enviarFeedbackSite() {
+
+    if (!campoFeedback) {
+        return;
+    }
+
+
+    const comentario =
+        campoFeedback.value.trim();
+
+
+    const sucesso =
+        document.getElementById(
+            "feedbackSucesso"
+        );
+
+
+    const whatsapp =
+        document.getElementById(
+            "feedbackWhatsapp"
+        );
+
+
+    if (!notaFeedback) {
+
+        if (avaliacaoFeedback) {
+
+            avaliacaoFeedback.textContent =
+                "⭐ Escolha uma avaliação antes de enviar.";
+
+        }
+
+        return;
+
+    }
+
+
+    if (!comentario) {
+
+        campoFeedback.focus();
+
+        campoFeedback.setCustomValidity(
+            "Digite seu comentário."
+        );
+
+        campoFeedback.reportValidity();
+
+        return;
+
+    }
+
+
+    campoFeedback.setCustomValidity("");
+
+
+    botaoFeedback.disabled = true;
+
+    botaoFeedback.textContent =
+        "⏳ REGISTRANDO...";
+
+
+    const feedback = {
+
+        avaliacao:
+            notaFeedback,
+
+        comentario:
+            comentario,
+
+        data:
+            new Date().toISOString()
+
+    };
+
+
+    try {
+
+        const lista =
+            JSON.parse(
+                localStorage.getItem(
+                    "empregotododiaiguatu_feedbacks"
+                ) || "[]"
+            );
+
+
+        lista.push(feedback);
+
+
+        localStorage.setItem(
+            "empregotododiaiguatu_feedbacks",
+            JSON.stringify(lista)
+        );
+
+    }
+
+    catch (erro) {
+
+        console.warn(
+            "Não foi possível salvar o feedback localmente.",
+            erro
+        );
+
+    }
+
+
+    const mensagem =
+        encodeURIComponent(
+
+            "Olá! Acabei de deixar um feedback no site Empregotododiaiguatu.\n\n" +
+
+            "⭐ Avaliação: " +
+            notaFeedback +
+            "./5\n" +
+
+            "💬 Comentário: " +
+            comentario +
+            "\n\n" +
+
+            "Gostaria de enviar uma mensagem sobre o feedback que deixei no site."
+
+        );
+
+
+    const numeroWhatsApp =
+        "5588993485054";
+
+
+    if (whatsapp) {
+
+        whatsapp.href =
+            "https://wa.me/" +
+            numeroWhatsApp +
+            "?text=" +
+            mensagem;
+
+    }
+
+
+    if (sucesso) {
+
+        sucesso.style.display =
+            "block";
+
+    }
+
+
+    if (whatsapp) {
+
+        whatsapp.style.display =
+            "block";
+
+    }
+
+
+    botaoFeedback.textContent =
+        "✅ FEEDBACK ENVIADO";
+
+}
+
+
+</script>
+<script>
+(function () {
+    const botao = document.getElementById("abrirFeedbackRapido");
+    const original = document.getElementById("abrirFeedbackArea");
+
+    if (!botao) return;
+
+    function abrirFeedback() {
+        if (original) {
+            original.click();
+            return;
+        }
+
+        const abrirFlutuante = document.getElementById("abrirFeedbackFlutuante");
+        if (abrirFlutuante) abrirFlutuante.click();
+    }
+
+    botao.addEventListener("click", abrirFeedback);
+
+    botao.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            abrirFeedback();
+        }
+    });
+})();
+</script>
+</body>
+</html>

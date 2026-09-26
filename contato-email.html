@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Entre em contato com o Emprego Todo Dia Iguatu."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="Emprego Todo Dia Iguatu"
+    >
+
+    <meta
+        name="theme-color"
+        content="#007bff"
+    >
+
+    <link
+        rel="canonical"
+        href="https://empregotododiaiguatu.com.br/contato-email.html"
+    >
+
+    <title>Contato - Emprego Todo Dia Iguatu</title>
+
+    <style>
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =====================================================
+           BODY
+        ===================================================== */
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f2f4f7,
+                    #e9edf2
+                );
+
+            color: #333;
+            min-height: 100vh;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+
+        /* =====================================================
+           LINK INÍCIO
+        ===================================================== */
+
+        .link-inicio {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 15px auto;
+
+            color: #e88a00;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+
+            transition: color 0.3s;
+        }
+
+        .link-inicio:hover {
+            color: #c66f00;
+            text-decoration: underline;
+        }
+
+        /* =====================================================
+           FORMULÁRIO
+        ===================================================== */
+
+        .formulario {
+            width: 100%;
+            max-width: 600px;
+
+            margin: 20px auto;
+
+            padding: 30px;
+
+            background: #ffffff;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0, 0, 0, 0.10);
+        }
+
+        /* =====================================================
+           TÍTULO
+        ===================================================== */
+
+        .formulario h1 {
+            text-align: center;
+            color: #222;
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+        }
+
+        /* =====================================================
+           SUBTÍTULO
+        ===================================================== */
+
+        .subtitulo {
+            text-align: center;
+
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 1.5;
+
+            margin-bottom: 25px;
+        }
+
+        /* =====================================================
+           AVISO
+        ===================================================== */
+
+        .aviso {
+            background: #e7f1ff;
+
+            border: 1px solid #b6d4fe;
+
+            color: #084298;
+
+            border-radius: 8px;
+
+            padding: 14px;
+
+            margin-bottom: 25px;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+
+            text-align: center;
+        }
+
+        /* =====================================================
+           INFORMAÇÕES DA PÁGINA / NAVEGAÇÃO
+        ===================================================== */
+
+        .informacoes-contato {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff8ed;
+            border: 1px solid #f0c27b;
+            border-left: 5px solid #e88a00;
+            border-radius: 10px;
+            color: #444;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .informacoes-contato h2 {
+            margin-bottom: 10px;
+            color: #b85f00;
+            font-size: 20px;
+        }
+
+        .informacoes-contato p {
+            margin-bottom: 10px;
+        }
+
+        .links-contato {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .links-contato a {
+            display: inline-block;
+            padding: 9px 13px;
+            border-radius: 7px;
+            background: #e88a00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .links-contato a:hover {
+            background: #c66f00;
+            text-decoration: none;
+        }
+
+        /* =====================================================
+           MENSAGEM DE ERRO
+        ===================================================== */
+
+        .erro {
+            display: none;
+
+            margin-bottom: 20px;
+
+            padding: 14px;
+
+            border-radius: 8px;
+
+            background: #f8d7da;
+
+            color: #842029;
+
+            border: 1px solid #f5c2c7;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+        /* =====================================================
+           CAMPOS
+        ===================================================== */
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        .campo label {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #333;
+
+            font-size: 15px;
+
+            font-weight: bold;
+        }
+
+        .obrigatorio {
+            color: #dc3545;
+        }
+
+        .campo input,
+        .campo textarea {
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #cccccc;
+
+            border-radius: 8px;
+
+            background: #ffffff;
+
+            color: #333333;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            font-size: 16px;
+
+            outline: none;
+
+            transition:
+                border-color 0.3s,
+                box-shadow 0.3s;
+        }
+
+        .campo input:focus,
+        .campo textarea:focus {
+            border-color: #007bff;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(0, 123, 255, 0.10);
+        }
+
+        .campo textarea {
+            min-height: 160px;
+
+            resize: vertical;
+        }
+
+        /* =====================================================
+           BOTÃO
+        ===================================================== */
+
+        .botao {
+            display: block;
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #007bff,
+                    #0056b3
+                );
+
+            color: #ffffff;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition:
+                background 0.3s,
+                transform 0.2s;
+        }
+
+        .botao:hover {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0069d9,
+                    #004494
+                );
+
+            transform: translateY(-1px);
+        }
+
+        .botao:active {
+            transform: translateY(1px);
+        }
+
+        .botao:disabled {
+            background: #6c757d;
+
+            cursor: not-allowed;
+
+            transform: none;
+        }
+
+        /* =====================================================
+           TELA DE SUCESSO
+        ===================================================== */
+
+        .sucesso {
+            display: none;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8fff0,
+                    #d8f8e3
+                );
+
+            border: 2px solid #28a745;
+
+            border-radius: 15px;
+
+            margin-top: 10px;
+        }
+
+        .sucesso .icone {
+            font-size: 55px;
+
+            margin-bottom: 15px;
+        }
+
+        .sucesso h2 {
+            color: #176b2c;
+
+            font-size: 25px;
+
+            margin-bottom: 12px;
+        }
+
+        .sucesso p {
+            color: #245b33;
+
+            font-size: 16px;
+
+            margin-bottom: 10px;
+        }
+
+        .sucesso strong {
+            color: #176b2c;
+
+            font-size: 18px;
+        }
+
+        .botao-inicio {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 12px 22px;
+
+            border-radius: 8px;
+
+            background: #007bff;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: background 0.3s;
+        }
+
+        .botao-inicio:hover {
+            background: #0056b3;
+
+            color: #ffffff;
+
+            text-decoration: none;
+        }
+
+        /* =====================================================
+           RODAPÉ
+        ===================================================== */
+
+        .rodape {
+            width: 100%;
+
+            max-width: 600px;
+
+            margin: 20px auto;
+
+            text-align: center;
+
+            color: #777;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+        /* =====================================================
+           RESPONSIVIDADE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .formulario {
+                padding: 22px 18px;
+
+                margin: 15px auto;
+            }
+
+            .formulario h1 {
+                font-size: 24px;
+            }
+
+            .subtitulo {
+                font-size: 14px;
+            }
+
+            .link-inicio {
+                font-size: 15px;
+            }
+
+            .informacoes-contato {
+                padding: 17px 15px;
+                font-size: 14px;
+            }
+
+            .informacoes-contato h2 {
+                font-size: 18px;
+            }
+
+            .links-contato {
+                flex-direction: column;
+            }
+
+            .links-contato a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .sucesso {
+                padding: 25px 15px;
+            }
+
+            .sucesso h2 {
+                font-size: 22px;
+            }
+
+            .sucesso p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LINK PARA INÍCIO
+    ====================================================== -->
+
+    <a
+        href="https://empregotododiaiguatu.com.br/#inicio"
+        class="link-inicio"
+        aria-label="Voltar para o início do Emprego Todo Dia Iguatu"
+    >
+        ← Voltar para o início
+    </a>
+
+
+    <!-- =====================================================
+         ÁREA PRINCIPAL
+    ====================================================== -->
+
+    <main
+        class="formulario"
+        id="areaFormulario"
+    >
+
+        <!-- =================================================
+             FORMULÁRIO NORMAL
+        ================================================== -->
+
+        <div id="conteudoFormulario">
+
+            <h1>
+                📩 Entre em Contato
+            </h1>
+
+            <p class="subtitulo">
+                Preencha os campos abaixo
+                e envie sua mensagem.
+            </p>
+
+
+            <!-- =================================================
+                 AVISO
+            ================================================== -->
+
+            <div class="aviso">
+                📧 Sua mensagem será enviada para:
+                <br>
+
+                <strong>
+                    empregotododiaiguatu@gmail.com
+                </strong>
+            </div>
+
+            <!-- =================================================
+                 INFORMAÇÕES SOBRE O CONTATO
+            ================================================== -->
+
+            <section class="informacoes-contato" aria-labelledby="tituloInformacoesContato">
+
+                <h2 id="tituloInformacoesContato">
+                    📌 Como funciona o contato
+                </h2>
+
+                <p>
+                    Esta página é o canal de comunicação do Emprego Todo Dia Iguatu.
+                    Você pode utilizá-la para enviar dúvidas, sugestões, informações,
+                    correções relacionadas às vagas divulgadas ou outros assuntos
+                    relacionados ao funcionamento do site.
+                </p>
+
+                <p>
+                    Preencha os dados corretamente e descreva sua mensagem com clareza.
+                    As mensagens são encaminhadas para nossa equipe por e-mail.
+                </p>
+
+                <p>
+                    O contato pelo site não representa garantia de emprego,
+                    entrevista ou contratação. Para consultar oportunidades e
+                    cadastrar seu currículo, utilize os canais específicos abaixo.
+                </p>
+
+                <div class="links-contato">
+                    <a href="https://empregotododiaiguatu.com.br/#inicio">
+                        🏠 Início
+                    </a>
+
+                    <a href="https://empregotododiaiguatu.com.br/vagas.html">
+                        🔎 Vagas
+                    </a>
+
+                    <a href="https://empregotododiaiguatu.com.br/cadastro-reserva.html">
+                        📄 Cadastro Reserva
+                    </a>
+
+                    <a href="https://empregotododiaiguatu.com.br/politica-de-privacidade.html">
+                        🔒 Privacidade
+                    </a>
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 ERRO
+            ================================================== -->
+
+            <div
+                class="erro"
+                id="mensagemErro"
+                role="alert"
+                aria-live="assertive"
+            ></div>
+
+
+            <!-- =================================================
+                 FORMULÁRIO FORMSUBMIT
+            ================================================== -->
+
+            <form
+                id="contatoForm"
+                action="https://formsubmit.co/empregotododiaiguatu@gmail.com"
+                method="POST"
+                accept-charset="UTF-8"
+            >
+
+                <!-- =================================================
+                     NOME
+                ================================================== -->
+
+                <div class="campo">
+
+                    <label for="nome">
+                        👤 Nome completo
+                        <span class="obrigatorio">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="Nome"
+                        placeholder="Digite seu nome completo"
+                        minlength="3"
+                        maxlength="100"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     E-MAIL
+                ================================================== -->
+
+                <div class="campo">
+
+                    <label for="email">
+                        📧 E-mail
+                        <span class="obrigatorio">*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="Digite seu e-mail"
+                        maxlength="150"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     TELEFONE
+                ================================================== -->
+
+                <div class="campo">
+
+                    <label for="telefone">
+                        📱 Telefone com DDD
+                        <span class="obrigatorio">*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="Telefone"
+                        placeholder="(88) 99999-9999"
+                        maxlength="15"
+                        inputmode="numeric"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     ASSUNTO
+                ================================================== -->
+
+                <div class="campo">
+
+                    <label for="assunto">
+                        📌 Assunto
+                        <span class="obrigatorio">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assunto"
+                        name="Assunto"
+                        placeholder="Digite o assunto"
+                        minlength="3"
+                        maxlength="150"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     MENSAGEM
+                ================================================== -->
+
+                <div class="campo">
+
+                    <label for="mensagem">
+                        💬 Mensagem
+                        <span class="obrigatorio">*</span>
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="Mensagem"
+                        placeholder="Digite sua mensagem"
+                        minlength="5"
+                        maxlength="5000"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONFIGURAÇÕES FORMSUBMIT
+                ================================================== -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="📩 Nova mensagem - Emprego Todo Dia Iguatu"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="true"
+                >
+
+                <input
+                    type="hidden"
+                    name="_replyto"
+                    id="replyto"
+                    value=""
+                >
+
+                <input
+                    type="hidden"
+                    name="_url"
+                    value="https://empregotododiaiguatu.com.br/contato-email.html"
+                >
+
+
+                <!-- =================================================
+                     BOTÃO
+                ================================================== -->
+
+                <button
+                    type="submit"
+                    class="botao"
+                    id="botaoEnviar"
+                >
+                    📤 ENVIAR MENSAGEM
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =====================================================
+             MENSAGEM DE SUCESSO
+        ====================================================== -->
+
+        <div
+            class="sucesso"
+            id="mensagemSucesso"
+            role="status"
+            aria-live="polite"
+        >
+
+            <div class="icone">
+                ✅
+            </div>
+
+            <h2>
+                Mensagem enviada com sucesso!
+            </h2>
+
+            <p>
+                Obrigado pelo contato.
+            </p>
+
+            <p>
+                Recebemos sua mensagem e
+                responderemos em até
+                <strong>48 horas</strong>.
+            </p>
+
+            <p>
+                Aguarde. Em breve entraremos
+                em contato com você.
+            </p>
+
+            <p>
+                <strong>
+                    Emprego Todo Dia Iguatu
+                </strong>
+            </p>
+
+            <a
+                href="https://empregotododiaiguatu.com.br/#inicio"
+                class="botao-inicio"
+            >
+                🏠 VOLTAR PARA O INÍCIO
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="rodape">
+        Emprego Todo Dia Iguatu © 2026 — Canal oficial de contato
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+        "use strict";
+
+
+        /* =====================================================
+           ELEMENTOS
+        ===================================================== */
+
+        const formulario =
+            document.getElementById("contatoForm");
+
+        const telefone =
+            document.getElementById("telefone");
+
+        const email =
+            document.getElementById("email");
+
+        const replyto =
+            document.getElementById("replyto");
+
+        const botaoEnviar =
+            document.getElementById("botaoEnviar");
+
+        const mensagemErro =
+            document.getElementById("mensagemErro");
+
+        const conteudoFormulario =
+            document.getElementById("conteudoFormulario");
+
+        const mensagemSucesso =
+            document.getElementById("mensagemSucesso");
+
+
+        /* =====================================================
+           MÁSCARA DE TELEFONE
+        ===================================================== */
+
+        telefone.addEventListener(
+            "input",
+            function () {
+
+                let valor =
+                    this.value.replace(/\D/g, "");
+
+                /*
+                 * Limita a 11 números:
+                 * DDD + celular
+                 */
+
+                valor =
+                    valor.substring(0, 11);
+
+
+                if (valor.length <= 2) {
+
+                    this.value =
+                        valor;
+
+                    return;
+                }
+
+
+                if (valor.length <= 7) {
+
+                    this.value =
+                        "(" +
+                        valor.substring(0, 2) +
+                        ") " +
+                        valor.substring(2);
+
+                    return;
+                }
+
+
+                this.value =
+                    "(" +
+                    valor.substring(0, 2) +
+                    ") " +
+                    valor.substring(2, 7) +
+                    "-" +
+                    valor.substring(7, 11);
+            }
+        );
+
+
+        /* =====================================================
+           VALIDAÇÃO TELEFONE
+        ===================================================== */
+
+        function telefoneValido(valor) {
+
+            const numeros =
+                valor.replace(/\D/g, "");
+
+
+            /*
+             * Telefone brasileiro:
+             * 11 dígitos = DDD + celular
+             */
+
+            if (numeros.length !== 11) {
+                return false;
+            }
+
+
+            /*
+             * DDD válido.
+             */
+
+            const ddd =
+                Number(
+                    numeros.substring(0, 2)
+                );
+
+
+            if (
+                ddd < 11 ||
+                ddd > 99
+            ) {
+                return false;
+            }
+
+
+            /*
+             * Celular brasileiro
+             * normalmente começa com 9.
+             */
+
+            const primeiroDigito =
+                numeros.charAt(2);
+
+
+            if (
+                primeiroDigito !== "9"
+            ) {
+                return false;
+            }
+
+
+            return true;
+        }
+
+
+        /* =====================================================
+           MOSTRAR ERRO
+        ===================================================== */
+
+        function mostrarErro(mensagem) {
+
+            mensagemErro.textContent =
+                mensagem;
+
+            mensagemErro.style.display =
+                "block";
+
+            mensagemErro.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+
+
+        /* =====================================================
+           ENVIO DO FORMULÁRIO
+        ===================================================== */
+
+        formulario.addEventListener(
+            "submit",
+            function (event) {
+
+                /*
+                 * Impede o envio automático
+                 * até concluirmos as validações.
+                 */
+
+                event.preventDefault();
+
+
+                mensagemErro.style.display =
+                    "none";
+
+
+                const emailDigitado =
+                    email.value.trim();
+
+
+                const telefoneDigitado =
+                    telefone.value.trim();
+
+
+                /* =================================================
+                   VALIDAÇÃO HTML
+                ================================================== */
+
+                if (!formulario.checkValidity()) {
+
+                    formulario.reportValidity();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR E-MAIL
+                ================================================== */
+
+                if (
+                    !emailDigitado ||
+                    !email.checkValidity()
+                ) {
+
+                    mostrarErro(
+                        "Digite um endereço de e-mail válido."
+                    );
+
+                    email.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   VALIDAR TELEFONE
+                ================================================== */
+
+                if (
+                    !telefoneValido(
+                        telefoneDigitado
+                    )
+                ) {
+
+                    mostrarErro(
+                        "Digite um celular válido com DDD. Exemplo: (88) 99999-9999."
+                    );
+
+                    telefone.focus();
+
+                    return;
+                }
+
+
+                /* =================================================
+                   REPLY-TO
+                ================================================== */
+
+                replyto.value =
+                    emailDigitado;
+
+
+                /* =================================================
+                   DESABILITAR BOTÃO
+                ================================================== */
+
+                botaoEnviar.disabled =
+                    true;
+
+                botaoEnviar.textContent =
+                    "📤 ENVIANDO...";
+
+
+                /* =================================================
+                   IFRAME INVISÍVEL
+                ================================================== */
+
+                const iframe =
+                    document.createElement("iframe");
+
+                iframe.name =
+                    "formsubmitFrame";
+
+                iframe.style.display =
+                    "none";
+
+                document.body.appendChild(
+                    iframe
+                );
+
+
+                formulario.target =
+                    "formsubmitFrame";
+
+
+                /* =================================================
+                   ENVIA PARA O FORMSUBMIT
+                ================================================== */
+
+                formulario.submit();
+
+
+                /* =================================================
+                   MOSTRAR CONFIRMAÇÃO
+                ================================================== */
+
+                setTimeout(
+                    function () {
+
+                        conteudoFormulario.style.display =
+                            "none";
+
+                        mensagemSucesso.style.display =
+                            "block";
+
+
+                        mensagemSucesso.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center"
+                        });
+
+
+                        /*
+                         * Limpa os campos.
+                         */
+
+                        formulario.reset();
+
+
+                        /*
+                         * Remove o iframe após o envio.
+                         */
+
+                        setTimeout(
+                            function () {
+
+                                if (iframe.parentNode) {
+
+                                    iframe.parentNode.removeChild(
+                                        iframe
+                                    );
+                                }
+
+                            },
+                            1000
+                        );
+
+                    },
+                    2500
+                );
+
+            }
+        );
+    </script>
+
+</body>
+
+</html>

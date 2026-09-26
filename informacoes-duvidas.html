@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Informações, dúvidas e orientações sobre o funcionamento do Emprego Todo Dia Iguatu, divulgação de oportunidades, candidaturas e segurança para quem procura emprego.">
+
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<meta
+    name="theme-color"
+    content="#007bff"
+>
+
+<link
+    rel="canonical"
+    href="https://empregotododiaiguatu.com.br/informacoes-duvidas.html"
+>
+
+<title>Informações e Dúvidas sobre Emprego | Emprego Todo Dia Iguatu</title>
+
+<style>
+
+    /* =========================
+       CONFIGURAÇÕES GERAIS
+    ========================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f2f4f7;
+        padding: 30px 15px;
+        color: #333;
+        min-height: 100vh;
+    }
+
+    /* =========================
+       LINK SUPERIOR
+    ========================= */
+
+    .voltar-topo {
+        display: block;
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #e88a00;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .voltar-topo:hover {
+        color: #c66c00;
+        text-decoration: underline;
+    }
+
+    /* =========================
+       CONTAINER
+    ========================= */
+
+    .informacoes {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 35px;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+    }
+
+    /* =========================
+       CABEÇALHO
+    ========================= */
+
+    .cabecalho {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .icone {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    .cabecalho h1 {
+        color: #222;
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .cabecalho p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       ABAS
+    ========================= */
+
+    .abas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .aba {
+        border: none;
+        padding: 13px 20px;
+        border-radius: 9px;
+        background: #e9ecef;
+        color: #333;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .aba:hover {
+        background: #d8dde2;
+        transform: translateY(-1px);
+    }
+
+    .aba.ativa {
+        background: #007bff;
+        color: #ffffff;
+    }
+
+    .aba:focus-visible,
+    .pergunta button:focus-visible,
+    .instagram:focus-visible,
+    .botao-fonte:focus-visible,
+    .voltar-inicio:focus-visible,
+    .voltar-topo:focus-visible {
+        outline: 3px solid #80bdff;
+        outline-offset: 3px;
+    }
+
+    /* =========================
+       CONTEÚDO DAS ABAS
+    ========================= */
+
+    .conteudo {
+        display: none;
+        animation: aparecer 0.3s ease;
+    }
+
+    .conteudo.ativo {
+        display: block;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .conteudo h2 {
+        color: #007bff;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .conteudo h3 {
+        color: #222;
+        font-size: 18px;
+        margin-top: 22px;
+        margin-bottom: 8px;
+    }
+
+    .conteudo p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 5px solid #007bff;
+    }
+
+    .card strong {
+        display: block;
+        color: #222;
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .card span {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* =========================
+       HISTÓRIA
+    ========================= */
+
+    .historia-box {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 12px;
+        border-left: 5px solid #198754;
+    }
+
+    .observacao {
+        margin-top: 20px;
+        padding: 18px;
+        background: #fff8e1;
+        border-left: 5px solid #ffc107;
+        border-radius: 8px;
+        color: #665c00;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       PERGUNTAS
+    ========================= */
+
+    .pergunta {
+        margin-bottom: 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .pergunta button {
+        width: 100%;
+        padding: 17px;
+        border: none;
+        background: #f8f9fa;
+        color: #222;
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .pergunta button:hover {
+        background: #e9ecef;
+    }
+
+    .resposta {
+        display: none;
+        padding: 16px;
+        background: #ffffff;
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+        border-top: 1px solid #ddd;
+    }
+
+    /* =========================
+       INSTAGRAM
+    ========================= */
+
+    .instagram,
+    .botao-fonte {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 25px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 9px;
+        background:
+            linear-gradient(
+                45deg,
+                #f58529,
+                #dd2a7b,
+                #8134af,
+                #515bd4
+            );
+        transition: 0.3s;
+    }
+
+    .instagram:hover,
+    .botao-fonte:hover {
+        transform: translateY(-2px);
+        box-shadow:
+            0 5px 15px
+            rgba(0, 0, 0, 0.20);
+    }
+
+    /* =========================
+       FONTE DAS INFORMAÇÕES
+    ========================= */
+
+    .fonte-informacoes {
+        margin-top: 35px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 14px;
+        border-left: 5px solid #8134af;
+        text-align: center;
+    }
+
+    .fonte-informacoes h2 {
+        color: #8134af;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .fonte-informacoes p {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .fonte-instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 18px;
+        background: #ffffff;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    .fonte-instagram .icone-instagram {
+        font-size: 40px;
+    }
+
+    .fonte-instagram .dados-instagram {
+        text-align: left;
+    }
+
+    .fonte-instagram .dados-instagram strong {
+        display: block;
+        color: #222;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .fonte-instagram .dados-instagram span {
+        color: #777;
+        font-size: 15px;
+    }
+
+    .fonte-aviso {
+        margin-top: 18px;
+        font-size: 13px !important;
+        color: #777 !important;
+    }
+
+    /* =========================
+       BOTÃO VOLTAR AO INÍCIO
+    ========================= */
+
+    .voltar-inicio {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 25px auto 0;
+        padding: 15px 25px;
+        background: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 9px;
+        border: 2px solid #007bff;
+        transition:
+            background 0.3s,
+            transform 0.3s,
+            box-shadow 0.3s;
+    }
+
+    .voltar-inicio:hover {
+        background: #0056b3;
+        border-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow:
+            0 5px 15px
+            rgba(0, 0, 0, 0.20);
+    }
+
+    .voltar-inicio:active {
+        transform: translateY(0);
+    }
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    .rodape {
+        text-align: center;
+        margin-top: 35px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        color: #777;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .rodape strong {
+        color: #007bff;
+    }
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 15px 10px;
+        }
+
+        .informacoes {
+            padding: 25px 18px;
+            margin: 0 auto;
+        }
+
+        .voltar-topo {
+            margin-bottom: 12px;
+        }
+
+        .cabecalho h1 {
+            font-size: 24px;
+        }
+
+        .cabecalho p {
+            font-size: 15px;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        .aba {
+            width: 100%;
+        }
+
+        .fonte-instagram {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .fonte-instagram .dados-instagram {
+            text-align: center;
+        }
+
+        .voltar-inicio {
+            width: 100%;
+        }
+
+        .instagram,
+        .botao-fonte {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* =========================
+       TELAS MUITO PEQUENAS
+    ========================= */
+
+    @media (max-width: 400px) {
+
+        .informacoes {
+            padding: 20px 15px;
+        }
+
+        .cabecalho h1 {
+            font-size: 22px;
+        }
+
+        .icone {
+            font-size: 45px;
+        }
+
+        .conteudo h2 {
+            font-size: 21px;
+        }
+
+        .conteudo p {
+            font-size: 15px;
+        }
+
+        .aba {
+            font-size: 14px;
+            padding: 12px 15px;
+        }
+    }
+
+    /* =========================
+       INTRODUÇÃO INFORMATIVA
+    ========================= */
+
+    .introducao-editorial {
+        margin-bottom: 28px;
+        padding: 22px;
+        background: #fffaf3;
+        border: 1px solid #ead7bd;
+        border-left: 5px solid #e88a00;
+        border-radius: 12px;
+    }
+
+    .introducao-editorial h2 {
+        color: #222;
+        font-size: 22px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #e88a00;
+    }
+
+    .introducao-editorial p {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 10px;
+    }
+
+    .introducao-editorial ul {
+        margin: 10px 0 10px 22px;
+        padding: 0;
+    }
+
+    .introducao-editorial li {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 6px;
+    }
+
+    .introducao-editorial .seguranca {
+        margin-top: 15px;
+        padding: 13px 15px;
+        background: #f4f8ff;
+        border-left: 4px solid #007bff;
+        border-radius: 7px;
+        color: #555;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .navegacao-site {
+        margin-top: 17px;
+        padding-top: 13px;
+        border-top: 1px solid #e2d7ca;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .navegacao-site a {
+        color: #c66f00;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .navegacao-site a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .introducao-editorial {
+            padding: 17px;
+        }
+
+        .introducao-editorial h2 {
+            font-size: 20px;
+        }
+
+        .introducao-editorial p,
+        .introducao-editorial li {
+            font-size: 14px;
+        }
+
+        .navegacao-site a {
+            display: inline-block;
+            margin: 2px 4px;
+        }
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- LINK PARA O SITE OFICIAL -->
+
+<a
+    href="https://empregotododiaiguatu.com.br/#inicio"
+    class="voltar-topo"
+    aria-label="Voltar para o início do site Emprego Todo Dia Iguatu"
+>
+    &larr; Voltar para o início
+</a>
+
+
+<div class="informacoes">
+
+    <!-- =========================
+         CABEÇALHO
+    ========================= -->
+
+    <div class="cabecalho">
+
+        <div class="icone">
+            💼
+        </div>
+
+        <h1>
+            Emprego Todo Dia Iguatu
+        </h1>
+
+        <p>
+            📍 Informações, história e dúvidas
+            sobre o projeto de divulgação de
+            oportunidades de emprego em
+            <strong>Iguatu - Ceará</strong>.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         ABAS
+    ========================= -->
+
+    <section class="introducao-editorial" aria-labelledby="sobreInformacoes">
+
+        <h2 id="sobreInformacoes">
+            📚 Sobre esta página de informações
+        </h2>
+
+        <p>
+            Esta página reúne informações sobre o
+            <strong>Emprego Todo Dia Iguatu</strong>, seu objetivo de divulgação
+            de oportunidades profissionais e orientações para quem acompanha
+            as publicações ou procura uma oportunidade de trabalho.
+        </p>
+
+        <p>
+            Use as abas abaixo para conhecer melhor o funcionamento do canal,
+            consultar dúvidas frequentes e encontrar orientações relacionadas
+            à candidatura e à segurança durante a busca por emprego.
+        </p>
+
+        <h3>
+            🔎 O que você encontra aqui
+        </h3>
+
+        <ul>
+            <li>Informações gerais sobre o projeto e sua finalidade.</li>
+            <li>Orientações para acompanhar oportunidades profissionais.</li>
+            <li>Respostas para dúvidas frequentes de candidatos.</li>
+            <li>Recomendações de segurança durante processos seletivos.</li>
+            <li>Referência para o perfil utilizado nas publicações do projeto.</li>
+        </ul>
+
+        <div class="seguranca">
+            <strong>🔒 Segurança na busca por emprego:</strong>
+            verifique sempre a empresa responsável pela vaga e as instruções
+            oficiais de candidatura. Não realize pagamentos nem compartilhe
+            senhas, códigos de confirmação ou informações bancárias para
+            garantir uma oportunidade.
+        </div>
+
+        <div class="navegacao-site">
+            <strong>Continue navegando:</strong><br>
+            <a href="index.html">🏠 Início</a> |
+            <a href="vagas.html">🔎 Vagas</a> |
+            <a href="cadastro-reserva.html">📄 Cadastro Reserva</a> |
+            <a href="contato-email.html">📩 Contato</a> |
+            <a href="politica-de-privacidade.html">🔒 Política de Privacidade</a>
+        </div>
+
+    </section>
+
+
+<div class="abas">
+
+        <button
+            type="button"
+            class="aba ativa"
+            onclick="abrirAba('resumo', this)"
+        >
+            📋 Resumo
+        </button>
+
+        <button
+            type="button"
+            class="aba"
+            onclick="abrirAba('historia', this)"
+        >
+            📖 História
+        </button>
+
+        <button
+            type="button"
+            class="aba"
+            onclick="abrirAba('duvidas', this)"
+        >
+            ❓ Dúvidas
+        </button>
+
+        <button
+            type="button"
+            class="aba"
+            onclick="abrirAba('funcionamento', this)"
+        >
+            💼 Como Funciona
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         ABA RESUMO
+    ========================= -->
+
+    <div
+        id="resumo"
+        class="conteudo ativo"
+    >
+
+        <h2>
+            📋 Resumo sobre o Emprego Todo Dia Iguatu
+        </h2>
+
+        <p>
+            O <strong>Emprego Todo Dia Iguatu</strong>
+            é um canal voltado à divulgação de
+            oportunidades profissionais para a cidade
+            de <strong>Iguatu, Ceará</strong>.
+        </p>
+
+        <p>
+            O projeto utiliza o Instagram
+            <strong>@empregostododiaiguatu</strong>
+            como um dos principais canais para
+            divulgação de informações e oportunidades
+            relacionadas ao mercado de trabalho local.
+        </p>
+
+        <p>
+            O objetivo é facilitar o acesso de pessoas
+            que estão procurando emprego a informações
+            sobre vagas e oportunidades profissionais.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <strong>
+                    📍 Cidade
+                </strong>
+
+                <span>
+                    Iguatu - Ceará
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <strong>
+                    💼 Área principal
+                </strong>
+
+                <span>
+                    Divulgação de oportunidades
+                    de emprego.
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <strong>
+                    📢 Divulgação
+                </strong>
+
+                <span>
+                    Vagas e informações
+                    profissionais.
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <strong>
+                    👥 Público
+                </strong>
+
+                <span>
+                    Pessoas em busca de emprego
+                    e empresas.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         ABA HISTÓRIA
+    ========================= -->
+
+    <div
+        id="historia"
+        class="conteudo"
+    >
+
+        <h2>
+            📖 História do Emprego Todo Dia Iguatu
+        </h2>
+
+        <div class="historia-box">
+
+            <p>
+                O <strong>Emprego Todo Dia Iguatu</strong>
+                está relacionado à divulgação de
+                oportunidades profissionais para a
+                região de Iguatu, no Ceará.
+            </p>
+
+            <p>
+                O perfil do Instagram
+                <strong>@empregostododiaiguatu</strong>
+                é utilizado como referência para
+                acompanhar publicações e informações
+                relacionadas ao projeto.
+            </p>
+
+            <p>
+                A proposta do canal é aproximar
+                candidatos e oportunidades de trabalho,
+                facilitando a divulgação de vagas para
+                quem procura uma oportunidade profissional.
+            </p>
+
+            <p>
+                A página também pode servir como ponto
+                de acesso para informações relacionadas
+                a empresas, processos seletivos e
+                oportunidades divulgadas na região.
+            </p>
+
+        </div>
+
+
+        <div class="observacao">
+
+            ⚠️ <strong>Importante:</strong>
+
+            <br><br>
+
+            A data exata de criação do perfil do
+            Instagram não deve ser apresentada como
+            fato confirmado sem uma fonte pública
+            confiável que comprove essa informação.
+
+            <br><br>
+
+            Para acompanhar a história e as publicações
+            mais recentes, consulte diretamente o perfil
+            oficial indicado na seção
+            <strong>Fonte das Informações</strong>.
+
+        </div>
+
+
+        <a
+            href="https://www.instagram.com/empregostododiaiguatu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram"
+            aria-label="Visitar Instagram oficial"
+        >
+            📸 Visitar Instagram
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         ABA DÚVIDAS
+    ========================= -->
+
+    <div
+        id="duvidas"
+        class="conteudo"
+    >
+
+        <h2>
+            ❓ Dúvidas Frequentes
+        </h2>
+
+
+        <div class="pergunta">
+
+            <button
+                type="button"
+                onclick="mostrarResposta(this)"
+                aria-expanded="false"
+            >
+                📌 O Emprego Todo Dia Iguatu é uma empresa?
+            </button>
+
+            <div class="resposta">
+
+                O nome Emprego Todo Dia Iguatu é utilizado
+                como identificação de um canal de
+                divulgação de oportunidades. Verifique
+                sempre os dados da empresa responsável
+                pela vaga antes de realizar sua candidatura.
+
+            </div>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <button
+                type="button"
+                onclick="mostrarResposta(this)"
+                aria-expanded="false"
+            >
+                💼 A página contrata funcionários?
+            </button>
+
+            <div class="resposta">
+
+                A divulgação de uma oportunidade não
+                significa necessariamente que a página
+                seja a empresa contratante. Confira
+                sempre quem é o responsável pelo processo
+                seletivo.
+
+            </div>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <button
+                type="button"
+                onclick="mostrarResposta(this)"
+                aria-expanded="false"
+            >
+                📄 Como faço para me candidatar?
+            </button>
+
+            <div class="resposta">
+
+                Leia atentamente a publicação da vaga
+                e siga somente as instruções oficiais
+                indicadas para realizar a candidatura.
+
+            </div>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <button
+                type="button"
+                onclick="mostrarResposta(this)"
+                aria-expanded="false"
+            >
+                ⚠️ Preciso pagar para conseguir emprego?
+            </button>
+
+            <div class="resposta">
+
+                Tenha cuidado com pedidos de pagamento,
+                depósitos ou transferências para garantir
+                uma vaga. Confirme a oportunidade e a
+                empresa responsável antes de fornecer
+                dinheiro ou documentos.
+
+            </div>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <button
+                type="button"
+                onclick="mostrarResposta(this)"
+                aria-expanded="false"
+            >
+                📱 Onde acompanhar as novidades?
+            </button>
+
+            <div class="resposta">
+
+                Acompanhe o perfil oficial
+                @empregostododiaiguatu e confira as
+                publicações mais recentes.
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://www.instagram.com/empregostododiaiguatu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram"
+            aria-label="Acessar Instagram oficial"
+        >
+            📸 Acessar Instagram Oficial
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         ABA COMO FUNCIONA
+    ========================= -->
+
+    <div
+        id="funcionamento"
+        class="conteudo"
+    >
+
+        <h2>
+            💼 Como Funciona
+        </h2>
+
+        <p>
+            O canal tem como objetivo facilitar o acesso
+            às informações sobre oportunidades
+            profissionais disponíveis em Iguatu e região.
+        </p>
+
+
+        <h3>
+            👤 Para quem procura emprego
+        </h3>
+
+        <p>
+            Acompanhe as publicações, confira os
+            requisitos da oportunidade e siga as
+            instruções apresentadas na vaga.
+        </p>
+
+
+        <h3>
+            🏢 Para empresas
+        </h3>
+
+        <p>
+            As oportunidades divulgadas devem apresentar
+            informações claras sobre a função, requisitos,
+            localização e forma de candidatura.
+        </p>
+
+
+        <h3>
+            🔎 Segurança
+        </h3>
+
+        <p>
+            Nunca forneça documentos pessoais ou realize
+            pagamentos sem verificar a autenticidade da
+            oportunidade e da empresa responsável.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         FONTE DAS INFORMAÇÕES
+    ========================= -->
+
+    <div class="fonte-informacoes">
+
+        <h2>
+            🔎 Fonte das Informações
+        </h2>
+
+        <p>
+            Para informações atualizadas sobre o
+            <strong>Emprego Todo Dia Iguatu</strong>,
+            consulte o perfil oficial utilizado como
+            referência para publicações e informações
+            relacionadas ao projeto.
+        </p>
+
+
+        <div class="fonte-instagram">
+
+            <div class="icone-instagram">
+                📸
+            </div>
+
+            <div class="dados-instagram">
+
+                <strong>
+                    Instagram Oficial
+                </strong>
+
+                <span>
+                    @empregostododiaiguatu
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://www.instagram.com/empregostododiaiguatu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="botao-fonte"
+            aria-label="Visitar Instagram oficial"
+        >
+            📸 VISITAR INSTAGRAM OFICIAL
+        </a>
+
+
+        <p class="fonte-aviso">
+            ⚠️ Consulte sempre o perfil oficial para
+            verificar informações e publicações mais
+            recentes.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         BOTÃO VOLTAR AO INÍCIO
+    ========================= -->
+
+    <a
+        href="https://empregotododiaiguatu.com.br/#inicio"
+        class="voltar-inicio"
+        aria-label="Voltar para a página inicial do Emprego Todo Dia Iguatu"
+    >
+        🏠 VOLTAR AO INÍCIO
+    </a>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================= -->
+
+    <div class="rodape">
+
+        <strong>
+            Emprego Todo Dia Iguatu
+        </strong>
+
+        <br>
+
+        📍 Iguatu - Ceará
+
+        <br>
+
+        📢 Informação e oportunidades profissionais
+
+        <br>
+
+        Informações, orientações e dúvidas sobre o funcionamento do canal.
+
+        <br>
+
+        📸 Instagram:
+        @empregostododiaiguatu
+
+        <br><br>
+
+        © 2026 Emprego Todo Dia Iguatu
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    /* =========================
+       ABRIR ABAS
+    ========================= */
+
+    function abrirAba(id, botao) {
+
+        const conteudos =
+            document.querySelectorAll(".conteudo");
+
+        const botoes =
+            document.querySelectorAll(".aba");
+
+        conteudos.forEach(function(item) {
+
+            item.classList.remove("ativo");
+
+        });
+
+        botoes.forEach(function(item) {
+
+            item.classList.remove("ativa");
+
+        });
+
+        const conteudoSelecionado =
+            document.getElementById(id);
+
+        if (conteudoSelecionado) {
+
+            conteudoSelecionado.classList.add("ativo");
+
+        }
+
+        if (botao) {
+
+            botao.classList.add("ativa");
+
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+
+    /* =========================
+       MOSTRAR / OCULTAR RESPOSTA
+    ========================= */
+
+    function mostrarResposta(botao) {
+
+        const resposta =
+            botao.nextElementSibling;
+
+        if (!resposta) {
+            return;
+        }
+
+        const aberta =
+            resposta.style.display === "block";
+
+        resposta.style.display =
+            aberta ? "none" : "block";
+
+        botao.setAttribute(
+            "aria-expanded",
+            String(!aberta)
+        );
+
+    }
+
+</script>
+
+</body>
+
+</html>

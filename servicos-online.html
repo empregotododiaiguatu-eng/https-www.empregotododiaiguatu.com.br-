@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Arquivo preparado para Vercel: servicos-online.html -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="Conheça os serviços digitais oferecidos pelo Emprego Todo Dia Iguatu, incluindo criação de artes e imagens, inteligência artificial, edição, sites, divulgação, redes sociais, Google e documentos.">
+<meta name="theme-color" content="#e88a00">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Empregotododiaiguatu">
+<title>Serviços Digitais: criação, edição e divulgação | Emprego Todo Dia Iguatu</title>
+<link rel="canonical" href="./servicos-online.html">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+    min-height:100vh;
+    width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg, rgba(255,145,0,.96), rgba(255,178,55,.96), rgba(230,125,0,.96)),
+               url("./imagens/empregotododiaiguatu.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:#222;
+    overflow-x:hidden;
+}
+a { -webkit-tap-highlight-color:transparent; }
+header {
+    width:100%;
+    text-align:center;
+    padding:40px 20px 30px;
+    background:linear-gradient(135deg,#d96b00 0%,#e88a00 20%,#f6a623 45%,#ffb84d 65%,#e88a00 100%);
+    border-bottom:5px solid #b85f00;
+    box-shadow:0 8px 0 #a95700,0 12px 25px rgba(0,0,0,.35);
+    position:relative;
+    overflow:hidden;
+}
+header::before {
+    content:""; position:absolute; top:-80px; left:-20%; width:140%; height:160px;
+    background:rgba(255,255,255,.12); transform:rotate(-5deg); pointer-events:none;
+}
+header h1 {
+    position:relative; font-size:48px; color:#fff; margin-bottom:15px; font-weight:900;
+    letter-spacing:1px; text-shadow:1px 1px 0 #d87900,2px 2px 0 #c66c00,3px 3px 0 #ad5e00,4px 4px 0 #934f00,5px 5px 8px rgba(0,0,0,.40);
+}
+header h2 {
+    position:relative; display:inline-block; font-size:22px; color:#fff; font-weight:800;
+    padding:12px 22px; border-radius:12px; background:linear-gradient(180deg,#ffcc70,#e99516);
+    border:2px solid rgba(255,255,255,.45); box-shadow:0 4px 0 #b96a00,0 7px 15px rgba(0,0,0,.30);
+    text-shadow:2px 2px 3px rgba(0,0,0,.35);
+}
+.menu {
+    width:100%; background:linear-gradient(180deg,#333,#111); display:flex; justify-content:center;
+    align-items:center; position:relative; z-index:1000; box-shadow:0 6px 12px rgba(0,0,0,.35);
+}
+.menu a {
+    display:block; color:white; text-decoration:none; font-size:17px; font-weight:800;
+    padding:20px 25px; text-shadow:1px 2px 2px #000; transition:.3s; white-space:nowrap;
+}
+.menu a:hover { background:linear-gradient(180deg,#ffc766,#ed980f); color:#111; }
+
+.servicos-digitais {
+    width:90%; max-width:1100px; margin:55px auto; padding:45px 35px;
+    background:linear-gradient(145deg,rgba(255,247,232,.98),rgba(255,226,184,.96));
+    border-radius:25px; border:2px solid rgba(230,138,0,.55);
+    box-shadow:0 8px 0 rgba(180,95,0,.45),0 15px 35px rgba(0,0,0,.30);
+    font-family:Arial,Helvetica,sans-serif;
+}
+.servicos-titulo { text-align:center; margin-bottom:10px; }
+.servicos-titulo h2 { margin:0; font-size:30px; font-weight:900; color:#4a2500; }
+.servicos-subtitulo {
+    text-align:center; max-width:750px; margin:10px auto 30px; font-size:16px;
+    line-height:1.6; color:#4a321d;
+}
+.servicos-lista { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.servico-item {
+    background:#fffdf8; border:2px solid #e5b76d; border-radius:14px; padding:20px;
+    display:flex; align-items:flex-start; gap:15px; box-sizing:border-box;
+    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+    text-decoration:none; color:inherit; cursor:pointer;
+}
+.servico-item:hover {
+    transform:translateY(-3px); border-color:#e88a00;
+    box-shadow:0 8px 22px rgba(180,95,0,.22);
+}
+.servico-icone {
+    width:48px; height:48px; min-width:48px; border-radius:12px;
+    background:linear-gradient(180deg,#ffcc70,#e99516); display:flex; align-items:center;
+    justify-content:center; font-size:24px; box-shadow:0 3px 0 #b96a00;
+}
+.servico-conteudo h3 { margin:0 0 6px; font-size:18px; color:#4a2500; }
+.servico-conteudo p { margin:0 0 13px; font-size:14px; line-height:1.5; color:#4a321d; }
+.servico-botao {
+    display:inline-block; padding:8px 12px; border-radius:9px;
+    background:linear-gradient(180deg,#ffcc70,#e99516); color:#111;
+    font-size:12px; font-weight:900; border:1px solid #b96a00;
+}
+.servicos-destaque {
+    margin-top:28px; padding:22px; border-radius:14px;
+    background:linear-gradient(135deg,#fff7e8,#ffe8c2); border:2px solid #e5b76d; text-align:center;
+}
+.servicos-destaque strong { display:block; margin-bottom:6px; font-size:18px; color:#4a2500; }
+.servicos-destaque span { font-size:14px; color:#4a321d; }
+footer {
+    width:100%; padding:30px 20px; text-align:center; background:linear-gradient(180deg,#333,#111);
+    color:#fff; margin-top:30px; box-shadow:0 -6px 12px rgba(0,0,0,.25);
+}
+footer a { color:#fff; }
+@media(max-width:700px) {
+    header h1 { font-size:34px; }
+    header h2 { font-size:18px; }
+    .menu { overflow-x:auto; justify-content:flex-start; }
+    .menu a { font-size:14px; padding:16px 14px; }
+    .servicos-lista { grid-template-columns:1fr; }
+    .servicos-titulo h2 { font-size:25px; }
+    .servicos-digitais { width:94%; padding:28px 15px; }
+}
+
+    /* CONTEÚDO INFORMATIVO ADICIONAL */
+    .adsense-informativo {
+        width: 90%;
+        max-width: 1100px;
+        margin: 30px auto 0;
+        padding: 28px 30px;
+        background: rgba(255,255,255,.97);
+        border: 2px solid rgba(230,138,0,.45);
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.18);
+        color: #3f2a18;
+        line-height: 1.65;
+    }
+
+    .adsense-informativo h2 {
+        margin: 0 0 12px;
+        color: #4a2500;
+        font-size: 25px;
+    }
+
+    .adsense-informativo h3 {
+        margin: 20px 0 7px;
+        color: #7b4200;
+        font-size: 19px;
+    }
+
+    .adsense-informativo p {
+        margin: 9px 0;
+    }
+
+    .adsense-informativo ul {
+        margin: 8px 0 12px 22px;
+    }
+
+    .adsense-informativo li {
+        margin-bottom: 6px;
+    }
+
+    .adsense-aviso {
+        margin-top: 18px;
+        padding: 14px 16px;
+        background: #fff7e8;
+        border-left: 4px solid #e88a00;
+        border-radius: 7px;
+    }
+
+    .adsense-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin-top: 20px;
+    }
+
+    .adsense-links a {
+        display: inline-block;
+        padding: 9px 12px;
+        border-radius: 7px;
+        background: #fff0d6;
+        color: #8f4d00;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .adsense-links a:hover,
+    .adsense-links a:focus-visible {
+        background: #e88a00;
+        color: #fff;
+    }
+
+    @media(max-width:700px) {
+        .adsense-informativo {
+            width: 94%;
+            padding: 22px 16px;
+        }
+
+        .adsense-links {
+            flex-direction: column;
+        }
+
+        .adsense-links a {
+            text-align: center;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+    <h1>Empregotododiaiguatu</h1>
+    <h2>🚀 Serviços Digitais</h2>
+</header>
+
+<nav class="menu" aria-label="Menu principal">
+    <a href="./">🏠 INÍCIO</a>
+    <a href="./cadastro-reserva.html" target="_blank" rel="noopener noreferrer">📋 CADASTRO RESERVA</a>
+    <a href="./servicos-online.html">🌐 SERVIÇOS ONLINE</a>
+    <a href="./vagas.html">💼 VAGAS</a>
+</nav>
+
+
+<section class="adsense-informativo" aria-labelledby="sobre-servicos">
+    <h2 id="sobre-servicos">📚 Sobre os serviços digitais</h2>
+
+    <p>
+        Esta página apresenta serviços digitais oferecidos de forma independente
+        para empresas, pequenos negócios, profissionais e pessoas que precisam
+        organizar, criar ou divulgar materiais na internet.
+    </p>
+
+    <p>
+        Os serviços abaixo são apresentados por categoria para facilitar a escolha.
+        Cada item possui um botão de contato pelo WhatsApp, onde o interessado pode
+        explicar sua necessidade, receber informações e verificar as condições do
+        serviço antes de solicitar qualquer trabalho.
+    </p>
+
+    <h3>🛠️ O que pode ser solicitado</h3>
+    <ul>
+        <li>Criação e edição de artes, imagens e materiais digitais.</li>
+        <li>Criações utilizando ferramentas de inteligência artificial.</li>
+        <li>Edição de imagens e vídeos para divulgação.</li>
+        <li>Criação, organização e atualização de sites.</li>
+        <li>Materiais e campanhas para divulgação pelo WhatsApp.</li>
+        <li>Configuração e organização de perfis e presença digital.</li>
+        <li>Organização da presença de empresas no Google.</li>
+        <li>Criação, edição e formatação de documentos digitais.</li>
+        <li>Publicidade e divulgação de pequenos negócios.</li>
+    </ul>
+
+    <h3>📌 Como funciona o atendimento</h3>
+    <p>
+        O primeiro contato é feito pelo WhatsApp. O interessado informa o que
+        precisa, e as condições, valores, prazo e demais detalhes podem ser
+        combinados antes da realização do serviço.
+    </p>
+
+    <div class="adsense-aviso">
+        <strong>⚠️ Importante:</strong>
+        a contratação de um serviço digital não garante resultados comerciais,
+        aumento de vendas, número específico de clientes, seguidores, alcance,
+        contratação ou qualquer outro resultado determinado. Os resultados
+        dependem do serviço solicitado, do material fornecido pelo cliente,
+        da plataforma utilizada e de outros fatores.
+    </div>
+
+    <nav class="adsense-links" aria-label="Navegação para páginas do site">
+        <a href="./">🏠 Início</a>
+        <a href="./vagas.html">💼 Vagas</a>
+        <a href="./cadastro-reserva.html">📋 Cadastro Reserva</a>
+        <a href="./contato-email.html">📩 Contato</a>
+        <a href="./politica-de-privacidade.html">🔐 Política de Privacidade</a>
+    </nav>
+</section>
+
+<section class="servicos-digitais" id="servicos-digitais">
+    <div class="servicos-titulo">
+        <h2>🚀 Ofereço Serviços Digitais</h2>
+    </div>
+
+    <p class="servicos-subtitulo">
+        Soluções digitais para empresas, pequenos negócios e profissionais
+        que querem melhorar sua presença e divulgação na internet.
+    </p>
+
+    <div class="servicos-lista">
+
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Cria%C3%A7%C3%A3o%20de%20Artes%20e%20Imagens.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Criação de Artes e Imagens pelo WhatsApp">
+            <div class="servico-icone">🎨</div>
+            <div class="servico-conteudo">
+                <h3>Criação de Artes e Imagens</h3>
+                <p>Criação de artes para divulgação, redes sociais, anúncios e publicidade.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Cria%C3%A7%C3%B5es%20com%20Intelig%C3%AAncia%20Artificial.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Criações com Inteligência Artificial pelo WhatsApp">
+            <div class="servico-icone">🤖</div>
+            <div class="servico-conteudo">
+                <h3>Criações com Inteligência Artificial</h3>
+                <p>Criação de imagens, conteúdos e materiais digitais utilizando ferramentas de inteligência artificial.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Edi%C3%A7%C3%A3o%20de%20Imagens%20e%20V%C3%ADdeos.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Edição de Imagens e Vídeos pelo WhatsApp">
+            <div class="servico-icone">🎬</div>
+            <div class="servico-conteudo">
+                <h3>Edição de Imagens e Vídeos</h3>
+                <p>Edição e preparação de materiais para divulgação em redes sociais e canais digitais.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Cria%C3%A7%C3%A3o%20e%20Edi%C3%A7%C3%A3o%20de%20Sites.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Criação e Edição de Sites pelo WhatsApp">
+            <div class="servico-icone">🌐</div>
+            <div class="servico-conteudo">
+                <h3>Criação e Edição de Sites</h3>
+                <p>Criação, organização e atualização de páginas e sites para empresas e negócios.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Divulga%C3%A7%C3%A3o%20pelo%20WhatsApp.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Divulgação pelo WhatsApp pelo WhatsApp">
+            <div class="servico-icone">📱</div>
+            <div class="servico-conteudo">
+                <h3>Divulgação pelo WhatsApp</h3>
+                <p>Criação de materiais e campanhas para divulgação de produtos, serviços e empresas.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Redes%20Sociais.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Redes Sociais pelo WhatsApp">
+            <div class="servico-icone">📲</div>
+            <div class="servico-conteudo">
+                <h3>Redes Sociais</h3>
+                <p>Criação e configuração de perfis para Instagram, Facebook e outras plataformas digitais.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Presen%C3%A7a%20no%20Google.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Presença no Google pelo WhatsApp">
+            <div class="servico-icone">🔎</div>
+            <div class="servico-conteudo">
+                <h3>Presença no Google</h3>
+                <p>Apoio na configuração e organização da presença digital de empresas no Google.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Edi%C3%A7%C3%A3o%20de%20Documentos.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Edição de Documentos pelo WhatsApp">
+            <div class="servico-icone">📄</div>
+            <div class="servico-conteudo">
+                <h3>Edição de Documentos</h3>
+                <p>Criação, edição, formatação e organização de documentos digitais.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Publicidade%20Online.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Publicidade Online pelo WhatsApp">
+            <div class="servico-icone">📢</div>
+            <div class="servico-conteudo">
+                <h3>Publicidade Online</h3>
+                <p>Divulgação de empresas, produtos e serviços através de publicidade virtual.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+        <a class="servico-item" href="https://wa.me/558899385054?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Empregotododiaiguatu.com.br%20e%20tenho%20interesse%20no%20servi%C3%A7o%3A%20Divulga%C3%A7%C3%A3o%20de%20Pequenos%20Neg%C3%B3cios.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Solicitar Divulgação de Pequenos Negócios pelo WhatsApp">
+            <div class="servico-icone">🏪</div>
+            <div class="servico-conteudo">
+                <h3>Divulgação de Pequenos Negócios</h3>
+                <p>Espaço e apoio para aumentar a visibilidade de empresas, comerciantes e empreendedores.</p>
+                <span class="servico-botao">💬 SOLICITAR ESTE SERVIÇO</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="servicos-destaque">
+        <strong>💼 Precisa de um serviço digital?</strong>
+        <span>
+            Clique no serviço desejado e fale diretamente pelo WhatsApp.
+        </span>
+    </div>
+</section>
+
+<footer>
+    <strong>Empregotododiaiguatu</strong>
+    <br>
+    📢 Página Oficial de Empregos de Iguatu – CE.
+    <br><br>
+    © 2026 - Todos os direitos reservados.
+
+    <br><br>
+    <nav class="adsense-links" aria-label="Links úteis" style="justify-content:center; margin:0;">
+        <a href="./">🏠 Início</a>
+        <a href="./vagas.html">💼 Vagas</a>
+        <a href="./cadastro-reserva.html">📋 Cadastro Reserva</a>
+        <a href="./contato-email.html">📩 Contato</a>
+        <a href="./politica-de-privacidade.html">🔐 Privacidade</a>
+    </nav>
+
+</footer>
+</body>
+</html>

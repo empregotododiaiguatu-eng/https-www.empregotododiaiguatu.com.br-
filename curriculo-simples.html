@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+       content="Modelo de currículo simples do Emprego Todo Dia Iguatu. Organize seus dados pessoais, objetivo profissional, experiências e cursos de forma clara para sua busca por emprego.">
+
+<meta name="author"
+      content="Emprego Todo Dia Iguatu">
+
+<meta name="theme-color"
+      content="#e88a00">
+
+<title>Currículo Simples: como montar seu currículo | Emprego Todo Dia Iguatu</title>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #f2f2f2, #e8e8e8);
+        color: #222;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .voltar-topo {
+        display: inline-block;
+        margin: 0 auto 15px;
+        color: #e88a00;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+    .voltar-topo:hover {
+        color: #c66f00;
+        text-decoration: underline;
+    }
+
+    .curriculo {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        box-shadow:
+            0 8px 0 rgba(0, 0, 0, 0.08),
+            0 15px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    h1 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 25px;
+        font-size: 34px;
+        font-weight: 900;
+    }
+
+    h2 {
+        color: #333;
+        border-bottom: 3px solid #e88a00;
+        padding-bottom: 7px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background: #fff;
+        color: #222;
+        transition: 0.2s ease;
+    }
+
+    input:hover,
+    textarea:hover,
+    select:hover {
+        border-color: #999;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+        border-color: #e88a00;
+        box-shadow: 0 0 0 3px rgba(232, 138, 0, 0.15);
+    }
+
+    textarea {
+        min-height: 110px;
+        resize: vertical;
+    }
+
+    .foto {
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 20px;
+        background: linear-gradient(145deg, #fafafa, #eeeeee);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .titulo-foto {
+        font-size: 19px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .descricao-foto {
+        color: #666;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .foto img {
+        width: 130px;
+        height: 160px;
+        object-fit: cover;
+        border: 2px solid #333;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        background: #ddd;
+    }
+
+    .bloco {
+        background: linear-gradient(145deg, #f9fafb, #f1f2f3);
+        padding: 20px;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .bloco-titulo {
+        font-size: 17px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .linha {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .informacao {
+        margin-top: 25px;
+        padding: 18px;
+        background: linear-gradient(135deg, #f4fff8, #e9fff1);
+        border-left: 5px solid #25D366;
+        border-radius: 7px;
+        color: #555;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .botoes {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .inicio,
+    .whatsapp {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        transition: all 0.25s ease;
+        cursor: pointer;
+    }
+
+    .inicio {
+        background: linear-gradient(180deg, #444, #171717);
+        border: 2px solid #555;
+        box-shadow:
+            0 5px 0 #000,
+            0 8px 15px rgba(0, 0, 0, 0.20);
+    }
+
+    .inicio:hover {
+        background: linear-gradient(180deg, #666, #333);
+        transform: translateY(-3px);
+    }
+
+    .inicio:active {
+        transform: translateY(1px);
+    }
+
+    .whatsapp {
+        background: linear-gradient(180deg, #25D366, #128C45);
+        border: 2px solid #0c793b;
+        box-shadow:
+            0 5px 0 #075e2d,
+            0 8px 15px rgba(0, 0, 0, 0.20);
+    }
+
+    .whatsapp:hover {
+        background: linear-gradient(180deg, #32e174, #159c50);
+        transform: translateY(-3px);
+    }
+
+    .whatsapp:active {
+        transform: translateY(1px);
+    }
+
+    .rodape {
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        color: #777;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .rodape strong {
+        color: #e88a00;
+    }
+
+    .rodape a {
+        color: #555;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .rodape a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 10px;
+        }
+
+        .curriculo {
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 27px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .linha {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        .bloco {
+            padding: 15px;
+        }
+
+        input,
+        textarea,
+        select {
+            font-size: 16px;
+        }
+
+        .inicio,
+        .whatsapp {
+            font-size: 15px;
+            padding: 14px 10px;
+        }
+
+        .foto img {
+            width: 120px;
+            height: 150px;
+        }
+
+        .voltar-topo {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 380px) {
+
+        body {
+            padding: 6px;
+        }
+
+        .curriculo {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .inicio,
+        .whatsapp {
+            font-size: 14px;
+        }
+    }
+
+    /* =========================================================
+       CONTEÚDO INFORMATIVO — CURRÍCULO SIMPLES
+    ========================================================= */
+
+    .conteudo-editorial {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto 20px;
+        padding: 22px;
+        background: #fffaf3;
+        border: 1px solid #ead7bd;
+        border-left: 5px solid #e88a00;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        color: #444;
+    }
+
+    .conteudo-editorial h2 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        color: #333;
+        border-bottom: 2px solid #e88a00;
+        padding-bottom: 7px;
+        font-size: 22px;
+    }
+
+    .conteudo-editorial h3 {
+        margin-top: 18px;
+        margin-bottom: 7px;
+        color: #333;
+        font-size: 17px;
+    }
+
+    .conteudo-editorial p {
+        margin: 8px 0;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .conteudo-editorial ul {
+        margin: 8px 0 10px 22px;
+        padding: 0;
+    }
+
+    .conteudo-editorial li {
+        margin-bottom: 6px;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    .conteudo-editorial .aviso-privacidade {
+        margin-top: 16px;
+        padding: 13px 15px;
+        background: #f4fff8;
+        border-left: 4px solid #25D366;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .navegacao-editorial {
+        margin-top: 17px;
+        padding-top: 13px;
+        border-top: 1px solid #e2d7ca;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .navegacao-editorial a {
+        color: #c66f00;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .navegacao-editorial a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .conteudo-editorial {
+            padding: 17px;
+        }
+
+        .conteudo-editorial h2 {
+            font-size: 20px;
+        }
+
+        .conteudo-editorial p,
+        .conteudo-editorial li {
+            font-size: 14px;
+        }
+
+        .navegacao-editorial a {
+            display: inline-block;
+            margin: 2px 4px;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<a
+    href="https://empregotododiaiguatu.com.br/#inicio"
+    class="voltar-topo"
+    aria-label="Voltar para o início do site"
+>
+    &larr; Voltar para o início
+</a>
+
+<section class="conteudo-editorial" aria-labelledby="guiaCurriculoSimples">
+
+    <h2 id="guiaCurriculoSimples">
+        📄 Como montar um currículo simples
+    </h2>
+
+    <p>
+        Este modelo de <strong>Currículo Simples</strong> foi criado para ajudar
+        você a organizar suas principais informações profissionais de maneira
+        clara e objetiva. Preencha os campos com atenção e utilize informações
+        verdadeiras e atualizadas.
+    </p>
+
+    <p>
+        Um currículo bem organizado pode facilitar a apresentação do seu perfil
+        profissional quando você estiver procurando oportunidades de trabalho.
+        Antes de enviar ou apresentar o documento, revise todas as informações.
+    </p>
+
+    <h3>👤 1. Dados pessoais</h3>
+
+    <p>
+        Informe seu nome completo e seus meios de contato. Confira principalmente
+        o telefone e o e-mail para que estejam corretos e atualizados.
+    </p>
+
+    <h3>🎯 2. Objetivo profissional</h3>
+
+    <p>
+        Escreva de forma direta a área, função ou tipo de trabalho que você procura.
+        Procure relacionar o objetivo com a oportunidade desejada.
+    </p>
+
+    <h3>💼 3. Experiência profissional</h3>
+
+    <p>
+        Informe as empresas onde trabalhou, os cargos exercidos, o período e as
+        principais atividades realizadas. Dê preferência a descrições objetivas
+        e verdadeiras.
+    </p>
+
+    <h3>📚 4. Cursos e qualificações</h3>
+
+    <p>
+        Inclua cursos que tenham relação com sua formação ou com a área profissional
+        desejada. Sempre que possível, informe o nome da instituição e do curso,
+        além do período e da modalidade.
+    </p>
+
+    <h3>⭐ Antes de usar seu currículo</h3>
+
+    <ul>
+        <li>Revise seu nome, telefone, e-mail e demais dados de contato.</li>
+        <li>Confira se empresas, cargos, datas e cursos estão corretos.</li>
+        <li>Evite erros de digitação e informações desnecessárias.</li>
+        <li>Não invente experiências, cursos ou qualificações.</li>
+        <li>Mantenha o objetivo profissional de acordo com a oportunidade procurada.</li>
+    </ul>
+
+    <div class="aviso-privacidade">
+        <strong>🔒 Atenção à sua segurança:</strong>
+        não informe neste currículo senhas, códigos de confirmação, dados de cartão,
+        informações bancárias ou outras informações pessoais que não sejam necessárias
+        para sua apresentação profissional. Compartilhe seus dados apenas com serviços
+        e pessoas de confiança.
+    </div>
+
+    <div class="navegacao-editorial">
+        <strong>Continue navegando:</strong><br>
+        <a href="vagas.html">🔎 Ver vagas</a> |
+        <a href="cadastro-reserva.html">📄 Cadastro Reserva</a> |
+        <a href="contato-email.html">📩 Contato</a> |
+        <a href="politica-de-privacidade.html">🔒 Política de Privacidade</a>
+    </div>
+
+</section>
+
+<main class="curriculo">
+
+    <h1>CURRÍCULO</h1>
+
+    <section class="foto">
+
+        <div class="titulo-foto">
+            📸 FOTO 3x4
+        </div>
+
+        <div class="descricao-foto">
+            Foto 3x4 para o currículo
+        </div>
+
+        <img
+            src="images/foto-3x4.png"
+            alt="Foto 3x4 para currículo"
+            width="130"
+            height="160"
+        >
+
+    </section>
+
+    <section>
+
+        <h2>👤 Dados Pessoais</h2>
+
+        <label for="nome">
+            Nome completo:
+        </label>
+
+        <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Digite seu nome completo"
+            autocomplete="name"
+        >
+
+        <label for="idade">
+            Idade:
+        </label>
+
+        <input
+            id="idade"
+            name="idade"
+            type="number"
+            placeholder="Digite sua idade"
+            min="1"
+            max="120"
+        >
+
+        <label for="estado-civil">
+            Estado civil:
+        </label>
+
+        <select id="estado-civil" name="estado_civil">
+
+            <option value="">
+                Selecione
+            </option>
+
+            <option value="solteiro">
+                Solteiro(a)
+            </option>
+
+            <option value="casado">
+                Casado(a)
+            </option>
+
+            <option value="divorciado">
+                Divorciado(a)
+            </option>
+
+            <option value="viuvo">
+                Viúvo(a)
+            </option>
+
+            <option value="uniao-estavel">
+                União estável
+            </option>
+
+        </select>
+
+        <label for="endereco">
+            Endereço completo:
+        </label>
+
+        <input
+            id="endereco"
+            name="endereco"
+            type="text"
+            placeholder="Rua, número, bairro, cidade - Estado"
+            autocomplete="street-address"
+        >
+
+        <label for="telefone">
+            Telefone:
+        </label>
+
+        <input
+            id="telefone"
+            name="telefone"
+            type="tel"
+            placeholder="(88) 9.9570-6025"
+            autocomplete="tel"
+        >
+
+        <label for="email">
+            E-mail:
+        </label>
+
+        <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="seuemail@email.com"
+            autocomplete="email"
+        >
+
+    </section>
+
+    <section>
+
+        <h2>🎯 Objetivo Profissional</h2>
+
+        <textarea
+            id="objetivo"
+            name="objetivo"
+            placeholder="Digite seu objetivo profissional..."
+        ></textarea>
+
+    </section>
+
+    <section>
+
+        <h2>💼 Experiências Profissionais</h2>
+
+        <div class="bloco">
+
+            <div class="bloco-titulo">
+                🏢 Experiência Profissional
+            </div>
+
+            <label for="empresa">
+                Nome completo da empresa:
+            </label>
+
+            <input
+                id="empresa"
+                name="empresa"
+                type="text"
+                placeholder="Digite o nome completo da empresa"
+            >
+
+            <div class="linha">
+
+                <div>
+
+                    <label for="cidade-empresa">
+                        Cidade:
+                    </label>
+
+                    <input
+                        id="cidade-empresa"
+                        name="cidade_empresa"
+                        type="text"
+                        placeholder="Digite a cidade"
+                    >
+
+                </div>
+
+                <div>
+
+                    <label for="estado-empresa">
+                        Estado:
+                    </label>
+
+                    <input
+                        id="estado-empresa"
+                        name="estado_empresa"
+                        type="text"
+                        placeholder="Ex.: Ceará - CE"
+                    >
+
+                </div>
+
+            </div>
+
+            <label for="cargo">
+                Cargo exercido:
+            </label>
+
+            <input
+                id="cargo"
+                name="cargo"
+                type="text"
+                placeholder="Ex.: Auxiliar Administrativo"
+            >
+
+            <div class="linha">
+
+                <div>
+
+                    <label for="ano-entrada">
+                        Ano que entrou:
+                    </label>
+
+                    <input
+                        id="ano-entrada"
+                        name="ano_entrada"
+                        type="number"
+                        placeholder="Ex.: 2020"
+                        min="1900"
+                        max="2100"
+                    >
+
+                </div>
+
+                <div>
+
+                    <label for="ano-saida">
+                        Ano que saiu:
+                    </label>
+
+                    <input
+                        id="ano-saida"
+                        name="ano_saida"
+                        type="number"
+                        placeholder="Ex.: 2023"
+                        min="1900"
+                        max="2100"
+                    >
+
+                </div>
+
+            </div>
+
+            <label for="funcoes">
+                Descrição das funções:
+            </label>
+
+            <textarea
+                id="funcoes"
+                name="funcoes"
+                placeholder="Descreva as principais funções, atividades e responsabilidades realizadas nesse cargo..."
+            ></textarea>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>📚 Cursos e Qualificações</h2>
+
+        <div class="bloco">
+
+            <div class="bloco-titulo">
+                📖 Informações do Curso
+            </div>
+
+            <label for="instituicao">
+                Nome completo da instituição:
+            </label>
+
+            <input
+                id="instituicao"
+                name="instituicao"
+                type="text"
+                placeholder="Digite o nome completo da instituição"
+            >
+
+            <label for="curso">
+                Nome completo do curso:
+            </label>
+
+            <input
+                id="curso"
+                name="curso"
+                type="text"
+                placeholder="Ex.: Curso de Informática Básica"
+            >
+
+            <div class="linha">
+
+                <div>
+
+                    <label for="cidade-curso">
+                        Cidade:
+                    </label>
+
+                    <input
+                        id="cidade-curso"
+                        name="cidade_curso"
+                        type="text"
+                        placeholder="Digite a cidade"
+                    >
+
+                </div>
+
+                <div>
+
+                    <label for="estado-curso">
+                        Estado:
+                    </label>
+
+                    <input
+                        id="estado-curso"
+                        name="estado_curso"
+                        type="text"
+                        placeholder="Ex.: Ceará - CE"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="linha">
+
+                <div>
+
+                    <label for="ano-inicio-curso">
+                        Ano que começou:
+                    </label>
+
+                    <input
+                        id="ano-inicio-curso"
+                        name="ano_inicio_curso"
+                        type="number"
+                        placeholder="Ex.: 2023"
+                        min="1900"
+                        max="2100"
+                    >
+
+                </div>
+
+                <div>
+
+                    <label for="ano-fim-curso">
+                        Ano que terminou:
+                    </label>
+
+                    <input
+                        id="ano-fim-curso"
+                        name="ano_fim_curso"
+                        type="number"
+                        placeholder="Ex.: 2024"
+                        min="1900"
+                        max="2100"
+                    >
+
+                </div>
+
+            </div>
+
+            <label for="modalidade">
+                Modalidade:
+            </label>
+
+            <select id="modalidade" name="modalidade">
+
+                <option value="">
+                    Selecione uma opção
+                </option>
+
+                <option value="presencial">
+                    Presencial
+                </option>
+
+                <option value="ead">
+                    Online / EAD
+                </option>
+
+                <option value="hibrido">
+                    Híbrido
+                </option>
+
+            </select>
+
+            <label for="conteudos">
+                Disciplinas / Conteúdos do curso:
+            </label>
+
+            <textarea
+                id="conteudos"
+                name="conteudos"
+                placeholder="Informe as principais disciplinas, matérias ou conteúdos estudados durante o curso..."
+            ></textarea>
+
+            <label for="situacao">
+                Situação:
+            </label>
+
+            <select id="situacao" name="situacao">
+
+                <option value="">
+                    Selecione uma opção
+                </option>
+
+                <option value="concluido">
+                    Curso concluído
+                </option>
+
+                <option value="andamento">
+                    Curso em andamento
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <div class="informacao">
+
+        📱
+        <strong>📱 Precisa de ajuda para fazer seu currículo?</strong>
+
+        <br>
+
+        Clique no botão abaixo e entre em contato
+        pelo WhatsApp para solicitar informações e orientação sobre a elaboração do currículo.
+
+    </div>
+
+    <div class="botoes">
+
+        <a
+            href="https://empregotododiaiguatu.com.br/#inicio"
+            class="inicio"
+            aria-label="Voltar para o início do site"
+        >
+            🏠 VOLTAR AO INÍCIO
+        </a>
+
+        <a
+            href="https://wa.me/558893485054?text=Ol%C3%A1!%20Fiquei%20interessado(a)%20em%20fazer%20um%20curr%C3%ADculo.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp"
+            aria-label="Entrar em contato pelo WhatsApp"
+        >
+            📱 FIQUEI INTERESSADO — ENTRAR EM CONTATO PELO WHATSAPP
+        </a>
+
+    </div>
+
+    <footer class="rodape">
+
+        <strong>Empregotododiaiguatu</strong>
+
+        <br>
+
+        Página Oficial de Empregos de Iguatu – CE.
+
+        <br>
+
+        Modelo de currículo para organização de informações profissionais.
+
+        <br>
+
+        © 2026 - Todos os direitos reservados.
+
+        <br>
+
+        <a
+            href="https://empregotododiaiguatu.com.br/#inicio"
+            aria-label="Acessar o início do site"
+        >
+            empregotododiaiguatu.com.br
+        </a>
+
+    </footer>
+
+</main>
+
+</body>
+
+</html>
