@@ -573,7 +573,7 @@ margin-top: 25px;
 <body>
 <header id="inicio">
 <h1>Empregotododiaiguatu</h1>
-<p>💼 VAGAS E CARGOS DE REFERÊNCIA — FUNDAMENTAL, MÉDIO E SUPERIOR</p>
+<p>💼 VAGAS — FUNDAMENTAL, MÉDIO E SUPERIOR</p>
 </header>
 <nav aria-label="Menu principal" class="menu">
 <a href="https://empregotododiaiguatu.com.br/">🏠 INÍCIO</a>
@@ -584,11 +584,11 @@ margin-top: 25px;
 </nav>
 <main class="container">
 <section class="hero">
-<h2>🔎 Consulte vagas divulgadas e cargos de referência</h2>
+<h2>🔎 Encontre oportunidades de acordo com sua escolaridade</h2>
 <p>
-      Consulte informações organizadas por <strong>Ensino Fundamental</strong>, <strong>Ensino Médio</strong>
-      e <strong>Ensino Superior</strong>. Um item desta página pode ser uma oportunidade divulgada ou um cargo de referência.
-      Quando o objetivo for deixar o currículo disponível para futuras oportunidades, utilize o Cadastro Reserva.
+      Consulte cargos organizados por <strong>Ensino Fundamental</strong>, <strong>Ensino Médio</strong>
+      e <strong>Ensino Superior</strong>. Clique em um cargo para ver requisitos, atividades e a orientação
+      para enviar seu currículo.
     </p>
 </section>
 
@@ -848,7 +848,7 @@ margin-top: 25px;
 <section aria-live="polite" class="grid" id="listaVagas"></section>
 <section class="info" id="como-enviar">
 <h2>📄 Como enviar seu currículo</h2>
-<p>Quando você encontrar uma vaga anunciada, siga as instruções do anúncio. Em geral:</p>
+<p>Quando você encontrar uma oportunidade realmente anunciada, siga as instruções do anúncio. Em geral:</p>
 <ul>
 <li>Tenha seu currículo atualizado em PDF;</li>
 <li>Confira nome da empresa, cargo, cidade e prazo;</li>
@@ -866,7 +866,6 @@ margin-top: 25px;
 <button aria-label="Fechar" class="fechar" id="fechar" type="button">×</button>
 <h2 id="modalTitulo"></h2>
 <div class="modal-sub" id="modalSub"></div>
-<div class="finalidade-modal"><strong>📋 Finalidade:</strong> este item apresenta o cargo como referência. O envio de currículo por esta página é destinado ao Cadastro Reserva para futuras oportunidades e não garante contratação.</div>
 <div aria-live="polite" class="contador-curriculos-modal" id="modalContadorCurriculos">👥 Currículos no Cadastro Reserva: <strong>0</strong></div>
 <div class="detalhes">
 <div class="detalhe"><strong>Escolaridade</strong><span id="modalEscolaridade"></span></div>
@@ -1058,7 +1057,7 @@ margin-top: 25px;
                 </h2>
 <p>
 
-                    Seu currículo foi recebido com sucesso no Cadastro Reserva.<br>Obrigado por se cadastrar! 🍀💼
+                    Seu currículo foi recebido com sucesso.<br>Obrigado por se cadastrar! 🍀💼
 
                     <br/><br/>
 
@@ -1434,6 +1433,8 @@ const vagas = [
   resumo:"Apoio técnico em obras e edificações.",requisitos:["Conforme formação e anúncio", "Requisitos adicionais devem ser conferidos no anúncio da empresa", "Disponibilidade e perfil compatíveis com a função"],atividades:["Atendimento e execução das rotinas do setor", "Registro e organização de informações", "Cumprimento dos procedimentos da empresa"]},
  {id:120,cargo:"Técnico(a) Agrícola",escolaridade:"medio",area:"rural",experiencia:"Conforme formação e anúncio",jornada:"A combinar",
   resumo:"Apoio técnico em atividades agrícolas.",requisitos:["Conforme formação e anúncio", "Requisitos adicionais devem ser conferidos no anúncio da empresa", "Disponibilidade e perfil compatíveis com a função"],atividades:["Atendimento e execução das rotinas do setor", "Registro e organização de informações", "Cumprimento dos procedimentos da empresa"]},
+ {id:121,cargo:"Auxiliar de Compras",escolaridade:"medio",area:"administrativo",experiencia:"Pode ser desejável",jornada:"A combinar",
+  resumo:"Cotações, pedidos e organização de compras.",requisitos:["Pode ser desejável", "Requisitos adicionais devem ser conferidos no anúncio da empresa", "Disponibilidade e perfil compatíveis com a função"],atividades:["Atendimento e execução das rotinas do setor", "Registro e organização de informações", "Cumprimento dos procedimentos da empresa"]},
  {id:122,cargo:"Assistente de Compras",escolaridade:"medio",area:"administrativo",experiencia:"Pode ser exigida",jornada:"A combinar",
   resumo:"Apoio ao processo de compras.",requisitos:["Pode ser exigida", "Requisitos adicionais devem ser conferidos no anúncio da empresa", "Disponibilidade e perfil compatíveis com a função"],atividades:["Atendimento e execução das rotinas do setor", "Registro e organização de informações", "Cumprimento dos procedimentos da empresa"]},
  {id:123,cargo:"Auxiliar Comercial",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",
@@ -3059,7 +3060,19 @@ const vagas = [
   {id:1696,cargo:"Vendedor(a) de Móveis",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Vendas de móveis e atendimento consultivo.",requisitos:["Ensino Médio","Comunicação e negociação","Experiência comercial pode ser diferencial"],atividades:["Atendimento","Apresentação de produtos","Negociação"]},
   {id:1697,cargo:"Vendedor(a) de Eletrodomésticos",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Atendimento e vendas de eletrodomésticos.",requisitos:["Ensino Médio","Boa comunicação","Experiência em vendas pode ser diferencial"],atividades:["Atendimento","Demonstração de produtos","Negociação"]},
   {id:1698,cargo:"Vendedor(a) de Autopeças",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Atendimento e vendas de peças e acessórios automotivos.",requisitos:["Ensino Médio","Boa comunicação","Conhecimento de autopeças pode ser diferencial"],atividades:["Atendimento","Consulta de produtos","Vendas"]},
-  ];
+  {id:1699,cargo:"Vendedor(a) Interno(a)",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Vendas e atendimento realizados dentro da empresa.",requisitos:["Ensino Médio","Comunicação","Experiência comercial pode ser diferencial"],atividades:["Atendimento","Prospecção","Acompanhamento de vendas"]},
+  {id:1700,cargo:"Auxiliar de Vendas",escolaridade:"medio",area:"comercial",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio ao atendimento e às atividades comerciais.",requisitos:["Ensino Médio","Boa comunicação","Organização"],atividades:["Atendimento","Organização de produtos","Apoio às vendas"]},
+  {id:1701,cargo:"Atendente de Loja",escolaridade:"medio",area:"atendimento",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Atendimento ao cliente e apoio à rotina da loja.",requisitos:["Ensino Médio","Boa comunicação","Organização"],atividades:["Atendimento","Orientação aos clientes","Organização da loja"]},
+  {id:1702,cargo:"Operador(a) de SAC",escolaridade:"medio",area:"atendimento",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Atendimento e suporte ao cliente por canais oficiais.",requisitos:["Ensino Médio","Boa comunicação","Informática básica"],atividades:["Atendimento","Registro de chamados","Orientação ao cliente"]},
+  {id:1703,cargo:"Auxiliar de Logística",escolaridade:"medio",area:"logistica",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio à movimentação e organização logística.",requisitos:["Ensino Médio","Organização","Atenção na conferência"],atividades:["Separação","Conferência","Organização de estoque"]},
+  {id:1704,cargo:"Auxiliar de Estoque",escolaridade:"fundamental",area:"logistica",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio no recebimento, separação e organização de mercadorias.",requisitos:["Ensino Fundamental","Organização","Atenção na conferência"],atividades:["Recebimento","Separação","Armazenamento"]},
+  {id:1705,cargo:"Auxiliar de Produção",escolaridade:"fundamental",area:"industria",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio às etapas de produção e organização do setor.",requisitos:["Ensino Fundamental ou Médio conforme empresa","Atenção às normas de segurança","Disponibilidade para a jornada"],atividades:["Abastecimento","Separação de materiais","Organização do setor"]},
+  {id:1706,cargo:"Operador(a) de Produção",escolaridade:"medio",area:"industria",experiencia:"Pode ser exigida",jornada:"A combinar",resumo:"Operação de processos produtivos conforme treinamento.",requisitos:["Ensino Médio conforme empresa","Atenção às normas de segurança","Experiência pode ser exigida"],atividades:["Operação","Inspeção básica","Organização do setor"]},
+  {id:1707,cargo:"Auxiliar de Serviços Gerais",escolaridade:"fundamental",area:"servicos",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Limpeza, organização e apoio à rotina do estabelecimento.",requisitos:["Ensino Fundamental completo ou conforme anúncio","Disposição para atividades operacionais","Responsabilidade"],atividades:["Limpeza e conservação","Organização de ambientes","Apoio às atividades gerais"]},
+  {id:1708,cargo:"Auxiliar de Cozinha",escolaridade:"fundamental",area:"alimentacao",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio na preparação de alimentos e organização da cozinha.",requisitos:["Escolaridade conforme anúncio","Organização e higiene","Disponibilidade para horários definidos"],atividades:["Higienização de utensílios","Pré-preparo","Organização da cozinha"]},
+  {id:1709,cargo:"Auxiliar Administrativo",escolaridade:"medio",area:"administrativo",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio a rotinas administrativas e organização de documentos.",requisitos:["Ensino Médio","Informática básica","Organização"],atividades:["Arquivo e documentos","Planilhas e cadastros","Atendimento e apoio administrativo"]},
+  {id:1710,cargo:"Auxiliar de Manutenção Predial",escolaridade:"fundamental",area:"construcao",experiencia:"Pode ser desejável",jornada:"A combinar",resumo:"Apoio à manutenção e conservação de instalações.",requisitos:["Ensino Fundamental","Conhecimentos práticos podem ser diferenciais","Atenção à segurança"],atividades:["Pequenos reparos","Organização de ferramentas","Conservação"]},
+];
 
 const nomesArea={
  administrativo:"Administrativo",comercial:"Comercial",servicos:"Serviços",logistica:"Logística",
@@ -3241,14 +3254,13 @@ function render(){
         <h3>${escapeHtml(v.cargo)}</h3>
         <span class="tag">${nomesEscolaridade[v.escolaridade]}</span>
       </div>
-      <div class="finalidade-vaga"><strong>📋 Cadastro Reserva:</strong> currículo mantido para futuras oportunidades. Este cadastro não representa contratação imediata.</div>
       <p>${escapeHtml(v.resumo)}</p>
       <div class="requisitos">
         <strong>📌 Requisitos principais</strong>
         <ul>${v.requisitos.slice(0,2).map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul>
       </div>
       <div class="contador-curriculos" id="contador-curriculos-${v.id}">👥 Currículos no Cadastro Reserva: <strong>consultando...</strong></div>
-      <button type="button" data-id="${v.id}">🔎 VER DETALHES DO CARGO</button>
+      <button type="button" data-id="${v.id}">🔎 VER DETALHES DA VAGA</button>
     `;
     card.querySelector("button").addEventListener("click",()=>abrirModal(v));
     lista.appendChild(card);
@@ -3268,7 +3280,7 @@ const fechar=document.getElementById("fechar");
 function abrirModal(v){
   window.vagaModalAtual = v;
   document.getElementById("modalTitulo").textContent=v.cargo;
-  document.getElementById("modalSub").textContent=`${nomesEscolaridade[v.escolaridade]} • ${nomesArea[v.area]} • Cadastro Reserva para futuras oportunidades`;
+  document.getElementById("modalSub").textContent=`${nomesEscolaridade[v.escolaridade]} • ${nomesArea[v.area]}`;
   document.getElementById("modalEscolaridade").textContent=nomesEscolaridade[v.escolaridade];
   document.getElementById("modalArea").textContent=nomesArea[v.area];
   document.getElementById("modalExperiencia").textContent=v.experiencia;
